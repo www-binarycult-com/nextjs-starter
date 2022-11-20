@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { ProjectProvider } from '../components/ProjectProvider';
+import { ProjectList } from '../components/ProjectList';
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +15,24 @@ const Home: NextPage = () => {
       <main className='bg-gray-400'>
         <h1>Koffer voller Immajung</h1>
       </main>
+      <p className='h-screen'>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque minima quidem beatae assumenda quam delectus
+        optio quibusdam error odio aperiam eum iure totam officia provident aliquam, debitis exercitationem? Culpa, at.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, iste voluptatibus eius quaerat ipsa quidem
+        quod doloremque incidunt a aspernatur deserunt minima cumque assumenda molestiae cupiditate reprehenderit veniam
+        eum in. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci inventore quas quae, nisi
+        voluptatibus ipsam assumenda pariatur cupiditate eius quos totam id officia accusamus numquam. Quos voluptatibus
+        repellendus tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consectetur ad
+        veritatis et, saepe repudiandae modi quo sit deserunt impedit praesentium vero, porro blanditiis? Aut a quos in
+        fuga? Officiis.
+      </p>
+      <ProjectProvider>
+        <ProjectList />
+      </ProjectProvider>
 
       <footer>
-        <p>Binarycult website</p>
+        <p className='h-screen '>Binarycult website</p>
+        <p className='h-screen bg-green-100'>Binarycult website</p>
       </footer>
     </div>
   );
