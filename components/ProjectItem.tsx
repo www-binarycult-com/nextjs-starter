@@ -19,8 +19,6 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
     threshold: 0.5,
   });
 
-  const imgRef = useRef<HTMLImageElement>();
-
   const { changeConfig } = useProject();
 
   useEffect(() => {
@@ -33,9 +31,6 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
   useEffect(() => {
     if (inView) {
       changeConfig({ position: position, color: backgroundColor });
-      if (imgRef) {
-        console.log('imgRef.current?.scrollIntoView');
-      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
