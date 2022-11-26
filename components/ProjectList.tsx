@@ -95,31 +95,3 @@ export const ProjectList = () => {
     </div>
   );
 };
-
-// const [color, setColor] = useState('black');
-// useEffect(() => {
-//   function updateScrollCompletion() {
-//     // see how much we have scrolled
-//     const currentProgress = window.scrollY;
-//     // see how much total scroll is available
-//     let scrollHeight = document.getElementById('trigger')?.scrollHeight || 0 - window.innerHeight;
-//     // if (scrollHeight) {
-//     //   setCompletion(Number((currentProgress / scrollHeight).toFixed(2)) * 100);
-//     // }
-
-//     const entry = document.getElementById('trigger')?.getBoundingClientRect().top || 0;
-//     const height = document.getElementById('trigger')?.getBoundingClientRect();
-
-//     const heightCalc = window.innerHeight / 2;
-//     console.log(-entry > heightCalc);
-//   }
-//   // add scroll event listener
-//   if (inView) {
-//     window.addEventListener('scroll', updateScrollCompletion);
-//   }
-
-//   // remove scroll event listener on umount
-//   return () => {
-//     window.removeEventListener('scroll', updateScrollCompletion);
-//   };
-// }, [inView]);
