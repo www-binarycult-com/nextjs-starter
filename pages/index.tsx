@@ -2,6 +2,15 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Slider } from '../components/slider';
 
+const images = [
+  { href: '/', src: '/1.png' },
+  { href: '/', src: '/2.png' },
+  { href: '/', src: '/3.png' },
+  { href: '/', src: '/4.png' },
+  { href: '/', src: '/5.png' },
+  { href: '/', src: '/vercel.svg' },
+];
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -14,8 +23,7 @@ const Home: NextPage = () => {
       <main className='bg-gray-400'>
         <h1>Koffer voller Immajung</h1>
       </main>
-      <Slider />
-
+      <Slider images={images} />
       <footer>
         <p>Binarycult website</p>
       </footer>
