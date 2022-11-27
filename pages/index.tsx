@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Slider } from '../components/slider';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <main className='bg-gray-400'>
         <h1>Koffer voller Immajung</h1>
       </main>
+      <Slider />
 
       <footer>
         <p>Binarycult website</p>
