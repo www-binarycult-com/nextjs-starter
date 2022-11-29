@@ -23,6 +23,34 @@ const Home: NextPage = () => {
       <main className='bg-gray-400'>
         <h1>Koffer voller Immajung</h1>
       </main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus
+        molestias modi magni deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta doloremque vero
+        explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio,
+        tenetur natus molestias modi magni deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta
+        doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia.
+        Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa laborum inventore expedita nobis
+        quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium, quia. Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa laborum inventore
+        expedita nobis quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa
+        laborum inventore expedita nobis quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus molestias modi magni
+        deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus molestias
+        modi magni deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta doloremque vero explicabo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus
+        molestias modi magni deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta doloremque vero
+        explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia. Aspernatur distinctio,
+        tenetur natus molestias modi magni deserunt culpa laborum inventore expedita nobis quidem! In commodi soluta
+        doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia.
+        Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa laborum inventore expedita nobis
+        quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium, quia. Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa laborum inventore
+        expedita nobis quidem! In commodi soluta doloremque vero explicabo? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Praesentium, quia. Aspernatur distinctio, tenetur natus molestias modi magni deserunt culpa
+        laborum inventore expedita nobis quidem! In commodi soluta doloremque vero explicabo?
+      </p>
       <Slider images={images} />
       <footer>
         <p>Binarycult website</p>

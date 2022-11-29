@@ -10,11 +10,22 @@ module.exports = {
     extend: {
       animation: {
         'slide-scroll': 'slide-scroll 4s linear infinite',
+        'fade-in': 'fade-in 1s ease-out',
       },
       keyframes: {
         'slide-scroll': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(calc(-250px * 6))' },
+        },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
         },
       },
       backgroundImage: {
