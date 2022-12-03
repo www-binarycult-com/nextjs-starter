@@ -7,7 +7,22 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend: {},
+    extend: {
+      fontFamily: { miriamLibre: 'Miriam Libre' },
+      animation: {
+        blink: 'blink 1s step-end infinite',
+      },
+      keyframes: {
+        blink: {
+          'from, to': {
+            color: 'transparent',
+          },
+          '50%': {
+            color: 'black',
+          },
+        },
+      },
+    },
   },
   variants: {
     extend: {},
