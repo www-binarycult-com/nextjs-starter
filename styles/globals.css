@@ -13,4 +13,7 @@
 
 
 
+  @keyframes leftright{0%,to{transform:translateX(-5px)}50%{transform:translateX(5px)}}
 
+
+  @keyframes updown{0%,50%,to{transform:translateY(0)}25%{transform:translateY(5px)}75%{transform:translateY(-5px)}}

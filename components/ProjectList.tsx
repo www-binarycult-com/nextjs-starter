@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { ProjectProvider, useProject } from './ProjectProvider';
-import { ProjectHeadline } from './ProjectHeadline';
+import { useProject } from './ProjectProvider';
 import { ProjectItem } from './ProjectItem';
 import { ProjectText } from './ProjectText';
 
