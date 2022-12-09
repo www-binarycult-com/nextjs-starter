@@ -17,7 +17,7 @@ export const Services = () => {
   return (
     <div>
       <Headline tag='h2'>Our Services</Headline>
-      <p>
+      <p className='w-1/3'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam voluptatibus exercitationem
         reiciendis sed ad nostrum? Error, fugit necessitatibus? Exercitationem vero enim adipisci et ipsa veniam
         excepturi, aliquam quis praesentium!
@@ -78,6 +78,7 @@ export const Services = () => {
         >
           <a
             ref={ref1}
+            href='/test'
             className='p-8'
             onMouseOver={() => {
               setPosition({
@@ -89,11 +90,12 @@ export const Services = () => {
               });
             }}
           >
-            Test1
+            UI / UX Design
           </a>
           <a
             ref={ref2}
             className='p-8'
+            href='/test'
             onMouseOver={() => {
               setPosition({
                 position: 2,
@@ -104,11 +106,12 @@ export const Services = () => {
               });
             }}
           >
-            Test2
+            Hosting
           </a>
           <a
             ref={ref3}
             className='p-8'
+            href='/test'
             onMouseOver={() => {
               setPosition({
                 position: 3,
@@ -119,7 +122,7 @@ export const Services = () => {
               });
             }}
           >
-            Test3
+            Full Service
           </a>
         </div>
       </div>

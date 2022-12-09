@@ -3,8 +3,7 @@ import Head from 'next/head';
 import { ProjectProvider } from '../components/ProjectProvider';
 import { ProjectList } from '../components/ProjectList';
 import { Headline } from '../components/Headline';
-import { ServicesAlt } from '../components/services/Services-alt';
-import { Services } from '../components/services/Services';
+import { ServicesAlt } from '../components/services/alt/Services-alt';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +17,7 @@ const Home: NextPage = () => {
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
+        <ServicesAlt />
       </main>
       <footer>
         <p className='h-screen '>Binarycult website</p>
@@ -31,9 +31,7 @@ const Home: NextPage = () => {
         <br />
         <Headline tag='h5'>Überschrift</Headline>
         <br />
-        <ServicesAlt />
         <p className='h-screen bg-green-100'>Binarycult website</p>
-        <Services />
       </footer>
     </div>
   );

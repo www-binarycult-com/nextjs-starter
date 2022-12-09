@@ -13,8 +13,17 @@ module.exports = {
         blink: 'blink 1s step-end infinite',
         leftRightService: 'leftRightService 1.9s linear infinite',
         upDownService: 'upDownService 1.9s linear infinite',
+        fadeIn: 'fadeIn 1s linear',
       },
       keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
         blink: {
           'from, to': {
             color: 'transparent',
