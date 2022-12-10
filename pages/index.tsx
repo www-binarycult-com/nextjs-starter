@@ -10,10 +10,10 @@ const images = [
   { href: '/', src: '/5.png' },
   { href: '/', src: '/6.png' },
 ];
-import { ProjectProvider } from '../components/ProjectProvider';
-import { ProjectList } from '../components/ProjectList';
+import { ProjectProvider } from '../components/project/ProjectProvider';
+import { ProjectList } from '../components/project/ProjectList';
 import { Headline } from '../components/Headline';
-import { ServicesAlt } from '../components/services/Services';
+import { Services } from '../components/services/Services';
 import { Hero } from '../components/hero/Hero';
 import { TextImageSection } from '../components/text-image/TextImageSection';
 
@@ -45,9 +45,9 @@ const Home: NextPage = () => {
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
-        <ServicesAlt />
+        <Services />
+        <Slider images={images} />
       </main>
-      <Slider images={images} />
       <footer>
         <p className='h-screen '>Binarycult website</p>
         <Headline tag='h1'>Überschrift</Headline>

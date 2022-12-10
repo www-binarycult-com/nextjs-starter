@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Headline } from './Headline';
+import { Headline } from '../Headline';
 
 export const ProjectHeadline = ({
   children,

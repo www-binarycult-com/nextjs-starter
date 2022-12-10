@@ -14,7 +14,7 @@ export const Slider = ({ images }: SliderProps) => {
   return (
     <div
       ref={ref}
-      className={`bg-white border-black h-[100px] m-auto overflow-hidden relative w-full ${before} ${after} ${
+      className={`bg-white border-black border-2 h-[100px] m-auto overflow-hidden relative w-full ${before} ${after} ${
         inView && 'animate-fade-in'
       }`}
     >

@@ -4,7 +4,7 @@ import { ServicesBox } from './ServiceBox';
 import { ServicesItem } from './ServicesItem';
 import { ServiceHeadline } from './ServiceHeadline';
 
-export const ServicesAlt = () => {
+export const Services = () => {
   const divElement = useRef<HTMLDivElement>(null);
   const ref1 = useRef<HTMLAnchorElement>(null);
   const ref2 = useRef<HTMLAnchorElement>(null);
@@ -21,7 +21,7 @@ export const ServicesAlt = () => {
 
   return (
     <div>
-      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10'>
+      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10 border-l-2 border-black  border-r-2'>
         <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Our Services
