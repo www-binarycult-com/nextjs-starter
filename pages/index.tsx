@@ -1,5 +1,15 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Slider } from '../components/slider';
+
+const images = [
+  { href: '/', src: '/1.png' },
+  { href: '/', src: '/2.png' },
+  { href: '/', src: '/3.png' },
+  { href: '/', src: '/4.png' },
+  { href: '/', src: '/5.png' },
+  { href: '/', src: '/6.png' },
+];
 import { ProjectProvider } from '../components/ProjectProvider';
 import { ProjectList } from '../components/ProjectList';
 import { Headline } from '../components/Headline';
@@ -37,6 +47,7 @@ const Home: NextPage = () => {
         </ProjectProvider>
         <ServicesAlt />
       </main>
+      <Slider images={images} />
       <footer>
         <p className='h-screen '>Binarycult website</p>
         <Headline tag='h1'>Überschrift</Headline>

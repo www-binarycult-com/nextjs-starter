@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('../public/hero-bg.png')",
+        'gradient-slider': 'linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
       },
       fontFamily: { miriamLibre: 'Miriam Libre' },
       animation: {
@@ -17,6 +18,8 @@ module.exports = {
         leftRightService: 'leftRightService 1.9s linear infinite',
         upDownService: 'upDownService 1.9s linear infinite',
         fadeIn: 'fadeIn 1s linear',
+        'slide-scroll': 'slide-scroll 4s linear infinite',
+        'fade-in': 'fade-in 1s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -61,6 +64,19 @@ module.exports = {
           },
           '100%': {
             transform: 'translateY(0)',
+          },
+        },
+        'slide-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-250px * 6))' },
+        },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            opacity: '1',
           },
         },
       },
