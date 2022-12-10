@@ -8,6 +8,7 @@ import { Hero } from '../components/hero/Hero';
 import { TextImageSection } from '../components/text-image/TextImageSection';
 import { ContactForm } from '../components/form/ContactForm';
 import { ContactCTA } from '../components/callToActions/ContactCTA';
+import { Footer } from '../components/footer/Footer';
 
 const images = [
   { href: '/', src: '/1.png' },
@@ -65,6 +66,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
