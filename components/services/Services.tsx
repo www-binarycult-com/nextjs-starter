@@ -22,16 +22,10 @@ export const ServicesAlt = () => {
   return (
     <div>
       <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10'>
-        <div ref={divElement}>
+        <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Our Services
           </Headline>
-          <p className='py-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam voluptatibus exercitationem
-            reiciendis sed ad nostrum? Error, fugit necessitatibus? Exercitationem vero enim adipisci et ipsa veniam
-            excepturi, aliquam quis praesentium!
-            <span>___</span>
-          </p>
         </div>
         <ServicesBox position={position} />
         <div
@@ -116,19 +110,19 @@ export const ServicesAlt = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
             perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
             dignissimos quam, totam et ex voluptates?
-          </ServicesItem>{' '}
+          </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={2} title='UI / UX Design'>
             Creating visual design concepts and user experiences which captivate the audience from the loading screen.
-          </ServicesItem>{' '}
+          </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={3} title='Hosting'>
             No matter the project or client, our compute options give you the flexibility an agency needs to handle
             different client requests. Whether you are looking to host hundreds of small websites or build a complicated
             application, we have you covered at a lower cost than other cloud providers.
-          </ServicesItem>{' '}
+          </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={4} title='Technical SEO'>
             Comprehensive analysis of your homepage. Optimization for local keywords. Acceleration of page load time,
             text and image optimization for TOP ranking on Google.
-          </ServicesItem>{' '}
+          </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={5} title='Web Development'>
             Designing complex and scalable web applications that can seamlessly handle the load of an enterprise-grade
             business while keeping data securely guarded.
