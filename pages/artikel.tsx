@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Headline } from '../components/Headline';
 
 const Artikel: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Artikel: NextPage = () => {
 
       <main className='bg-gray-400'>
         <h1>Artikel</h1>
+        <Headline tag='h2'>Überschrift</Headline>
       </main>
       <footer>
         <p>Binarycult website</p>
