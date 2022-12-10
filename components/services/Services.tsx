@@ -21,7 +21,7 @@ export const Services = () => {
 
   return (
     <div>
-      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10 border-l-2 border-black  border-r-2'>
+      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10 border-l-2 border-black  border-r-2'>
         <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Our Services
