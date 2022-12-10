@@ -32,13 +32,17 @@ const Home: NextPage = () => {
           heading='Ueberschrift'
           text='Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.'
           image={{ src: './coder.svg' }}
+          className='border-black border-4'
         />
-        <ContactCTA />
+        <div className='border-black border-4'>
+          <ContactCTA />
+        </div>
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
         <TextImageSection
           heading='Ueberschrift'
+          className='border-black border-4'
           text='Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.'
         />
         <Services />
@@ -46,11 +50,12 @@ const Home: NextPage = () => {
         <TextImageSection
           heading='Ueberschrift'
           reversedOrder
+          className='border-black border-4'
           text='Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.'
           image={{ src: './coder.svg' }}
         />
-        <div id='contact-form' className='flex flex-col-reverse md:flex-row'>
-          <div className='w-full md:w-1/2'>
+        <div id='contact-form' className='flex flex-col-reverse md:flex-row border-black border-4'>
+          <div className='w-full md:w-1/2 '>
             <ContactForm />
           </div>
           <div className='w-full p-10 md:w-1/2'>

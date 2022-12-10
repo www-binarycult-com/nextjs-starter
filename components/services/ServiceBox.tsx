@@ -23,7 +23,7 @@ export const ServicesBox = ({ position }: { position: PositionTypes }) => {
     >
       <div
         className={`bg-white w-full h-full block absolute top-0 left-0  ${
-          position?.height && 'animate-upDownService border-2 border-black '
+          position?.height && 'animate-upDownService border-4 border-black '
         }`}
       />
     </div>
