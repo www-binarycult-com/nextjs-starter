@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { ProjectProvider } from '../components/ProjectProvider';
 import { ProjectList } from '../components/ProjectList';
 import { Headline } from '../components/Headline';
+import { Hero } from '../components/hero/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='bg-white'>
+        <Hero />
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>

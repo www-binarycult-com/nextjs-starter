@@ -8,6 +8,9 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      backgroundImage: {
+        hero: "url('../public/hero-bg.png')",
+      },
       fontFamily: { miriamLibre: 'Miriam Libre' },
       animation: {
         blink: 'blink 1s step-end infinite',
