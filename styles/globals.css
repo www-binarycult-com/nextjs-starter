@@ -17,3 +17,29 @@
 
 
   @keyframes updown{0%,50%,to{transform:translateY(0)}25%{transform:translateY(5px)}75%{transform:translateY(-5px)}}
+
+
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -12,11 +12,13 @@ type ServiceItemsTypes = {
 export const ServicesItem = ({ position, hoveredPosition, title, children, href }: ServiceItemsTypes) => {
   return hoveredPosition === position ? (
     <div className={`z-0 w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
-      <div className={`p-4 md:p-8 w-full md:w-[80%] bg-white flex flex-col  gap-8 duration-500`}>
-        <div className='flex'>{title}</div>
+      <div className={`p-4 md:p-8 w-full md:w-[60%] bg-black flex flex-col  gap-8 duration-200`}>
+        <div className='flex text-2xl text-white'>{title}</div>
         <div>
-          <div className='mb-8'>{children}</div>
-          <a href={href}>Mehr Erfahren</a>
+          <div className='mb-8 text-white'>{children}</div>
+          <a className='text-white hover-underline-animation' href={href}>
+            Mehr Erfahren
+          </a>
         </div>
       </div>
     </div>

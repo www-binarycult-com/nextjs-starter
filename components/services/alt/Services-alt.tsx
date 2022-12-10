@@ -1,18 +1,11 @@
 import Image from 'next/image';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../../Headline';
-import { ServicesBox } from '../ServiceBox';
-import { ServicesItem } from '../ServicesItem';
-import { ServiceHeadline } from './ServiceHeadline';
 
-export const ServicesAlt = () => {
-  const divElement = useRef<HTMLDivElement>(null);
-  const ParagraphElement = useRef<HTMLParagraphElement>(null);
+export const Services = () => {
   const ref1 = useRef<HTMLAnchorElement>(null);
   const ref2 = useRef<HTMLAnchorElement>(null);
   const ref3 = useRef<HTMLAnchorElement>(null);
-  const ref4 = useRef<HTMLAnchorElement>(null);
-  const ref5 = useRef<HTMLAnchorElement>(null);
   const [position, setPosition] = useState<{
     position?: number;
     top?: number;
@@ -23,122 +16,114 @@ export const ServicesAlt = () => {
 
   return (
     <div>
-      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10'>
-        <div ref={divElement}>
-          <Headline className='z-10' tag='h2'>
-            Our Services
-          </Headline>
-          <p className='py-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam voluptatibus exercitationem
-            reiciendis sed ad nostrum? Error, fugit necessitatibus? Exercitationem vero enim adipisci et ipsa veniam
-            excepturi, aliquam quis praesentium!
-            <span>___</span>
-          </p>
+      <Headline tag='h2'>Our Services</Headline>
+      <p className='w-1/3'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam voluptatibus exercitationem
+        reiciendis sed ad nostrum? Error, fugit necessitatibus? Exercitationem vero enim adipisci et ipsa veniam
+        excepturi, aliquam quis praesentium!
+      </p>
+      <span>___</span>
+      <div className='box-border block bg-cover relative w-[900px] h-[500px] p-12'>
+        <div className='z-0'>
+          <img
+            src='bild1-services.webp'
+            className={`absolute w-full h-full  top-0 left-0 ${
+              position?.position === 1 ? 'opacity-1 visible' : 'opacity-0'
+            } transition-all duration-500`}
+            width={900}
+            height={500}
+            alt=''
+          />
+          <img
+            className={`absolute w-full h-full  top-0 left-0 ${
+              position?.position === 2 ? 'opacity-1 visible' : 'opacity-0'
+            } transition-all duration-500`}
+            src='bild2-services.webp'
+            width={900}
+            height={500}
+            alt=''
+          />
+          <img
+            className={`absolute w-full h-full  top-0 left-0 ${
+              position?.position === 3 ? 'opacity-1 visible' : 'opacity-0'
+            } transition-all duration-500`}
+            src='bild3.webp'
+            width={900}
+            height={500}
+            alt=''
+          />
         </div>
-        <ServicesBox position={position} />
         <div
-          className='relative z-2 gap-8 flex flex-wrap'
-          onClick={() => {
+          className={`z-1 block absolute top-0 left-0 w-full h-full transition-all duration-500 ${
+            position?.height && 'animate-leftRightService'
+          }`}
+          style={{
+            top: position?.top,
+            left: position?.left,
+            width: position?.width,
+            height: position?.height,
+          }}
+        >
+          <div
+            className={`bg-yellow-100 w-full h-full block absolute top-0 left-0 ${
+              position?.height && 'animate-upDownService'
+            }`}
+          />
+        </div>
+        <div
+          className='relative z-2 grid-cols-[213px_213px_213px] gap-8 grid'
+          onMouseLeave={() => {
             setPosition({ ...position, top: undefined, left: undefined, width: undefined, height: undefined });
           }}
         >
-          <ServiceHeadline
-            onMouseEnter={() => {
+          <a
+            ref={ref1}
+            href='/test'
+            className='p-8'
+            onMouseOver={() => {
               setPosition({
                 position: 1,
-                top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref1.current?.offsetTop || 0) + 48,
                 left: ref1.current?.getBoundingClientRect().left,
                 width: ref1.current?.getBoundingClientRect().width,
                 height: ref1.current?.getBoundingClientRect().height,
               });
             }}
-            ref={ref1}
           >
-            Full Service
-          </ServiceHeadline>
-          <ServiceHeadline
-            onMouseEnter={() => {
+            UI / UX Design
+          </a>
+          <a
+            ref={ref2}
+            className='p-8'
+            href='/test'
+            onMouseOver={() => {
               setPosition({
                 position: 2,
-                top: (ref2.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref2.current?.offsetTop || 0) + 48,
                 left: ref2.current?.getBoundingClientRect().left,
                 width: ref2.current?.getBoundingClientRect().width,
                 height: ref2.current?.getBoundingClientRect().height,
               });
             }}
-            ref={ref2}
           >
-            UI / UX Design
-          </ServiceHeadline>
-          <ServiceHeadline
-            onMouseEnter={() => {
+            Hosting
+          </a>
+          <a
+            ref={ref3}
+            className='p-8'
+            href='/test'
+            onMouseOver={() => {
               setPosition({
                 position: 3,
-                top: (ref3.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref3.current?.offsetTop || 0) + 48,
                 left: ref3.current?.getBoundingClientRect().left,
                 width: ref3.current?.getBoundingClientRect().width,
                 height: ref3.current?.getBoundingClientRect().height,
               });
             }}
-            ref={ref3}
           >
-            Hosting
-          </ServiceHeadline>
-          <ServiceHeadline
-            onMouseEnter={() => {
-              setPosition({
-                position: 4,
-                top: (ref4.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                left: ref4.current?.getBoundingClientRect().left,
-                width: ref4.current?.getBoundingClientRect().width,
-                height: ref4.current?.getBoundingClientRect().height,
-              });
-            }}
-            ref={ref4}
-          >
-            Technical SEO
-          </ServiceHeadline>
-          <ServiceHeadline
-            onMouseEnter={() => {
-              setPosition({
-                position: 5,
-                top: (ref5.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                left: ref5.current?.getBoundingClientRect().left,
-                width: ref5.current?.getBoundingClientRect().width,
-                height: ref5.current?.getBoundingClientRect().height,
-              });
-            }}
-            ref={ref5}
-          >
-            Web Development
-          </ServiceHeadline>
-        </div>
-        <div className='bg-yellow-200 p-8 h-[500px]'>
-          <ServicesItem href='' hoveredPosition={position?.position} position={1} title='Full Service'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
-          </ServicesItem>{' '}
-          <ServicesItem href='' hoveredPosition={position?.position} position={2} title='UI / UX Design'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
-          </ServicesItem>{' '}
-          <ServicesItem href='' hoveredPosition={position?.position} position={3} title='Hosting'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
-          </ServicesItem>{' '}
-          <ServicesItem href='' hoveredPosition={position?.position} position={4} title='Technical SEO'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
-          </ServicesItem>{' '}
-          <ServicesItem href='' hoveredPosition={position?.position} position={5} title='Web Development'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
-          </ServicesItem>
+            Full Service
+          </a>
         </div>
       </div>
     </div>
