@@ -49,7 +49,6 @@ const Home: NextPage = () => {
         <Slider images={images} />
       </main>
       <footer>
-        <p className='h-screen '>Binarycult website</p>
         <Headline tag='h1'>Überschrift</Headline>
         <br />
         <Headline tag='h2'>Überschrift</Headline>
@@ -60,7 +59,6 @@ const Home: NextPage = () => {
         <br />
         <Headline tag='h5'>Überschrift</Headline>
         <br />
-        <p className='h-screen bg-green-100'>Binarycult website</p>
       </footer>
     </div>
   );
