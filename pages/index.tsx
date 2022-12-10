@@ -4,6 +4,7 @@ import { ProjectProvider } from '../components/ProjectProvider';
 import { ProjectList } from '../components/ProjectList';
 import { Headline } from '../components/Headline';
 import { ServicesAlt } from '../components/services/Services';
+import { Hero } from '../components/hero/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='bg-white'>
-        <a className='underwrite' href=''>
-          Testwesie
-        </a>
+        <Hero />
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
