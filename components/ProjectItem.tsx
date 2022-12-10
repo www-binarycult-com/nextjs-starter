@@ -40,14 +40,14 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
       <div id='test' className='relative min-h-[80vh]'>
         <div id='inner' className='flex items-center justify-items-center absolute w-full h-full inset-0 min-h-[80vh]'>
           <div className='relative flex flex-col'>
-            <h1 className='text-4xl p-12 md:hidden text-white'>{headline}</h1>
+            <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-white'>{headline}</h1>
             <div className='relative'>
               <div id='item_bg' className='absolute w-[100%] h-[100%] top-0 left-0 '>
                 <img
                   src={svgSrc}
                   alt=''
                   ref={ref}
-                  className='absolute w-full h-full top-0 left-0 block object-contain scale-125'
+                  className='absolute w-full h-full top-0 left-0 block object-contain '
                 />
               </div>
               <div id='item_screen' className='items-center flex flex-col justify-items-center relative w-full'>
@@ -58,7 +58,7 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
                 />
               </div>
             </div>
-            {<div className='relative p-12 md:hidden text-white'>{children}</div>}
+            {<div className='relative p-6 md:p-12 md:hidden text-white'>{children}</div>}
           </div>
         </div>
       </div>
