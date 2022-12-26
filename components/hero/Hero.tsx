@@ -1,3 +1,4 @@
+import { Headline } from '../Headline';
 import { Navigation } from '../navigation/Navigation';
 
 export const Hero = () => {
@@ -6,7 +7,7 @@ export const Hero = () => {
       <div className='p-10'>
         <div className='flex justify-between'>
           <div>
-            <p className='font-extrabold'>{'<immajung />'}</p>
+            <Headline tag='h5'>{'<immajung />'}</Headline>
           </div>
           <div className='mr-8'>
             <Navigation />

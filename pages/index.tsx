@@ -9,6 +9,7 @@ import { TextImageSection } from '../components/text-image/TextImageSection';
 import { ContactForm } from '../components/form/ContactForm';
 import { ContactCTA } from '../components/callToActions/ContactCTA';
 import { Footer } from '../components/footer/Footer';
+import { LinkCTA } from '../components/callToActions/LinkCTA';
 
 const images = [
   { href: '/', src: '/1.png' },
@@ -50,7 +51,7 @@ const Home: NextPage = () => {
               näher kennen.
             </p>
             <br />
-            <a href='#contact-form'>Sag uns gerne Hallo!</a>
+            <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
           </>
         </TextImageSection>
         <div className=' '>
@@ -93,10 +94,12 @@ const Home: NextPage = () => {
             <ContactForm />
           </div>
           <div className='w-full p-10 md:w-1/2'>
-            Sie haben Fragen oder möchten mehr über unsere Leistungen erfahren? Dann zögern Sie nicht, uns zu
-            kontaktieren. Wir stehen Ihnen gerne zur Verfügung und beantworten Ihre Anfragen schnellstmöglich. Nutzen
-            Sie dafür einfach das Kontaktformular nebenan oder schreiben Sie uns eine E-Mail an{' '}
-            <a href=''>info@immajung.de</a>. Wir freuen uns darauf, von Ihnen zu hören.
+            Sie haben Fragen oder möchten mehr über unsere Leistungen erfahren? <br />
+            <br />
+            Dann zögern Sie nicht, uns zu kontaktieren. Wir stehen Ihnen gerne zur Verfügung und beantworten Ihre
+            Anfragen schnellstmöglich. Nutzen Sie dafür einfach das Kontaktformular nebenan oder schreiben Sie uns eine
+            E-Mail an <br />
+            <LinkCTA href=''>info@immajung.de</LinkCTA>. Wir freuen uns darauf, von Ihnen zu hören.
           </div>
         </div>
       </main>

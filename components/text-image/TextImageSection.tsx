@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { DetailedHTMLProps, HTMLProps, ImgHTMLAttributes, ReactNode } from 'react';
+import { DetailedHTMLProps, ImgHTMLAttributes, ReactNode } from 'react';
 import { Headline } from '../Headline';
 
 interface ITextImageSection {
