@@ -1,16 +1,16 @@
 import classNames from 'classnames';
-import { DetailedHTMLProps, HTMLProps, ImgHTMLAttributes } from 'react';
+import { DetailedHTMLProps, HTMLProps, ImgHTMLAttributes, ReactNode } from 'react';
 import { Headline } from '../Headline';
 
 interface ITextImageSection {
   reversedOrder?: boolean;
   heading?: string;
   image?: DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>;
-  text: string;
   className?: string;
+  children: ReactNode;
 }
 
-export const TextImageSection = ({ reversedOrder, heading, image, text, className }: ITextImageSection) => {
+export const TextImageSection = ({ reversedOrder, children, heading, image, className }: ITextImageSection) => {
   const flex = classNames('flex', reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row');
   const textWidth = classNames(image && 'md:w-1/2 w-full');
   const container = classNames(className, 'p-10');
@@ -23,7 +23,7 @@ export const TextImageSection = ({ reversedOrder, heading, image, text, classNam
         </div>
       )}
       <div className={flex}>
-        <div className={textWidth}>{text}</div>
+        <div className={textWidth}>{children}</div>
         {image && (
           <div className='md:w-1/2 w-full'>
             <img className='m-auto' {...image} />
