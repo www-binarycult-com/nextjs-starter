@@ -8,41 +8,82 @@
     src: url('/fonts/MiriamLibre-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    }
   }
+}
 
-
-
-  @keyframes leftright{0%,to{transform:translateX(-5px)}50%{transform:translateX(5px)}}
-
-
-  @keyframes updown{0%,50%,to{transform:translateY(0)}25%{transform:translateY(5px)}75%{transform:translateY(-5px)}}
-
-
-
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: white;
+@keyframes leftright {
+  0%,
+  to {
+    transform: translateX(-5px);
   }
-  
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: yellow;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  50% {
+    transform: translateX(5px);
   }
-  
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+}
+
+@keyframes updown {
+  0%,
+  50%,
+  to {
+    transform: translateY(0);
   }
+  25% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
 
-  html { scroll-behavior: smooth; }
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
 
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+menu > button > div {
+  transition: all 0.5s ease-in-out !important;
+}
+
+menu > div {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.menu-closed > div:nth-child(1) {
+  transform: translateY(0%) rotate(0deg);
+}
+.menu-open > div:nth-child(1) {
+  transform: translateY(0%) rotate(408deg);
+}
+
+.menu-closed > div:nth-child(2) {
+  opacity: 1;
+}
+.menu-open > div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-closed > div:nth-child(3) {
+  transform: translateY(0%) rotate(0deg);
+}
+.menu-open > div:nth-child(3) {
+  transform: translateY(-600%) rotate(-408deg);
+}
