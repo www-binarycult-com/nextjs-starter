@@ -15,7 +15,7 @@ export const Slider = ({ images }: SliderProps) => {
   return (
     <div className='p-10'>
       <Headline>Our Clients</Headline>
-      <p className='py-4 max-w-md'>
+      <p className='py-4 max-w-md text-gray-500'>
         Wir glauben, dass Marken die kulturelle Verbindung zwischen Unternehmen und ihren Gemeinschaften sind.
       </p>
       <div
