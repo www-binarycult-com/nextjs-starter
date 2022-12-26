@@ -54,8 +54,8 @@ export const ContactForm: React.FC = () => {
           />
         </div>
         <div>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type='submit'>
-            Absenden // ToDo Button Color Yellow
+          <button className='bg-cta font-bold py-2 px-4 rounded' type='submit'>
+            Absenden
           </button>
         </div>
       </form>

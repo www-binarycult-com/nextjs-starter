@@ -1,8 +1,9 @@
 import React from 'react';
+import { Headline } from '../Headline';
 
 export const Footer = () => {
   return (
-    <footer className='bg-yellow-400 text-center p-10'>
+    <footer className='bg-cta text-center p-10'>
       <div className='mx-auto'>
         <div className='flex items-center justify-between'>
           <p className='text-sm'>Copyright 2023, immajung</p>
@@ -44,7 +45,7 @@ export const Footer = () => {
           </nav>
         </div>
         <div className='mt-8'>
-          <p className='text-gray-600 text-sm font-semibold tracking-wide'>immajung</p>
+          <Headline>immajung</Headline>
           <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
             Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
           </p>
