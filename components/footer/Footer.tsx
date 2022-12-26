@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className='bg-yellow-400 text-center p-10'>
       <div className='mx-auto'>
         <div className='flex items-center justify-between'>
-          <p className='text-sm'>Copyright 2021, My Agency</p>
+          <p className='text-sm'>Copyright 2023, immajung</p>
           <nav className='text-sm font-semibold'>
             <ul className='flex items-center'>
               <li className='mr-3'>
@@ -44,8 +44,10 @@ export const Footer = () => {
           </nav>
         </div>
         <div className='mt-8'>
-          <p className='text-gray-600 text-sm font-semibold tracking-wide'>My Agency</p>
-          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>We make things happen.</p>
+          <p className='text-gray-600 text-sm font-semibold tracking-wide'>immajung</p>
+          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
+            Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
+          </p>
         </div>
       </div>
     </footer>
