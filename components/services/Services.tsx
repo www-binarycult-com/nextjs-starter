@@ -21,7 +21,7 @@ export const Services = () => {
 
   return (
     <div>
-      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10 border-4 border-black'>
+      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10  '>
         <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Our Services
@@ -107,25 +107,47 @@ export const Services = () => {
         </div>
         <div className='bg-yellow-200 pt-8'>
           <ServicesItem href='' hoveredPosition={position?.position} position={1} title='Full Service'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nemo velit, sint debitis
-            perferendis sequi voluptatem praesentium voluptatum consectetur reprehenderit, dolorem ratione facilis
-            dignissimos quam, totam et ex voluptates?
+            Wir bei immajung sind stolz darauf, ein umfassendes Angebot an digitalen Dienstleistungen anzubieten, um
+            unsere Kunden bei ihrem Streben nach Erfolg zu unterstützen. Von der Webentwicklung und dem Hosting bis hin
+            zu technischer SEO und UI/UX-Design verfügt unser Expertenteam über die Fähigkeiten und die Erfahrung, um
+            Ihr Unternehmen in der digitalen Welt zum Erfolg zu führen. Mit dem Schwerpunkt auf moderner Technik und
+            benutzerfreundlichem Design sind wir bestens gerüstet, um Ihrem Unternehmen zu Wachstum und Erfolg zu
+            verhelfen. Kontaktieren Sie uns noch heute, um mehr über unser Full-Service-Angebot zu erfahren und wie Ihr
+            Unternehmen davon profitieren kann.
           </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={2} title='UI / UX Design'>
-            Creating visual design concepts and user experiences which captivate the audience from the loading screen.
+            Als Digitalagentur in Hannover bietet immajung fachkundige UI/UX-Design-Services, um unseren Kunden zu
+            helfen, benutzerfreundliche, ansprechende und visuell ansprechende Websites zu erstellen. Mit dem Fokus auf
+            moderne Designprinzipien und nutzerzentriertes Design kann unser Expertenteam Ihnen helfen, eine Website zu
+            erstellen, die nicht nur gut aussieht, sondern auch ein nahtloses und angenehmes Nutzererlebnis bietet.
+            Setzen Sie sich noch heute mit uns in Verbindung, um mehr darüber zu erfahren, wie unsere
+            UI/UX-Designservices Ihrem Unternehmen zugutekommen und Ihnen zum Erfolg in der digitalen Welt verhelfen
+            können.{' '}
           </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={3} title='Hosting'>
-            No matter the project or client, our compute options give you the flexibility an agency needs to handle
-            different client requests. Whether you are looking to host hundreds of small websites or build a complicated
-            application, we have you covered at a lower cost than other cloud providers.
+            Als führende Digitalagentur in Hannover, Deutschland, bietet immajung zuverlässige und sichere
+            Hosting-Services zur Unterstützung Ihrer Online-Aktivitäten. Mit dem Fokus auf Betriebszeit, Leistung und
+            Sicherheit sind unsere Hosting-Lösungen so konzipiert, dass Ihre Website reibungslos und effizient läuft, so
+            dass Sie sich auf das Wachstum Ihres Unternehmens konzentrieren können. Kontaktieren Sie uns noch heute, um
+            mehr über unsere Hosting-Services zu erfahren und wie Ihr Unternehmen davon profitieren kann.
           </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={4} title='Technical SEO'>
-            Comprehensive analysis of your homepage. Optimization for local keywords. Acceleration of page load time,
-            text and image optimization for TOP ranking on Google.
+            Wir bei immajung wissen, wie wichtig die Suchmaschinenoptimierung (SEO) für moderne Unternehmen ist. Deshalb
+            bieten wir umfassende technische SEO-Dienstleistungen an, die unseren Kunden helfen, ihre
+            Suchmaschinenplatzierungen zu verbessern und mehr Besucher auf ihre Websites zu bringen. Von der
+            Keyword-Recherche und On-Page-Optimierung bis hin zum Linkaufbau und der Erstellung von Inhalten - unsere
+            technischen SEO-Experten verfügen über das Wissen und die Erfahrung, um Ihrem Unternehmen zum Erfolg in der
+            digitalen Welt zu verhelfen. Setzen Sie sich noch heute mit uns in Verbindung, um mehr darüber zu erfahren,
+            wie wir Ihr Unternehmen dabei unterstützen können, sein Suchmaschinenranking zu verbessern und mehr Besucher
+            auf Ihre Website zu bringen.
           </ServicesItem>
           <ServicesItem href='' hoveredPosition={position?.position} position={5} title='Web Development'>
-            Designing complex and scalable web applications that can seamlessly handle the load of an enterprise-grade
-            business while keeping data securely guarded.
+            Bei immajung sind wir stolz auf unsere erstklassigen Webentwicklungsdienste. Ganz gleich, ob Sie eine
+            einfache Website zur Präsentation Ihres Unternehmens oder eine komplexere Plattform zur Unterstützung Ihrer
+            Online-Aktivitäten benötigen, unser Expertenteam verfügt über die Fähigkeiten und die Erfahrung, um die von
+            Ihnen benötigten Lösungen zu liefern. Mit einem Schwerpunkt auf moderner Technik und benutzerfreundlichem
+            Design können unsere Webentwicklungsdienste Ihrem Unternehmen zum Erfolg in der digitalen Welt verhelfen.
+            Kontaktieren Sie uns noch heute, um mehr zu erfahren
           </ServicesItem>
         </div>
       </div>
