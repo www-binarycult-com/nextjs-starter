@@ -5,7 +5,7 @@ import { ProjectText } from './ProjectText';
 
 const projectListArray = [
   {
-    headline: 'Vodafone',
+    headline: 'IKS Hannover',
     content: (
       <>
         <p>
@@ -15,12 +15,11 @@ const projectListArray = [
         </p>
       </>
     ),
-    imgSrc: 'bild1.webp',
-    svgSrc: 'svgbild1.svg',
-    backgroundColor: '#1F132C',
+    imgSrc: 'iks-hannover.png',
+    backgroundColor: '#EE7917',
   },
   {
-    headline: 'Madsack',
+    headline: 'Vitalist',
     content: (
       <>
         <p>
@@ -30,9 +29,8 @@ const projectListArray = [
         </p>
       </>
     ),
-    imgSrc: 'bild2.webp',
-    svgSrc: 'svgbild2.svg',
-    backgroundColor: '#161616',
+    imgSrc: 'vita-list.png',
+    backgroundColor: '#D7E6CF',
   },
   {
     headline: 'Faber Ernährungsberatung',
@@ -45,9 +43,8 @@ const projectListArray = [
         </p>
       </>
     ),
-    imgSrc: 'bild3.webp',
-    svgSrc: 'svgbild3.svg',
-    backgroundColor: '#00449C',
+    imgSrc: 'faber.png',
+    backgroundColor: '#01072e',
   },
 ];
 
@@ -75,12 +72,11 @@ export const ProjectList = () => {
           className='w-full md:w-1/2 transition-all duration-300 ease-in '
           style={{ background: state.color }}
         >
-          {projectListArray.map(({ headline, content, backgroundColor, imgSrc, svgSrc }, key) => {
+          {projectListArray.map(({ headline, content, backgroundColor, imgSrc }, key) => {
             return (
               <ProjectItem
                 key={'ProjectItem-' + key}
                 imgSrc={imgSrc}
-                svgSrc={svgSrc}
                 backgroundColor={backgroundColor}
                 position={key + 1}
                 headline={headline}

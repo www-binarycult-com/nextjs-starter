@@ -42,19 +42,12 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
           <div className='relative flex flex-col'>
             <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-white'>{headline}</h1>
             <div className='relative'>
-              <div id='item_bg' className='absolute w-[100%] h-[100%] top-0 left-0 '>
-                <img
-                  src={svgSrc}
-                  alt=''
-                  ref={ref}
-                  className='absolute w-full h-full top-0 left-0 block object-contain '
-                />
-              </div>
               <div id='item_screen' className='items-center flex flex-col justify-items-center relative w-full'>
                 <img
+                  ref={ref}
                   alt=''
                   src={imgSrc}
-                  className='duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%]'
+                  className='border-black border-4 duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%]'
                 />
               </div>
             </div>
