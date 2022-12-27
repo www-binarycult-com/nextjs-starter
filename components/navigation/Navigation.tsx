@@ -24,6 +24,14 @@ export const Navigation = () => {
             <li>
               <a href='/#contact-form'>Kontankt</a>
             </li>
+
+            <li>
+              <a href='/dsgvo'>Datenschutz</a>
+            </li>
+
+            <li>
+              <a href='/impressum'>Impressum</a>
+            </li>
           </ul>
         </div>
       </div>

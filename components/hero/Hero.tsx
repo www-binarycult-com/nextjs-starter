@@ -7,7 +7,9 @@ export const Hero = () => {
       <div className='p-10'>
         <div className='flex justify-between'>
           <div>
-            <Headline tag='h5'>{'<immajung />'}</Headline>
+            <a href='/'>
+              <Headline tag='h5'>{'<immajung />'}</Headline>
+            </a>
           </div>
           <div className='mr-8'>
             <Navigation />
