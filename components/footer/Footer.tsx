@@ -22,7 +22,7 @@ export const Footer = () => {
                   href='/dsgvo'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
-                  DSGVO
+                  Datenschutz
                 </a>
               </li>
               <li className='mr-3'>
@@ -35,7 +35,7 @@ export const Footer = () => {
               </li>
               <li className='mr-3'>
                 <a
-                  href='#contact-form'
+                  href='/#contact-form'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Kontakt
