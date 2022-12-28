@@ -14,12 +14,12 @@ import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 
 const images = [
-  { href: '/', src: '/1.png' },
-  { href: '/', src: '/2.png' },
-  { href: '/', src: '/3.png' },
-  { href: '/', src: '/4.png' },
-  { href: '/', src: '/5.png' },
-  { href: '/', src: '/6.png' },
+  { href: '/', src: '/casa.png' },
+  { href: '/', src: '/vitalistlogo.jpeg' },
+  { href: '/', src: '/vergoelst.svg' },
+  { href: '/', src: '/iks.webp' },
+  { href: '/', src: '/faber.svg' },
+  { href: '/', src: '/sezer.jpeg' },
 ];
 
 const Home: NextPage = () => {
