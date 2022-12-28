@@ -5,8 +5,7 @@ export const Footer = () => {
   return (
     <footer className='bg-cta text-center p-10'>
       <div className='mx-auto'>
-        <div className='flex items-center justify-between'>
-          <p className='text-sm'>Copyright 2023, immajung</p>
+        <div className='flex items-center justify-between flex-col'>
           <nav className='text-sm font-semibold'>
             <ul className='flex items-center'>
               <li className='mr-3'>
@@ -49,6 +48,7 @@ export const Footer = () => {
           <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
             Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
           </p>
+          <p className='text-sm mt-24'>Copyright 2023, immajung</p>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ export const ServicesItem = ({ position, hoveredPosition, title, children, href 
         <div className='flex text-2xl text-white'>{title}</div>
         <div>
           <div className='mb-8 text-white'>{children}</div>
-          <a className='text-white hover-underline-animation' href={href}>
+          <a className='text-white hover-underline-animation' href={'/#contact-form'}>
             Mehr Erfahren
           </a>
         </div>

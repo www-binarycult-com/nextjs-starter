@@ -10,6 +10,7 @@ module.exports = {
     colors: {
       cta: '#FFFD54',
       black: 'black',
+      white: 'white',
     },
     extend: {
       backgroundImage: {
