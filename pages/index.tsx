@@ -11,6 +11,7 @@ import { ContactCTA } from '../components/callToActions/ContactCTA';
 import { Footer } from '../components/footer/Footer';
 import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
+import CookieBanner from '../components/cookieConsent/CookieBanner';
 
 const images = [
   { href: '/', src: '/1.png' },
@@ -106,6 +107,7 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
