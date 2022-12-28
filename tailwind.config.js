@@ -7,6 +7,10 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
+    colors: {
+      cta: '#FFFD54',
+      black: 'black',
+    },
     extend: {
       backgroundImage: {
         hero: "url('../public/hero-bg.png')",

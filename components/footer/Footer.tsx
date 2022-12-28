@@ -1,11 +1,12 @@
 import React from 'react';
+import { Headline } from '../Headline';
 
 export const Footer = () => {
   return (
-    <footer className='bg-yellow-400 text-center p-10'>
+    <footer className='bg-cta text-center p-10'>
       <div className='mx-auto'>
         <div className='flex items-center justify-between'>
-          <p className='text-sm'>Copyright 2021, My Agency</p>
+          <p className='text-sm'>Copyright 2023, immajung</p>
           <nav className='text-sm font-semibold'>
             <ul className='flex items-center'>
               <li className='mr-3'>
@@ -21,7 +22,7 @@ export const Footer = () => {
                   href='/dsgvo'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
-                  DSGVO
+                  Datenschutz
                 </a>
               </li>
               <li className='mr-3'>
@@ -34,7 +35,7 @@ export const Footer = () => {
               </li>
               <li className='mr-3'>
                 <a
-                  href='#contact-form'
+                  href='/#contact-form'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Kontakt
@@ -44,8 +45,10 @@ export const Footer = () => {
           </nav>
         </div>
         <div className='mt-8'>
-          <p className='text-gray-600 text-sm font-semibold tracking-wide'>My Agency</p>
-          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>We make things happen.</p>
+          <Headline>immajung</Headline>
+          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
+            Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
+          </p>
         </div>
       </div>
     </footer>
