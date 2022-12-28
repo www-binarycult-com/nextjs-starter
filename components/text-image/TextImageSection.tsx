@@ -11,7 +11,10 @@ interface ITextImageSection {
 }
 
 export const TextImageSection = ({ reversedOrder, children, heading, image, className }: ITextImageSection) => {
-  const flex = classNames('flex', reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row');
+  const flex = classNames(
+    'flex gap-8',
+    reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row'
+  );
   const textWidth = classNames(image && 'md:w-1/2 w-full');
   const container = classNames(className, 'p-10');
 
