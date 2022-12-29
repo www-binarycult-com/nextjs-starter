@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useProject } from './ProjectProvider';
 import { ProjectItem } from './ProjectItem';
 import { ProjectText } from './ProjectText';
@@ -7,13 +6,13 @@ const projectListArray = [
   {
     headline: 'IKS Hannover',
     content: (
-      <>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta nisi, tempore harum qui corporis
-          veniam officiis repellat id voluptatum quas alias minus aliquam. Illum reprehenderit eligendi odio libero
-          sapiente!
-        </p>
-      </>
+      <p>
+        IKS Hannover ist ein in Hannover ansässiger Pflegedienst. Ziel dieses Projektes war es, mit einem
+        benutzerfreundlichem CMS, die maximale Performance einer Webseite zu erreichen. Hierfür wurden Technologien wie
+        Gatsby(Static Site Generator), Wordpress CMS, React.js und Serveless Functions genutzt. Neben der Erstellung der
+        Webseite, so wie einem eigenen Jobportal wurde Suchmaschinenoptimierung betrieben, um eine möglichst große
+        Sichtbarkeit der Webseite zu erreichen.{' '}
+      </p>
     ),
     imgSrc: 'iks-hannover.png',
     backgroundColor: '#EE7917',
@@ -21,13 +20,13 @@ const projectListArray = [
   {
     headline: 'Vitalist',
     content: (
-      <>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta nisi, tempore harum qui corporis
-          veniam officiis repellat id voluptatum quas alias minus aliquam. Illum reprehenderit eligendi odio libero
-          sapiente!
-        </p>
-      </>
+      <p>
+        Vitalist ist ein in Hannover ansässiges Yoga Studio. Ziel dieses Projektes war es, mit einem
+        benutzerfreundlichem CMS, die maximale Performance einer Webseite zu erreichen. Hierfür wurden Technologien wie
+        Gatsby(Static Site Generator), Wordpress CMS, React.js und Serveless Functions genutzt. Neben der Erstellung der
+        Webseite, so wie einem online Kursplan + online Kursbuchungssystem wurde Suchmaschinenoptimierung betrieben, um
+        eine möglichst große Sichtbarkeit der Webseite zu erreichen.
+      </p>
     ),
     imgSrc: 'vita-list.png',
     backgroundColor: '#D7E6CF',
@@ -35,13 +34,13 @@ const projectListArray = [
   {
     headline: 'Faber Ernährungsberatung',
     content: (
-      <>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta nisi, tempore harum qui corporis
-          veniam officiis repellat id voluptatum quas alias minus aliquam. Illum reprehenderit eligendi odio libero
-          sapiente!
-        </p>
-      </>
+      <p>
+        Ernährungsberatung Faber ist eine in Hannover - Langenhagen ansässige Ernährungsberatung. Ziel dieses Projektes
+        war es, mit minmalen Ertrag, die maximale Performance einer Webseite zu erreichen. Hierfür wurden Technologien
+        wie Gatsby(Static Site Generator), Netlify (CMS und Host), React.js und Serveless Functions genutzt. Neben der
+        Erstellung der Webseite wurde Suchmaschinenoptimierung betrieben, um eine möglichst große Sichtbarkeit der
+        Webseite zu erreichen.
+      </p>
     ),
     imgSrc: 'faber.png',
     backgroundColor: '#01072e',

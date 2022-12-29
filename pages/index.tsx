@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Slider } from '../components/slider';
+import { Sliders } from '../components/slider';
 import { ProjectProvider } from '../components/project/ProjectProvider';
 import { ProjectList } from '../components/project/ProjectList';
 import { Services } from '../components/services/Services';
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           </>
         </TextImageSection>
         <Services />
-        <Slider images={images} />
+        <Sliders images={images} />
         <TechStack />
         <div id='contact-form' className='flex flex-col-reverse md:flex-row  '>
           <div className='w-full md:w-1/2 '>
