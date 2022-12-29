@@ -14,12 +14,18 @@ import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 
 const images = [
-  { href: '/', src: '/casa.png' },
-  { href: '/', src: '/vitalistlogo.jpeg' },
-  { href: '/', src: '/vergoelst.svg' },
-  { href: '/', src: '/iks.webp' },
-  { href: '/', src: '/faber.svg' },
-  { href: '/', src: '/sezer.jpeg' },
+  { href: '/', src: '/clients/casa.png' },
+  { href: '/', src: '/clients/vitalistlogo.jpeg' },
+  { href: '/', src: '/clients/vergoelst.svg' },
+  { href: '/', src: '/clients/iks.webp' },
+  { href: '/', src: '/clients/faber.svg' },
+  { href: '/', src: '/clients/sezer.jpeg' },
+  { href: '/', src: '/clients/ariston.png' },
+  { href: '/', src: '/clients/change-mediated.png' },
+  { href: '/', src: '/clients/oralchirurgie.png' },
+  { href: '/', src: '/clients/logo_cleanin.png' },
+  { href: '/', src: '/clients/spax.png' },
+  { href: '/', src: '/clients/wt.jpg' },
 ];
 
 const Home: NextPage = () => {
