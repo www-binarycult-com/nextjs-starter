@@ -87,3 +87,29 @@ menu > div {
 .menu-open > div:nth-child(3) {
   transform: translateY(-600%) rotate(-408deg);
 }
+
+.hero {
+  background: radial-gradient(
+    circle,
+    rgba(205, 179, 156, 1) 20%,
+    rgba(224, 171, 104, 1) 40%,
+    rgba(222, 151, 128, 1) 60%,
+    rgba(242, 153, 62, 1) 80%,
+    rgba(181, 198, 212, 1) 100%
+  );
+  /* background: linear-gradient(-45deg, #CDB39C, #e73c7e, #23a6d5, #23d5ab); */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
