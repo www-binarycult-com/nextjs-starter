@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
 import { ServicesBox } from './ServiceBox';
 import { ServicesItem } from './ServicesItem';
@@ -19,21 +19,26 @@ export const Services = () => {
     height?: number;
   } | null>(null);
 
+  useEffect(() => {
+    setPosition({
+      position: 1,
+      top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+      left: ref1.current?.getBoundingClientRect().left,
+      width: ref1.current?.getBoundingClientRect().width,
+      height: ref1.current?.getBoundingClientRect().height,
+    });
+  }, []);
+
   return (
     <div>
-      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-yellow-200 z-10  '>
+      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10  '>
         <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
-            Our Services
+            Unsere Dienstleistungen
           </Headline>
         </div>
         <ServicesBox position={position} />
-        <div
-          className='relative z-2 gap-8 flex flex-wrap'
-          onClick={() => {
-            setPosition({ ...position, top: undefined, left: undefined, width: undefined, height: undefined });
-          }}
-        >
+        <div className='relative z-2 gap-8 flex flex-wrap'>
           <ServiceHeadline
             onMouseEnter={() => {
               setPosition({
