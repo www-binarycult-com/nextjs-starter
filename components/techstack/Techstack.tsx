@@ -21,10 +21,10 @@ const frontendStack: TechStackTypes = [
 ];
 
 const backendStack: TechStackTypes = [
-  { src: 'backend/go.svg', title: 'React' },
-  { src: 'backend/java.svg', title: 'HTML' },
+  { src: 'backend/go.svg', title: 'Go' },
+  { src: 'backend/java.svg', title: 'Java' },
   { src: 'backend/nodejs.svg', title: 'NodeJS' },
-  { src: 'backend/php.svg', title: 'Typescript' },
+  { src: 'backend/php.svg', title: 'PHP' },
   { src: 'more.svg', title: 'More' },
 ];
 
@@ -76,102 +76,105 @@ export const TechStack = () => {
 
   return (
     <div>
-      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10  '>
+      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10'>
         <div className='pb-16' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Unsere Technologien
           </Headline>
         </div>
-        <div className='block md:flex'>
-          <TechBox position={position} />
-          <div className='relative z-2 gap-8 flex flex-wrap md:flex-col'>
-            <TechHeadline
-              onMouseEnter={() => {
-                setPosition({
-                  position: 1,
-                  top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                  left: ref1.current?.getBoundingClientRect().left,
-                  width: ref1.current?.getBoundingClientRect().width,
-                  height: ref1.current?.getBoundingClientRect().height,
-                });
-              }}
-              ref={ref1}
-            >
-              Frontend
-            </TechHeadline>
-            <TechHeadline
-              onMouseEnter={() => {
-                setPosition({
-                  position: 2,
-                  top: (ref2.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                  left: ref2.current?.getBoundingClientRect().left,
-                  width: ref2.current?.getBoundingClientRect().width,
-                  height: ref2.current?.getBoundingClientRect().height,
-                });
-              }}
-              ref={ref2}
-            >
-              Backend
-            </TechHeadline>
-            <TechHeadline
-              onMouseEnter={() => {
-                setPosition({
-                  position: 3,
-                  top: (ref3.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                  left: ref3.current?.getBoundingClientRect().left,
-                  width: ref3.current?.getBoundingClientRect().width,
-                  height: ref3.current?.getBoundingClientRect().height,
-                });
-              }}
-              ref={ref3}
-            >
-              Mobile
-            </TechHeadline>
-            <TechHeadline
-              onMouseEnter={() => {
-                setPosition({
-                  position: 4,
-                  top: (ref4.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
-                  left: ref4.current?.getBoundingClientRect().left,
-                  width: ref4.current?.getBoundingClientRect().width,
-                  height: ref4.current?.getBoundingClientRect().height,
-                });
-              }}
-              ref={ref4}
-            >
-              CMS
-            </TechHeadline>
-          </div>
-          <div
-            className={`hidden md:block ${
-              position?.height ? 'md:hidden' : ''
-            } right-1/4 md:transition-opacity animate-fadeIn md:absolute`}
+        <TechBox position={position} />
+        <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
+          <TechHeadline
+            onMouseEnter={() => {
+              setPosition({
+                position: 1,
+                top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                left: ref1.current?.getBoundingClientRect().left,
+                width: ref1.current?.getBoundingClientRect().width,
+                height: ref1.current?.getBoundingClientRect().height,
+              });
+            }}
+            ref={ref1}
           >
-            <img src='coder.svg' alt='' />
-          </div>
-          <div className='bg-yellow-200 pt-8'>
-            <TechItem stack={frontendStack} href='' hoveredPosition={position?.position} position={1} title='Frontend'>
-              Im Frontend setzen wir auf leistungsstarke und zukunftsorientierte Technologien. Unser Tech-Stack umfasst
-              React, Next, Gatsby, SolidJS und CSS, die wir in Kombination mit dem CSS-Framework Tailwind einsetzen.
-              Zusätzlich verwenden wir three.js, eine JavaScript-Bibliothek, die es uns ermöglicht, interaktive
-              3D-Grafiken und Animationssequenzen in unsere Webseiten zu integrieren.
-            </TechItem>
-            <TechItem stack={backendStack} href='' hoveredPosition={position?.position} position={2} title='Backend'>
-              Im Backend setzen wir auf leistungsstarke und zukunftssichere Technologien. Unser Tech-Stack umfasst
-              NodeJS, Typescript, GoLang und verschiedene Datenbanken wie PostgreSQL und MongoDB.
-            </TechItem>
-            <TechItem stack={mobileStack} href='' hoveredPosition={position?.position} position={3} title='Mobile'>
-              Im Bereich Mobile setzen wir auf Flutter und React-native, zwei leistungsstarke Frameworks für die
-              Entwicklung von nativen Apps für Android und iOS.
-            </TechItem>
-            <TechItem stack={cmsStack} href='' hoveredPosition={position?.position} position={4} title='CMS'>
-              Unsere Agentur bietet auch Unterstützung bei der Wahl und Einführung von Content Management Systemen
-              (CMS). Wir haben Erfahrung mit verschiedenen CMS wie Wordpress, Shopify, Sanity, Contentfull und
-              netlify-cms. Wir beraten Sie gerne bei der Wahl des passenden CMS für Ihre Anforderungen und unterstützen
-              Sie bei der Einführung und Nutzung des Systems. Auf Wunsch übernehmen wir auch die Pflege und Wartung
-              Ihres CMS.
-            </TechItem>
-          </div>
+            <span className={`${position?.position === 1 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Frontend
+            </span>
+          </TechHeadline>
+          <TechHeadline
+            onMouseEnter={() => {
+              setPosition({
+                position: 2,
+                top: (ref2.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                left: ref2.current?.getBoundingClientRect().left,
+                width: ref2.current?.getBoundingClientRect().width,
+                height: ref2.current?.getBoundingClientRect().height,
+              });
+            }}
+            ref={ref2}
+          >
+            <span className={`${position?.position === 2 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Backend
+            </span>
+          </TechHeadline>
+          <TechHeadline
+            onMouseEnter={() => {
+              setPosition({
+                position: 3,
+                top: (ref3.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                left: ref3.current?.getBoundingClientRect().left,
+                width: ref3.current?.getBoundingClientRect().width,
+                height: ref3.current?.getBoundingClientRect().height,
+              });
+            }}
+            ref={ref3}
+          >
+            <span className={`${position?.position === 3 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Mobile / Apps
+            </span>
+          </TechHeadline>
+          <TechHeadline
+            onMouseEnter={() => {
+              setPosition({
+                position: 4,
+                top: (ref4.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                left: ref4.current?.getBoundingClientRect().left,
+                width: ref4.current?.getBoundingClientRect().width,
+                height: ref4.current?.getBoundingClientRect().height,
+              });
+            }}
+            ref={ref4}
+          >
+            <span className={`${position?.position === 4 ? 'underline md:no-underline' : 'no-underline'} `}>CMS</span>
+          </TechHeadline>
+        </div>
+        <div
+          className={`hidden md:block ${
+            position?.height ? 'md:hidden' : ''
+          } right-1/4 md:transition-opacity animate-fadeIn md:absolute`}
+        >
+          <img src='coder.svg' alt='' />
+        </div>
+        <div className='bg-cta pt-8'>
+          <TechItem stack={frontendStack} href='' hoveredPosition={position?.position} position={1} title='Frontend'>
+            Im Frontend setzen wir auf leistungsstarke und zukunftsorientierte Technologien. Unser Tech-Stack umfasst
+            React, Next, Gatsby, SolidJS und CSS, die wir in Kombination mit dem CSS-Framework Tailwind einsetzen.
+            Zusätzlich verwenden wir three.js, eine JavaScript-Bibliothek, die es uns ermöglicht, interaktive
+            3D-Grafiken und Animationssequenzen in unsere Webseiten zu integrieren.
+          </TechItem>
+          <TechItem stack={backendStack} href='' hoveredPosition={position?.position} position={2} title='Backend'>
+            Im Backend setzen wir auf leistungsstarke und zukunftssichere Technologien. Unser Tech-Stack umfasst NodeJS,
+            Typescript, GoLang und verschiedene Datenbanken wie PostgreSQL und MongoDB.
+          </TechItem>
+          <TechItem stack={mobileStack} href='' hoveredPosition={position?.position} position={3} title='Mobile'>
+            Im Bereich Mobile setzen wir auf Flutter und React-native, zwei leistungsstarke Frameworks für die
+            Entwicklung von nativen Apps für Android und iOS.
+          </TechItem>
+          <TechItem stack={cmsStack} href='' hoveredPosition={position?.position} position={4} title='CMS'>
+            Unsere Agentur bietet auch Unterstützung bei der Wahl und Einführung von Content Management Systemen (CMS).
+            Wir haben Erfahrung mit verschiedenen CMS wie Wordpress, Shopify, Sanity, Contentfull und netlify-cms. Wir
+            beraten Sie gerne bei der Wahl des passenden CMS für Ihre Anforderungen und unterstützen Sie bei der
+            Einführung und Nutzung des Systems. Auf Wunsch übernehmen wir auch die Pflege und Wartung Ihres CMS.
+          </TechItem>
         </div>
       </div>
     </div>

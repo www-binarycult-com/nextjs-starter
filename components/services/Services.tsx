@@ -31,14 +31,14 @@ export const Services = () => {
 
   return (
     <div>
-      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10  '>
+      <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10'>
         <div className='pb-4' ref={divElement}>
           <Headline className='z-10' tag='h2'>
             Unsere Dienstleistungen
           </Headline>
         </div>
         <ServicesBox position={position} />
-        <div className='relative z-2 gap-8 flex flex-wrap'>
+        <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
           <ServiceHeadline
             onMouseEnter={() => {
               setPosition({
@@ -51,7 +51,9 @@ export const Services = () => {
             }}
             ref={ref1}
           >
-            Full Service
+            <span className={`${position?.position === 1 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Full Service
+            </span>
           </ServiceHeadline>
           <ServiceHeadline
             onMouseEnter={() => {
@@ -65,7 +67,9 @@ export const Services = () => {
             }}
             ref={ref2}
           >
-            UI / UX Design
+            <span className={`${position?.position === 2 ? 'underline md:no-underline' : 'no-underline'} `}>
+              UI / UX Design
+            </span>
           </ServiceHeadline>
           <ServiceHeadline
             onMouseEnter={() => {
@@ -79,7 +83,9 @@ export const Services = () => {
             }}
             ref={ref3}
           >
-            Hosting
+            <span className={`${position?.position === 3 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Hosting
+            </span>
           </ServiceHeadline>
           <ServiceHeadline
             onMouseEnter={() => {
@@ -93,7 +99,9 @@ export const Services = () => {
             }}
             ref={ref4}
           >
-            Technical SEO
+            <span className={`${position?.position === 4 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Technisches SEO
+            </span>
           </ServiceHeadline>
           <ServiceHeadline
             onMouseEnter={() => {
@@ -107,10 +115,12 @@ export const Services = () => {
             }}
             ref={ref5}
           >
-            Web Development
+            <span className={`${position?.position === 5 ? 'underline md:no-underline' : 'no-underline'} `}>
+              Web Development
+            </span>
           </ServiceHeadline>
         </div>
-        <div className='bg-yellow-200 pt-8'>
+        <div className='bg-cta pt-8'>
           <ServicesItem href='' hoveredPosition={position?.position} position={1} title='Full Service'>
             Wir bei immajung sind stolz darauf, ein umfassendes Angebot an digitalen Dienstleistungen anzubieten, um
             unsere Kunden bei ihrem Streben nach Erfolg zu unterstützen. Von der Webentwicklung und dem Hosting bis hin

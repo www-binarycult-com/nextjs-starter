@@ -11,7 +11,7 @@ type PositionTypes = {
 export const ServicesBox = ({ position }: { position: PositionTypes }) => {
   return (
     <div
-      className={`z-1 block absolute top-0 left-0 w-full h-full transition-all duration-500 ${
+      className={`z-1 block hidden md:block md:absolute top-0 left-0 w-full h-full transition-all duration-500 ${
         position?.height && 'animate-leftRightService'
       }`}
       style={{
