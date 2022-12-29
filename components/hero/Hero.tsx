@@ -3,7 +3,7 @@ import { Navigation } from '../navigation/Navigation';
 
 export const Hero = () => {
   return (
-    <div className='border-8 border-black h-[80vh] bg-hero bg-cover bg-center '>
+    <div className='border-8 border-black h-[80vh] hero'>
       <div className='p-10'>
         <div className='flex justify-between'>
           <div>
