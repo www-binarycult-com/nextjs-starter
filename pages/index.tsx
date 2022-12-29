@@ -11,7 +11,7 @@ import { Footer } from '../components/footer/Footer';
 import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
-import { Sliders } from '../components/Slider';
+import Slider from '../components/Slider';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           </>
         </TextImageSection>
         <Services />
-        <Sliders images={images} />
+        <Slider images={images} />
         <TechStack />
         <div id='contact-form' className='flex flex-col-reverse md:flex-row  '>
           <div className='w-full md:w-1/2 '>

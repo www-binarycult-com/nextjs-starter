@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Headline } from '../Headline';
 
@@ -9,36 +10,36 @@ export const Footer = () => {
           <nav className='text-sm font-semibold'>
             <ul className='flex items-center'>
               <li className='mr-3'>
-                <a
+                <Link
                   href='/'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className='mr-3'>
-                <a
+                <Link
                   href='/dsgvo'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Datenschutz
-                </a>
+                </Link>
               </li>
               <li className='mr-3'>
-                <a
+                <Link
                   href='/impressum'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Impressum
-                </a>
+                </Link>
               </li>
               <li className='mr-3'>
-                <a
+                <Link
                   href='/#contact-form'
                   className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
                 >
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

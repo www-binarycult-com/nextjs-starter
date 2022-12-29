@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export const Navigation = () => {
@@ -19,18 +20,18 @@ export const Navigation = () => {
         <div>
           <ul>
             <li>
-              <a href='/'>Home</a>
+              <Link href='/'>Home</Link>
             </li>
             <li>
-              <a href='/#contact-form'>Kontankt</a>
-            </li>
-
-            <li>
-              <a href='/dsgvo'>Datenschutz</a>
+              <Link href='/#contact-form'>Kontankt</Link>
             </li>
 
             <li>
-              <a href='/impressum'>Impressum</a>
+              <Link href='/dsgvo'>Datenschutz</Link>
+            </li>
+
+            <li>
+              <Link href='/impressum'>Impressum</Link>
             </li>
           </ul>
         </div>

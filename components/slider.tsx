@@ -17,7 +17,7 @@ const settings = {
   cssEase: 'linear',
 };
 
-export const Sliders = ({ images }: SliderProps) => {
+const SliderComp = ({ images }: SliderProps) => {
   const before =
     "before:content-[''] before:absolute before:w-[200px] before:h-[100px] before:z-[2] before:left-0 before:top-0 before:bg-gradient-slider";
   const after =
@@ -39,3 +39,5 @@ export const Sliders = ({ images }: SliderProps) => {
     </div>
   );
 };
+
+export default SliderComp;
