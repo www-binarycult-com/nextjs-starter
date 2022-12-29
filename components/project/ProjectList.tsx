@@ -52,7 +52,7 @@ export const ProjectList = () => {
 
   return (
     <div id='trigger'>
-      <div className='flex  '>
+      <div className='flex container mx-auto'>
         <div id='test' className='hidden md:w-1/2 p-10 pb-[50vh] md:block'>
           <div className='sticky top-10'>
             <div className='relative pb-10'>

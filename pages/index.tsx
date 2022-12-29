@@ -107,7 +107,7 @@ const Home: NextPage = () => {
         <Services />
         <Slider images={images} />
         <TechStack />
-        <div id='contact-form' className='flex flex-col-reverse md:flex-row  '>
+        <div id='contact-form' className='flex flex-col-reverse md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
           </div>

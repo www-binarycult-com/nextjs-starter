@@ -26,7 +26,7 @@ export const TextImageSection = ({
     reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row'
   );
   const textWidth = classNames(image && 'md:w-1/2 w-full');
-  const container = classNames(className, 'p-10');
+  const container = classNames(className, 'p-10 container m-auto');
 
   return (
     <div className={container}>

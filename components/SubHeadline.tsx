@@ -6,15 +6,7 @@ type HeadlineProps = { children: ReactNode; className?: string; tag?: 'h1' | 'h2
 
 export const SubHeadline = ({ children, className, tag = 'h5' }: HeadlineProps) => {
   const component = { tag: tag };
-  const classes = classNames(
-    '',
-    tag === 'h1' && 'text-4xl',
-    tag === 'h2' && 'text-3xl',
-    tag === 'h3' && 'text-2xl',
-    tag === 'h4' && 'text-xl',
-    tag === 'h5' && 'text-md',
-    className
-  );
+  const classes = classNames('text-sm', className);
 
   return (
     <>
