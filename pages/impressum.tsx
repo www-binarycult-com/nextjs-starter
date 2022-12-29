@@ -58,8 +58,8 @@ const Impressum: NextPage = () => {
             <p>
               Informationen zur Online-Streitbeilegung: Ab dem ersten Quartal 2016 wird die EU-Kommission eine
               Internetplattform zur Beilegung von für die Beilegung von Online-Streitigkeiten (die sogenannte
-              "OS-Plattform") bereitstellen. Die OS-Plattform wird eine zentrale Anlaufstelle für die außergerichtliche
-              Beilegung von Rechtsstreitigkeiten im Zusammenhang mit vertraglichen Verpflichtungen aus
+              &quot;OS-Plattform&quot;) bereitstellen. Die OS-Plattform wird eine zentrale Anlaufstelle für die
+              außergerichtliche Beilegung von Rechtsstreitigkeiten im Zusammenhang mit vertraglichen Verpflichtungen aus
               Online-Kaufverträgen. Die OS-Plattform wird über den folgenden Link erreichbar sein.
             </p>
             <br />

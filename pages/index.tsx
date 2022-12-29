@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Sliders } from '../components/slider';
 import { ProjectProvider } from '../components/project/ProjectProvider';
 import { ProjectList } from '../components/project/ProjectList';
 import { Services } from '../components/services/Services';
@@ -13,6 +12,7 @@ import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
+import Slider from '../components/Slider';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
           </>
         </TextImageSection>
         <Services />
-        <Sliders images={images} />
+        <Slider images={images} />
         <TechStack />
         <div id='contact-form' className='flex flex-col-reverse md:flex-row  '>
           <div className='w-full md:w-1/2 '>

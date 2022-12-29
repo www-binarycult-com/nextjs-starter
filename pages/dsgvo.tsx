@@ -29,9 +29,9 @@ const DSGVO: NextPage = () => {
             <p>
               Für externe Links zu fremden Inhalten können wir trotz sorgfältiger inhaltlicher Kontrolle keine Haftung
               übernehmen. Diese Datenschutzrichtlinie beschreibt, wie Ihre persönlichen Daten gesammelt, verwendet und
-              weitergegeben werden, wenn Sie Ucon Acrobatics (die "Site") besuchen oder dort einkaufen. Wir behandeln
-              Ihre Daten gemäß den gesetzlichen Bestimmungen (DSGVO, TKG 2003). Im Folgenden finden Sie alle wichtigen
-              Aspekte, die Ihre persönlichen Daten auf unserer Site betreffen. <br />
+              weitergegeben werden, wenn Sie Ucon Acrobatics (die &quot;Site&quot;) besuchen oder dort einkaufen. Wir
+              behandeln Ihre Daten gemäß den gesetzlichen Bestimmungen (DSGVO, TKG 2003). Im Folgenden finden Sie alle
+              wichtigen Aspekte, die Ihre persönlichen Daten auf unserer Site betreffen. <br />
               <br />
             </p>
             <Headline tag='h4'>Welche Informationen sammlen wir?</Headline>
@@ -43,14 +43,14 @@ const DSGVO: NextPage = () => {
               die auf Ihrem Gerät installiert sind. Wenn Sie auf der Website surfen, erfassen wir außerdem Informationen
               über die einzelnen Webseiten oder Produkte, die Sie sich ansehen, welche Websites oder Suchbegriffe Sie
               auf die Website verwiesen haben, und Informationen darüber, wie Sie mit der Website interagieren. Wir
-              bezeichnen diese automatisch gesammelten Informationen als "Geräteinformationen". Wir erfassen
-              Geräteinformationen mithilfe der folgenden Technologien: "Cookies" sind Datendateien, die auf Ihrem Gerät
-              oder Computer gespeichert werden und häufig eine anonyme eindeutige Kennung enthalten. Weitere
+              bezeichnen diese automatisch gesammelten Informationen als &quot;Geräteinformationen&quot;. Wir erfassen
+              Geräteinformationen mithilfe der folgenden Technologien: &quot;Cookies&quot; sind Datendateien, die auf
+              Ihrem Gerät oder Computer gespeichert werden und häufig eine anonyme eindeutige Kennung enthalten. Weitere
               Informationen über Cookies und wie Sie Cookies deaktivieren können, finden Sie unter Alles über Cookies.
-              "Protokolldateien" verfolgen Aktionen auf der Website und erfassen Daten wie Ihre IP-Adresse, den
-              Browsertyp, den Internetdienstanbieter, die Verweis- und Ausgangsseiten sowie Datums- und Zeitstempel.
-              "Web-Beacons", "Tags" und "Pixel" sind elektronische Dateien, die Informationen darüber aufzeichnen, wie
-              Sie auf der Website surfen.
+              &quot;Protokolldateien&quot; verfolgen Aktionen auf der Website und erfassen Daten wie Ihre IP-Adresse,
+              den Browsertyp, den Internetdienstanbieter, die Verweis- und Ausgangsseiten sowie Datums- und Zeitstempel.
+              &quot;Web-Beacons&quot;, &quot;Tags&quot; und &quot;Pixel&quot; sind elektronische Dateien, die
+              Informationen darüber aufzeichnen, wie Sie auf der Website surfen.
             </p>
             <br />
             <br />

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Headline } from '../Headline';
 import { Navigation } from '../navigation/Navigation';
 
@@ -7,9 +8,9 @@ export const Hero = () => {
       <div className='p-10'>
         <div className='flex justify-between'>
           <div>
-            <a href='/'>
+            <Link href='/'>
               <Headline tag='h5'>{'<immajung />'}</Headline>
-            </a>
+            </Link>
           </div>
           <div className='md:mr-8'>
             <Navigation />
