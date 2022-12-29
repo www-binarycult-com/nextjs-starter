@@ -15,7 +15,7 @@ type ServiceItemsTypes = {
 export const TechItem = ({ position, hoveredPosition, title, children, stack }: ServiceItemsTypes) => {
   return hoveredPosition === position ? (
     <div className={`z-0 w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
-      <div className={`p-4 md:p-8 w-full md:w-[80%] flex flex-col  gap-8 duration-200 bg-white`}>
+      <div className={`p-4 md:p-4 w-full md:w-[80%] flex flex-col gap-8 duration-200 bg-white`}>
         <div className='flex text-2xl'>{title}</div>
         <div>
           <div className='mb-8'>{children}</div>

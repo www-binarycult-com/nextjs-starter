@@ -21,10 +21,12 @@ export const Services = () => {
     height?: number;
   } | null>(null);
 
+  console.log(ref1.current?.getBoundingClientRect());
+
   useEffect(() => {
     setPosition({
       position: 1,
-      top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+      top: (ref1.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
       left: ref1.current?.getBoundingClientRect().left,
       width: ref1.current?.getBoundingClientRect().width,
       height: ref1.current?.getBoundingClientRect().height,
@@ -45,7 +47,7 @@ export const Services = () => {
             onMouseEnter={() => {
               setPosition({
                 position: 1,
-                top: (ref1.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref1.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
                 left: ref1.current?.getBoundingClientRect().left,
                 width: ref1.current?.getBoundingClientRect().width,
                 height: ref1.current?.getBoundingClientRect().height,
@@ -61,7 +63,7 @@ export const Services = () => {
             onMouseEnter={() => {
               setPosition({
                 position: 2,
-                top: (ref2.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref2.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
                 left: ref2.current?.getBoundingClientRect().left,
                 width: ref2.current?.getBoundingClientRect().width,
                 height: ref2.current?.getBoundingClientRect().height,
@@ -77,7 +79,7 @@ export const Services = () => {
             onMouseEnter={() => {
               setPosition({
                 position: 3,
-                top: (ref3.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref3.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
                 left: ref3.current?.getBoundingClientRect().left,
                 width: ref3.current?.getBoundingClientRect().width,
                 height: ref3.current?.getBoundingClientRect().height,
@@ -93,7 +95,7 @@ export const Services = () => {
             onMouseEnter={() => {
               setPosition({
                 position: 4,
-                top: (ref4.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref4.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
                 left: ref4.current?.getBoundingClientRect().left,
                 width: ref4.current?.getBoundingClientRect().width,
                 height: ref4.current?.getBoundingClientRect().height,
@@ -109,7 +111,7 @@ export const Services = () => {
             onMouseEnter={() => {
               setPosition({
                 position: 5,
-                top: (ref5.current?.offsetTop || 0) + 48 + (divElement.current?.clientHeight || 0),
+                top: (ref5.current?.offsetTop || 0) + 232 + (divElement.current?.clientHeight || 0),
                 left: ref5.current?.getBoundingClientRect().left,
                 width: ref5.current?.getBoundingClientRect().width,
                 height: ref5.current?.getBoundingClientRect().height,

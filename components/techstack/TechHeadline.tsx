@@ -5,7 +5,11 @@ type TechHeadline = { children: ReactNode } & HTMLProps<HTMLAnchorElement>;
 export const TechHeadline = forwardRef(
   ({ children, onMouseEnter }: TechHeadline, ref: ForwardedRef<HTMLAnchorElement>) => {
     return (
-      <a onMouseEnter={onMouseEnter} ref={ref} className='p-8 border-4 border-black w-40'>
+      <a
+        onMouseEnter={onMouseEnter}
+        ref={ref}
+        className='p-8 border-4 border-black w-40 flex justify-center items-center'
+      >
         {children}
       </a>
     );
