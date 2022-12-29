@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Sliders } from '../components/slider';
 import { ProjectProvider } from '../components/project/ProjectProvider';
 import { ProjectList } from '../components/project/ProjectList';
 import { Services } from '../components/services/Services';
@@ -12,6 +11,7 @@ import { Footer } from '../components/footer/Footer';
 import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
+import { Sliders } from '../components/Slider';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
