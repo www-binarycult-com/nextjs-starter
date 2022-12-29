@@ -7,11 +7,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 type SliderProps = { images: { src: string; href: string }[] };
 
-const state = {
-  display: true,
-  width: 600,
-};
-
 const settings = {
   infinite: true,
   slidesToShow: 5,
