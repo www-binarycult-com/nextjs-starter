@@ -1,10 +1,12 @@
-import React from 'react';
+import { useState } from 'react';
+import { Spacing } from '../Spacing';
 import { Headline } from '../Headline';
+import { SubHeadline } from '../SubHeadline';
 
 export const ContactForm: React.FC = () => {
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -15,8 +17,10 @@ export const ContactForm: React.FC = () => {
   return (
     <div className='p-10'>
       <form onSubmit={handleSubmit}>
-        <div className='mb-10'>
+        <div>
           <Headline tag='h2'>Kontakt</Headline>
+          <SubHeadline>Sprechen Sie uns an und lassen Sie uns gemeinsam Ihr Projekt planen.</SubHeadline>
+          <Spacing type='content' />
         </div>
         <div className='mb-4'>
           <label className='block text-gray-700 mb-2' htmlFor='name'>

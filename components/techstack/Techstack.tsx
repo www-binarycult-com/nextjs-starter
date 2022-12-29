@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
+import { SubHeadline } from '../SubHeadline';
+import { Spacing } from '../Spacing';
 import { TechBox } from './TechBox';
 import { TechItem } from './TechItem';
 import { TechHeadline } from './TechHeadline';
@@ -77,11 +79,11 @@ export const TechStack = () => {
   return (
     <div>
       <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10'>
-        <div className='pb-16' ref={divElement}>
-          <Headline className='z-10' tag='h2'>
-            Unsere Technologien
-          </Headline>
-        </div>
+        <Headline className='z-10' tag='h2'>
+          Unsere Technologien
+        </Headline>
+        <SubHeadline>Zukunftssichere Technologien für Ihr Projekt.</SubHeadline>
+        <Spacing type='content' />
         <TechBox position={position} />
         <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
           <TechHeadline
