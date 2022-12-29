@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
+import { SubHeadline } from '../SubHeadline';
+import { Spacing } from '../Spacing';
 import { ServicesBox } from './ServiceBox';
 import { ServicesItem } from './ServicesItem';
 import { ServiceHeadline } from './ServiceHeadline';
@@ -32,11 +34,11 @@ export const Services = () => {
   return (
     <div>
       <div className='box-border bg-white block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10'>
-        <div className='pb-4' ref={divElement}>
-          <Headline className='z-10' tag='h2'>
-            Unsere Dienstleistungen
-          </Headline>
-        </div>
+        <Headline className='z-10' tag='h2'>
+          Unsere Dienstleistungen
+        </Headline>
+        <SubHeadline>Von der Beratung bis zum Full-Service</SubHeadline>
+        <Spacing type='content' />
         <ServicesBox position={position} />
         <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
           <ServiceHeadline

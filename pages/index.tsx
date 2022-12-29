@@ -11,6 +11,7 @@ import { Footer } from '../components/footer/Footer';
 import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
+import { Spacing } from '../components/Spacing';
 import Slider from '../components/Slider';
 
 const images = [
@@ -38,7 +39,12 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Hero />
-        <TextImageSection heading='Hallo!' image={{ src: './coder.svg' }} className=' '>
+        <TextImageSection
+          heading='Hallo!'
+          subheading='Wir sind Ihr Partner für Web Development und mehr.'
+          image={{ src: './coder.svg' }}
+          className=' '
+        >
           <>
             <p>
               Wir sind eine Remote-Web-Development-Agentur, die sich auf kleine und mittelständische Unternehmen
@@ -62,13 +68,16 @@ const Home: NextPage = () => {
             <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
           </>
         </TextImageSection>
-        <div className=' '>
-          <ContactCTA />
-        </div>
+        <ContactCTA />
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
-        <TextImageSection heading='Digitalisierung' image={{ src: './group.svg' }} reversedOrder>
+        <TextImageSection
+          heading='Digitalisierung'
+          subheading='Unsere Mission: Ihnen dabei helfen, die Herausforderungen der Digitalisierung zu meistern.'
+          image={{ src: './group.svg' }}
+          reversedOrder
+        >
           <>
             <p>
               Die Digitalisierung ist in aller Munde und bietet für Unternehmen viele Chancen und Möglichkeiten.
@@ -103,11 +112,14 @@ const Home: NextPage = () => {
             <ContactForm />
           </div>
           <div className='w-full p-10 md:w-1/2'>
-            Sie haben Fragen oder möchten mehr über unsere Leistungen erfahren? <br />
-            <br />
-            Dann zögern Sie nicht, uns zu kontaktieren. Wir stehen Ihnen gerne zur Verfügung und beantworten Ihre
-            Anfragen schnellstmöglich. Nutzen Sie dafür einfach das Kontaktformular nebenan oder schreiben Sie uns eine
-            E-Mail an <br />
+            <Spacing type='large' />
+            <p>
+              Sie haben Fragen oder möchten mehr über unsere Leistungen erfahren? <br />
+              <br />
+              Dann zögern Sie nicht, uns zu kontaktieren. Wir stehen Ihnen gerne zur Verfügung und beantworten Ihre
+              Anfragen schnellstmöglich. Nutzen Sie dafür einfach das Kontaktformular nebenan oder schreiben Sie uns
+              eine E-Mail an <br />
+            </p>
             <LinkCTA href=''>info@immajung.de</LinkCTA>. Wir freuen uns darauf, von Ihnen zu hören.
           </div>
         </div>
