@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useInView } from 'react-intersection-observer';
 import { Headline } from './Headline';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -20,22 +19,19 @@ const settings = {
 };
 
 const SliderComp = ({ images }: SliderProps) => {
-  const before =
-    "before:content-[''] before:absolute before:w-[200px] before:h-[100px] before:z-[2] before:left-0 before:top-0 before:bg-gradient-slider";
-  const after =
-    "after:content-[''] after:absolute after:w-[200px] after:h-[100px] after:z-[2] after:right-0 after:top-0 after:transform after:rotate-180 after:bg-gradient-slider";
-
   return (
-    <div className='p-10'>
-      <Headline>Unsere Kunden</Headline>
-      <SubHeadline>
-        Wir glauben, dass Marken die kulturelle Verbindung zwischen Unternehmen und ihren Gemeinschaften sind.
-      </SubHeadline>
-      <Spacing type='content' />
+    <div className='p-10 container mx-auto'>
+      <>
+        <Headline>Unsere Kunden</Headline>
+        <SubHeadline>
+          Wir glauben, dass Marken die kulturelle Verbindung zwischen Unternehmen und ihren Gemeinschaften sind.
+        </SubHeadline>
+        <Spacing type='content' />
+      </>
       <Slider {...settings}>
         {images.map(({ src }, key) => (
           <div key={key} className='mx-4'>
-            <Image src={src} className='w-32' height='100' width='250' alt='' />
+            <Image src={src} className='w-32' height='100' width='250' alt='client logo' />
           </div>
         ))}
       </Slider>
