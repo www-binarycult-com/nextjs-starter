@@ -21,8 +21,6 @@ export const Services = () => {
     height?: number;
   } | null>(null);
 
-  console.log(ref1.current?.getBoundingClientRect());
-
   useEffect(() => {
     setPosition({
       position: 1,
