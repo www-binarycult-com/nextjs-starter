@@ -21,13 +21,11 @@ const settings = {
 const SliderComp = ({ images }: SliderProps) => {
   return (
     <div className='p-10 container mx-auto'>
-      <>
-        <Headline>Unsere Kunden</Headline>
-        <SubHeadline>
-          Wir glauben, dass Marken die kulturelle Verbindung zwischen Unternehmen und ihren Gemeinschaften sind.
-        </SubHeadline>
-        <Spacing type='content' />
-      </>
+      <Headline>Unsere Kunden</Headline>
+      <SubHeadline>
+        Wir glauben, dass Marken die kulturelle Verbindung zwischen Unternehmen und ihren Gemeinschaften sind.
+      </SubHeadline>
+      <Spacing type='content' />
       <Slider {...settings}>
         {images.map(({ src }, key) => (
           <div key={key} className='mx-4'>
