@@ -12,7 +12,7 @@ import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
-import Slider from '../components/Slider';
+import Slider from '../components/slider/Slider';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },

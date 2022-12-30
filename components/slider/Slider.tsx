@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import { Headline } from './Headline';
+import { Headline } from '../Headline';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { SubHeadline } from './SubHeadline';
-import { Spacing } from './Spacing';
+import { SubHeadline } from '../SubHeadline';
+import { Spacing } from '../Spacing';
 
 type SliderProps = { images: { src: string; href: string }[] };
 
@@ -18,7 +18,7 @@ const settings = {
   cssEase: 'linear',
 };
 
-const SliderComp = ({ images }: SliderProps) => {
+const SliderComponent = ({ images }: SliderProps) => {
   return (
     <div className='p-10 container mx-auto'>
       <Headline>Unsere Kunden</Headline>
@@ -37,4 +37,4 @@ const SliderComp = ({ images }: SliderProps) => {
   );
 };
 
-export default SliderComp;
+export default SliderComponent;
