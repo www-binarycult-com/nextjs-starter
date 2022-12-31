@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { Spacing } from '../Spacing';
-import { TechBox } from './TechBox';
 import { TechItem } from './TechItem';
 import { TechHeadline } from './TechHeadline';
 
@@ -84,7 +83,7 @@ export const TechStack = () => {
         </Headline>
         <SubHeadline>Zukunftssichere Technologien für Ihr Projekt.</SubHeadline>
         <Spacing type='content' />
-        <TechBox position={position} />
+        {/* <TechBox position={position} /> */}
         <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
           <TechHeadline
             onMouseEnter={() => {
@@ -96,6 +95,7 @@ export const TechStack = () => {
                 height: ref1.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 1}
             ref={ref1}
           >
             <span className={`${position?.position === 1 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -112,6 +112,7 @@ export const TechStack = () => {
                 height: ref2.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 2}
             ref={ref2}
           >
             <span className={`${position?.position === 2 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -128,6 +129,7 @@ export const TechStack = () => {
                 height: ref3.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 3}
             ref={ref3}
           >
             <span className={`${position?.position === 3 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -144,6 +146,7 @@ export const TechStack = () => {
                 height: ref4.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 4}
             ref={ref4}
           >
             <span className={`${position?.position === 4 ? 'underline md:no-underline' : 'no-underline'} `}>CMS</span>
