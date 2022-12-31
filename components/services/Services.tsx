@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { Spacing } from '../Spacing';
-import { ServicesBox } from './ServiceBox';
 import { ServicesItem } from './ServicesItem';
 import { ServiceHeadline } from './ServiceHeadline';
 
