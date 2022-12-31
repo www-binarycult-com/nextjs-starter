@@ -1,11 +1,15 @@
-import { ForwardedRef, forwardRef, HTMLProps, ReactNode, useEffect, useRef, useState } from 'react';
+import { ForwardedRef, forwardRef, HTMLProps, ReactNode } from 'react';
 
-type ServiceHeadline = { children: ReactNode } & HTMLProps<HTMLAnchorElement>;
+type ServiceHeadline = { children: ReactNode; position?: boolean } & HTMLProps<HTMLAnchorElement>;
 
 export const ServiceHeadline = forwardRef(
-  ({ children, onMouseEnter }: ServiceHeadline, ref: ForwardedRef<HTMLAnchorElement>) => {
+  ({ children, onMouseEnter, position }: ServiceHeadline, ref: ForwardedRef<HTMLAnchorElement>) => {
     return (
-      <a onMouseEnter={onMouseEnter} ref={ref} className='p-8 border-black border-4'>
+      <a
+        onMouseEnter={onMouseEnter}
+        ref={ref}
+        className={`p-8 border-black border-4 transition-all duration-500 ${position ? 'bg-white' : 'bg-transparent'}`}
+      >
         {children}
       </a>
     );

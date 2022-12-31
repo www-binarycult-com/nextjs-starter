@@ -39,7 +39,7 @@ export const Services = () => {
         </Headline>
         <SubHeadline>Von der Beratung bis zum Full-Service</SubHeadline>
         <Spacing type='content' />
-        <ServicesBox position={position} />
+        {/* <ServicesBox position={position} /> */}
         <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>
           <ServiceHeadline
             onMouseEnter={() => {
@@ -51,6 +51,7 @@ export const Services = () => {
                 height: ref1.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 1}
             ref={ref1}
           >
             <span className={`${position?.position === 1 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -67,6 +68,7 @@ export const Services = () => {
                 height: ref2.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 2}
             ref={ref2}
           >
             <span className={`${position?.position === 2 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -83,6 +85,7 @@ export const Services = () => {
                 height: ref3.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 3}
             ref={ref3}
           >
             <span className={`${position?.position === 3 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -99,6 +102,7 @@ export const Services = () => {
                 height: ref4.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 4}
             ref={ref4}
           >
             <span className={`${position?.position === 4 ? 'underline md:no-underline' : 'no-underline'} `}>
@@ -115,6 +119,7 @@ export const Services = () => {
                 height: ref5.current?.getBoundingClientRect().height,
               });
             }}
+            position={position?.position === 5}
             ref={ref5}
           >
             <span className={`${position?.position === 5 ? 'underline md:no-underline' : 'no-underline'} `}>
