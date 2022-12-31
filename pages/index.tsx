@@ -107,12 +107,14 @@ const Home: NextPage = () => {
         <Services />
         <Slider images={images} />
         <TechStack />
-        <div id='contact-form' className='flex flex-col-reverse md:flex-row container p-5 m-auto'>
+        <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
           </div>
           <div className='w-full p-10 md:w-1/2'>
-            <Spacing type='large' />
+            <div className='hidden md:block'>
+              <Spacing type='large' />
+            </div>
             <p>
               Sie haben Fragen oder möchten mehr über unsere Leistungen erfahren? <br />
               <br />

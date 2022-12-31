@@ -12,7 +12,7 @@ export const Hero = () => {
               <Headline tag='h5'>{'<immajung />'}</Headline>
             </Link>
           </div>
-          <div className='md:mr-8'>
+          <div className='mt-8 md:mr-8'>
             <Navigation />
           </div>
         </div>
