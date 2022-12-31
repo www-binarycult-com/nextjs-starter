@@ -12,7 +12,7 @@ export const ContactForm: React.FC = () => {
 
   return (
     <div className='p-10'>
-      <form name='contact' method='POST' data-netlify='true'>
+      <form name='contact-agency' method='POST' data-netlify='true'>
         <div>
           <Headline tag='h2'>Kontakt</Headline>
           <SubHeadline>Sprechen Sie uns an und lassen Sie uns gemeinsam Ihr Projekt planen.</SubHeadline>
