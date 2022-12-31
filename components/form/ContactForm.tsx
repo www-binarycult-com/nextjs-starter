@@ -12,7 +12,9 @@ export const ContactForm: React.FC = () => {
 
   return (
     <div className='p-10'>
-      <form name='contact-agency' method='POST' data-netlify='true'>
+      <form name='contact' method='POST' data-netlify='true'>
+        <input type='hidden' name='form-name' value='contact' />
+        <input type='hidden' name='bot-field' />
         <div>
           <Headline tag='h2'>Kontakt</Headline>
           <SubHeadline>Sprechen Sie uns an und lassen Sie uns gemeinsam Ihr Projekt planen.</SubHeadline>
@@ -55,7 +57,6 @@ export const ContactForm: React.FC = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <input type='hidden' name='contact' value='contact' />
         </div>
         <div className='mb-4'>
           <label className='block text-gray-700 mb-2' htmlFor='dsgvo'>
