@@ -5,7 +5,6 @@ import { Navigation } from '../navigation/Navigation';
 export const Hero = () => {
   return (
     <>
-      {' '}
       <div className='relative border-8 border-black h-[100vh] hero'>
         <div className='p-10 container m-auto'>
           <div className='flex justify-between'>
