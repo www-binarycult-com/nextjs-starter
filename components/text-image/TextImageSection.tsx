@@ -9,6 +9,7 @@ interface ITextImageSection {
   reversedOrder?: boolean;
   heading?: string;
   subheading?: string;
+  id?: string;
   image?: DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>;
   className?: string;
   children: ReactNode;
@@ -20,6 +21,7 @@ export const TextImageSection = ({
   heading,
   subheading = ' ',
   image,
+  id,
   className,
 }: ITextImageSection) => {
   const { ref, inView } = useInView({
@@ -37,7 +39,7 @@ export const TextImageSection = ({
   const img = classNames(`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`, 'm-auto');
 
   return (
-    <div ref={ref} className={container}>
+    <div ref={ref} className={container} id={id}>
       <div className={`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`}>
         {heading && <Headline tag='h2'>{heading}</Headline>}
         {subheading && <SubHeadline>{subheading}</SubHeadline>}
