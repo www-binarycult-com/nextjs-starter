@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { ReactNode, useContext, useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { ProjectHeadline } from './ProjectHeadline';
 import { useProject } from './ProjectProvider';
 
 type ProjectItemProps = {
@@ -16,7 +15,7 @@ type ProjectItemProps = {
 export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headline, children }: ProjectItemProps) => {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.3,
   });
 
   const { changeConfig } = useProject();
