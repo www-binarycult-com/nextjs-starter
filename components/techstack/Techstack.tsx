@@ -4,6 +4,7 @@ import { SubHeadline } from '../SubHeadline';
 import { Spacing } from '../Spacing';
 import { TechItem } from './TechItem';
 import { TechHeadline } from './TechHeadline';
+import { useInView } from 'react-intersection-observer';
 
 type TechStackTypes = {
   src: string;
@@ -52,6 +53,10 @@ const cmsStack: TechStackTypes = [
 ];
 
 export const TechStack = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.3,
+  });
   const divElement = useRef<HTMLDivElement>(null);
   const ref1 = useRef<HTMLAnchorElement>(null);
   const ref2 = useRef<HTMLAnchorElement>(null);
@@ -76,8 +81,8 @@ export const TechStack = () => {
   }, []);
 
   return (
-    <div>
-      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10 container m-auto'>
+    <div ref={ref} className={`transition-all duration-500 delay-100 ease-in-out ${inView ? 'bg-cta' : ''}`}>
+      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 z-10 container m-auto'>
         <Headline className='z-10' tag='h2'>
           Unsere Technologien
         </Headline>
@@ -159,7 +164,7 @@ export const TechStack = () => {
         >
           <img src='coder.svg' alt='' />
         </div>
-        <div className='bg-cta pt-8'>
+        <div className='pt-8'>
           <TechItem stack={frontendStack} href='' hoveredPosition={position?.position} position={1} title='Frontend'>
             Im Frontend setzen wir auf leistungsstarke und zukunftsorientierte Technologien. Unser Tech-Stack umfasst
             React, Next, Gatsby, SolidJS und CSS, die wir in Kombination mit dem CSS-Framework Tailwind einsetzen.

@@ -2,10 +2,15 @@ import { useEffect, useRef, useState } from 'react';
 import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { Spacing } from '../Spacing';
+import { useInView } from 'react-intersection-observer';
 import { ServicesItem } from './ServicesItem';
 import { ServiceHeadline } from './ServiceHeadline';
 
 export const Services = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    triggerOnce: true,
+  });
   const divElement = useRef<HTMLDivElement>(null);
   const ref1 = useRef<HTMLAnchorElement>(null);
   const ref2 = useRef<HTMLAnchorElement>(null);
@@ -31,8 +36,8 @@ export const Services = () => {
   }, []);
 
   return (
-    <div>
-      <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 bg-cta z-10 container m-auto'>
+    <div className={`transition-all duration-500 delay-100 ease-in-out ${inView ? 'bg-cta' : ''}`} ref={ref}>
+      <div className={`box-border block bg-cover relative w-full px-4 md:px-12 py-12  z-10 container m-auto`}>
         <Headline className='z-10' tag='h2'>
           Unsere Dienstleistungen
         </Headline>
@@ -126,7 +131,7 @@ export const Services = () => {
             </span>
           </ServiceHeadline>
         </div>
-        <div className='bg-cta pt-8'>
+        <div className='pt-8'>
           <ServicesItem href='' hoveredPosition={position?.position} position={1} title='Full Service'>
             Wir bei immajung sind stolz darauf, ein umfassendes Angebot an digitalen Dienstleistungen anzubieten, um
             unsere Kunden bei ihrem Streben nach Erfolg zu unterstützen. Von der Webentwicklung und dem Hosting bis hin

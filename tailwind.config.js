@@ -21,7 +21,9 @@ module.exports = {
         blink: 'blink 1s step-end infinite',
         leftRightService: 'leftRightService 1.9s linear infinite',
         upDownService: 'upDownService 1.9s linear infinite',
-        fadeIn: 'fadeIn 1s linear',
+        fadeIn: 'fadeIn 1s linear forwards',
+        fadeInLeft: 'fadeInLeft 0.5s linear forwards',
+        fadeInRight: 'fadeInRight 0.5s linear forwards',
         'slide-scroll': 'slide-scroll 4s linear infinite',
         'fade-in': 'fade-in 1s ease-out',
       },
@@ -32,6 +34,26 @@ module.exports = {
           },
           '100%': {
             opacity: '1',
+          },
+        },
+        fadeInLeft: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate(-40px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translate(0)',
+          },
+        },
+        fadeInRight: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate(40px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translate(0)',
           },
         },
         blink: {
