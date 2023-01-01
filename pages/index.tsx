@@ -41,6 +41,7 @@ const Home: NextPage = () => {
         <Hero />
         <TextImageSection
           heading='Hallo!'
+          id='agency'
           subheading='Wir sind Ihr Partner für Web Development und mehr.'
           image={{ src: './coder.svg' }}
           className=' '
