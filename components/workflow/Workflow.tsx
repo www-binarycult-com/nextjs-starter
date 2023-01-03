@@ -72,17 +72,14 @@ export const Workflow = ({ className }: ITextImageSection) => {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          icon={<h3 className='text-3xl'>03</h3>}
           contentStyle={{
             background: 'transparent',
             color: 'black',
             borderRadius: '0',
             boxShadow: 'none',
             padding: 0,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
           }}
-          icon={<h3 className='text-3xl'>03</h3>}
           iconStyle={{
             background: 'black',
             color: 'white',
