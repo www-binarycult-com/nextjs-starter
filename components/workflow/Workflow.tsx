@@ -29,11 +29,15 @@ export const Workflow = ({ className }: ITextImageSection) => {
           contentStyle={{ background: 'transparent', color: 'black', borderRadius: '0', boxShadow: 'none', padding: 0 }}
           iconStyle={{
             background: 'black',
-            color: '#ff0000',
+            color: 'white',
             borderRadius: '0',
             boxShadow: 'none',
             borderBlockColor: ' black',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
+          icon={<h3 className='text-3xl'>01</h3>}
         >
           <div className='flex items-center flex-col justify-start'>
             <Headline hasSpacing={false} tag='h2'>
@@ -47,7 +51,16 @@ export const Workflow = ({ className }: ITextImageSection) => {
         <VerticalTimelineElement
           position='left'
           contentStyle={{ background: 'transparent', color: 'black', borderRadius: '0', boxShadow: 'none', padding: 0 }}
-          iconStyle={{ background: 'black', color: '#ff0000', borderRadius: '0', boxShadow: 'none' }}
+          iconStyle={{
+            background: 'black',
+            color: 'white',
+            borderRadius: '0',
+            boxShadow: 'none',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          icon={<h3 className='text-3xl'>02</h3>}
           date='Mit Ihnen gemeinsam entwickeln wir individuelle Lösungen und digitale Strategien. Unsere Grafikspezialisten
           erschaffen Ihre digitale Visitenkarte und erarbeiten den Grundaufbau Ihrer Website.'
         >
@@ -59,8 +72,26 @@ export const Workflow = ({ className }: ITextImageSection) => {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          contentStyle={{ background: 'transparent', color: 'black', borderRadius: '0', boxShadow: 'none', padding: 0 }}
-          iconStyle={{ background: 'black', color: '#ff0000', borderRadius: '0', boxShadow: 'none' }}
+          contentStyle={{
+            background: 'transparent',
+            color: 'black',
+            borderRadius: '0',
+            boxShadow: 'none',
+            padding: 0,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          icon={<h3 className='text-3xl'>03</h3>}
+          iconStyle={{
+            background: 'black',
+            color: 'white',
+            borderRadius: '0',
+            boxShadow: 'none',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
           position='right'
           date='Innerhalb kürzester Zeit designen unsere Experten Ihre Wunschwebsite. Dabei binden wir Sie anhand kurzer
           Abstimmungswege in den Entwicklungsprozess ein und schaffen Transparenz.'
@@ -80,7 +111,16 @@ export const Workflow = ({ className }: ITextImageSection) => {
             boxShadow: 'none',
             padding: 0,
           }}
-          iconStyle={{ background: 'black', color: '#ff0000', borderRadius: '0', boxShadow: 'none' }}
+          iconStyle={{
+            background: 'black',
+            color: 'white',
+            borderRadius: '0',
+            boxShadow: 'none',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          icon={<h3 className='text-3xl'>04</h3>}
           position='left'
           date='Nach erfolgreichem Erstellen Ihrer Website bieten wir Ihnen ein individuell angepasstes Marketingprogramm
           für Ihr Unternehmen an.'
