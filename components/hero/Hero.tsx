@@ -33,8 +33,8 @@ export const Hero = () => {
           <svg
             className='w-12 h-12 text-black'
             fill='none'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeLinecap='round'
+            strokeLinejoin='round'
             stroke-width='2'
             viewBox='0 0 24 24'
             stroke='black'
