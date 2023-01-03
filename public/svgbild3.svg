@@ -96,7 +96,7 @@
             <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.478431 0 0 0 0 0.803922 0 0 0 0 0.427451 0 0 0 1.000000 0"></feColorMatrix>
         </filter>
     </defs>
-    <g id="portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.795503162">
+    <g id="portfolio" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd" opacity="0.795503162">
         <g id="6-2-inleed@2x" transform="translate(-492.000000, -113.000000)">
             <g id="Group-5" transform="translate(-31.000000, 0.000000)" filter="url(#filter-1)">
                 <g transform="translate(523.000000, 113.000000)">
