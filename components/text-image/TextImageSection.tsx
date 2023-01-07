@@ -41,7 +41,7 @@ export const TextImageSection = ({
   return (
     <div ref={ref} className={container} id={id}>
       <div className={`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`}>
-        {heading && <Headline tag='h2'>{heading}</Headline>}
+        {heading && <Headline tag='h1'>{heading}</Headline>}
         {subheading && <SubHeadline>{subheading}</SubHeadline>}
       </div>
       <Spacing type='content' />

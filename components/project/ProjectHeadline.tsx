@@ -12,7 +12,7 @@ export const ProjectHeadline = ({
 }) => {
   return (
     <div className={`${position} pb-10`}>
-      <Headline>{children}</Headline>
+      <Headline tag='h2'>{children}</Headline>
     </div>
   );
 };

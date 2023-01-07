@@ -13,6 +13,7 @@ import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
 import Slider from '../components/slider/Slider';
+import { Workflow } from '../components/workflow/Workflow';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -105,6 +106,7 @@ const Home: NextPage = () => {
             <br />
           </>
         </TextImageSection>
+        <Workflow />
         <Services />
         <Slider images={images} />
         <TechStack />
