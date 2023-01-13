@@ -14,7 +14,7 @@ interface ITextImageSection {
 }
 
 export const Workflow = ({ className }: ITextImageSection) => {
-  const container = classNames(className, 'p-10 container m-auto');
+  const container = classNames(className, 'p-10 container m-auto overflow-hidden');
 
   return (
     <div className={container}>
