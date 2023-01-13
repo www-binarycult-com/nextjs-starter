@@ -11,7 +11,7 @@ type ServiceItemsTypes = {
 
 export const ServicesItem = ({ position, hoveredPosition, title, children, href }: ServiceItemsTypes) => {
   return hoveredPosition === position ? (
-    <div className={`z-0 w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
+    <div className={`z-0  rounded w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
       <div className={`p-4 md:p-8 w-full md:w-[60%] bg-white flex flex-col  gap-8 duration-200`}>
         <div className='flex text-2xl'>{title}</div>
         <div>

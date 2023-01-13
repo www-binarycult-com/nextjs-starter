@@ -13,6 +13,7 @@ import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
 import Slider from '../components/slider/Slider';
+import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 
 const images = [
@@ -106,6 +107,7 @@ const Home: NextPage = () => {
             <br />
           </>
         </TextImageSection>
+        <Done />
         <Workflow />
         <Services />
         <Slider images={images} />

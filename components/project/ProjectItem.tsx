@@ -35,7 +35,7 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
   }, [inView]);
 
   return (
-    <a className='block group min-h-[100vh] '>
+    <a className='block group min-h-[100vh]'>
       <div id='test' className='relative min-h-[80vh]'>
         <div id='inner' className='flex items-center justify-items-center absolute w-full h-full inset-0 min-h-[80vh]'>
           <div className='relative flex flex-col'>
@@ -46,7 +46,7 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
                   ref={ref}
                   alt=''
                   src={imgSrc}
-                  className='border-black border-4 duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%]'
+                  className='rounded duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%]'
                 />
               </div>
             </div>

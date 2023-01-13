@@ -31,6 +31,7 @@ export const TextImageSection = ({
   });
 
   const flex = classNames(
+    `opacity-0 ${inView ? 'animate-fadeInRight' : ''}`,
     'flex gap-8',
     reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row'
   );
@@ -40,12 +41,12 @@ export const TextImageSection = ({
 
   return (
     <div ref={ref} className={container} id={id}>
-      <div className={`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`}>
-        {heading && <Headline tag='h1'>{heading}</Headline>}
+      <div>
+        {heading && <Headline tag='h2'>{heading}</Headline>}
         {subheading && <SubHeadline>{subheading}</SubHeadline>}
       </div>
       <Spacing type='content' />
-      <div className={flex}>
+      <div ref={ref} className={flex}>
         <div className={textWidth}>{children}</div>
         {image && (
           <div className='md:w-1/2 w-full'>

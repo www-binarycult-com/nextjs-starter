@@ -19,7 +19,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
   return (
     <div className={container}>
       <Headline>Our Workflow</Headline>
-      <SubHeadline>Unsere 4-Stufen-Methode für Ihr Projekt</SubHeadline>
+      <SubHeadline>Unsere 4-Stufen-Methode für Ihr Projekt.</SubHeadline>
       <Spacing type='content' />
       <VerticalTimeline lineColor='black'>
         <VerticalTimelineElement

@@ -29,7 +29,7 @@ const projectListArray = [
       </p>
     ),
     imgSrc: 'vita-list.png',
-    backgroundColor: '#D7E6CF',
+    backgroundColor: '#9FA365',
   },
   {
     headline: 'Faber Ernährungsberatung',
