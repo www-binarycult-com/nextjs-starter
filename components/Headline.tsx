@@ -9,7 +9,7 @@ type HeadlineProps = {
   hasSpacing?: boolean;
 };
 
-export const Headline = ({ children, className, tag = 'h1', hasSpacing }: HeadlineProps) => {
+export const Headline = ({ children, className, tag = 'h1', hasSpacing = true }: HeadlineProps) => {
   const component = { tag: tag };
   const classes = classNames(
     "inline relative before:bg-cta before:content-[''] before:w-full before:h-[40%] before:left-4 before:bottom-0 before:z-[-1] before:absolute",

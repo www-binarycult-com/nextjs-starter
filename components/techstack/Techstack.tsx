@@ -83,7 +83,7 @@ export const TechStack = () => {
   return (
     <div ref={ref} className={`transition-all duration-500 delay-100 ease-in-out ${inView ? 'bg-cta' : ''}`}>
       <div className='box-border block bg-cover relative w-full px-4 md:px-12 py-12 z-10 container m-auto'>
-        <Headline className='z-10' tag='h2'>
+        <Headline className='z-10' tag='h1'>
           Unsere Technologien
         </Headline>
         <SubHeadline>Zukunftssichere Technologien für Ihr Projekt.</SubHeadline>

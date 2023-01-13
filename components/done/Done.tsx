@@ -68,7 +68,7 @@ export const Done = () => {
         <Headline tag='h2'>Unsere Erfolge</Headline>
         <SubHeadline className='max-w-[45em]'>
           Der wichtigste und wertvollste Erfolg sind unsere zufriedenen Kunden. Egal ob es eine neue Webseite oder eine
-          Webanwendung für den Betrieb ist. Bei uns sind Sie in den richtigen Händen
+          Webanwendung für den Betrieb ist. Bei uns sind Sie in den richtigen Händen.
         </SubHeadline>
         <Spacing type='content' />
         <div

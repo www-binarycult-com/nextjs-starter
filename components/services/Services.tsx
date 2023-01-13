@@ -41,7 +41,7 @@ export const Services = () => {
         <Headline className='z-10' tag='h2'>
           Unsere Dienstleistungen
         </Headline>
-        <SubHeadline>Von der Beratung bis zum Full-Service</SubHeadline>
+        <SubHeadline>Von der Beratung bis zum Full-Service.</SubHeadline>
         <Spacing type='content' />
         {/* <ServicesBox position={position} /> */}
         <div className='relative z-2 gap-8 flex overflow-x-auto md:flex-wrap'>

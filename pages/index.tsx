@@ -14,6 +14,7 @@ import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
 import Slider from '../components/slider/Slider';
 import { Done } from '../components/done/Done';
+import { Workflow } from '../components/workflow/Workflow';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -74,7 +75,6 @@ const Home: NextPage = () => {
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
-        <Done />
         <TextImageSection
           heading='Digitalisierung'
           subheading='Unsere Mission: Ihnen dabei helfen, die Herausforderungen der Digitalisierung zu meistern.'
@@ -107,6 +107,8 @@ const Home: NextPage = () => {
             <br />
           </>
         </TextImageSection>
+        <Done />
+        <Workflow />
         <Services />
         <Slider images={images} />
         <TechStack />
