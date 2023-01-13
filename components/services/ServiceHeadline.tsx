@@ -8,7 +8,9 @@ export const ServiceHeadline = forwardRef(
       <a
         onMouseEnter={onMouseEnter}
         ref={ref}
-        className={`p-6 border-black border-4 transition-all duration-500 ${position ? 'bg-white' : 'bg-transparent'}`}
+        className={`p-6 border-black rounded border-4 transition-all duration-500 ${
+          position ? 'bg-white' : 'bg-transparent'
+        }`}
       >
         {children}
       </a>

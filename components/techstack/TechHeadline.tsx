@@ -8,7 +8,7 @@ export const TechHeadline = forwardRef(
       <a
         onMouseEnter={onMouseEnter}
         ref={ref}
-        className={`p-6 border-4 border-black flex justify-center items-center transition-all duration-500 ${
+        className={`p-6 rounded border-4 border-black flex justify-center items-center transition-all duration-500 ${
           position ? 'bg-white' : 'bg-transparent'
         }`}
       >
