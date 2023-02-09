@@ -27,9 +27,9 @@ const Impressum: NextPage = () => {
               Hannover Germany e-mail: hello@immajung.com
             </p>
             <p>
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE323372283
+              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: ******
               <br />
-              Steuer-ID: 26/235/17007
+              Steuer-ID: *******
               <br />
               Landgericht: Hannover-Süd
               <br />
