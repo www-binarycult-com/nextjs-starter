@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ProjectProvider } from '../components/project/ProjectProvider';
 import { ProjectList } from '../components/project/ProjectList';
-import { Services } from '../components/services/Services';
+import { Services } from '../components/services/ServicesAlt';
 import { Hero } from '../components/hero/Hero';
 import { TextImageSection } from '../components/text-image/TextImageSection';
 import { ContactForm } from '../components/form/ContactForm';
@@ -69,7 +69,6 @@ const Home: NextPage = () => {
             <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
           </>
         </TextImageSection>
-        <ContactCTA />
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
@@ -105,6 +104,7 @@ const Home: NextPage = () => {
             <br />
           </>
         </TextImageSection>
+        <ContactCTA />
         <Done />
         <Workflow />
         <Services />

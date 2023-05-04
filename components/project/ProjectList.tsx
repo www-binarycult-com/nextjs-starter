@@ -15,7 +15,7 @@ const projectListArray = [
       </p>
     ),
     imgSrc: 'iks-hannover.png',
-    backgroundColor: '#EE7917',
+    backgroundColor: 'black',
   },
   {
     headline: 'Vitalist',

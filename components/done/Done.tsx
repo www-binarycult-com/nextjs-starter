@@ -6,11 +6,10 @@ import { Spacing } from '../Spacing';
 import { SubHeadline } from '../SubHeadline';
 
 export const Done = () => {
-  const n = 100;
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5,
-    triggerOnce: true,
+    threshold: 0.1,
+    triggerOnce: false,
   });
 
   return (

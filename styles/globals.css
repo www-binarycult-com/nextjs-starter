@@ -42,7 +42,6 @@ html{
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
 }
 
 .hover-underline-animation:after {
