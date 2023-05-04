@@ -12,7 +12,7 @@ import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
-import Slider from '../components/slider/Slider';
+import Slider from '../components/slider/SliderAlt';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 
@@ -27,8 +27,6 @@ const images = [
   { href: '/', src: '/clients/change-mediated.png' },
   { href: '/', src: '/clients/oralchirurgie.png' },
   { href: '/', src: '/clients/logo_cleanin.png' },
-  { href: '/', src: '/clients/spax.png' },
-  { href: '/', src: '/clients/wt.jpg' },
 ];
 
 const Home: NextPage = () => {

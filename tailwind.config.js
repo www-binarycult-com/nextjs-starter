@@ -22,6 +22,10 @@ module.exports = {
         leftRightService: 'leftRightService 1.9s linear infinite',
         upDownService: 'upDownService 1.9s linear infinite',
         fadeIn: 'fadeIn 1s linear forwards',
+        fadePop: 'fadePop 0.25s linear forwards',
+        fadePop2: 'fadePop 0.5s linear forwards',
+        fadePop3: 'fadePop 0.75s linear forwards',
+        fadePop4: 'fadePop 1s linear forwards',
         fadeInLeft: 'fadeInLeft 0.5s linear forwards',
         fadeInRight: 'fadeInRight 0.5s linear forwards',
         'slide-scroll': 'slide-scroll 4s linear infinite',
@@ -34,6 +38,16 @@ module.exports = {
           },
           '100%': {
             opacity: '1',
+          },
+        },
+        fadePop: {
+          '0%': {
+            opacity: '0',
+            transform: 'scale(0)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'scale(1)',
           },
         },
         fadeInLeft: {
