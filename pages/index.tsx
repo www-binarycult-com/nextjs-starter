@@ -127,6 +127,9 @@ const Home: NextPage = () => {
               eine E-Mail an <br />
             </p>
             <LinkCTA href=''>info@immajung.de</LinkCTA>. Wir freuen uns darauf, von Ihnen zu hören.
+            <div className='flex'>
+              <img className='pt-16' width={300} {...{ src: './contact.svg' }} />
+            </div>
           </div>
         </div>
       </main>

@@ -35,7 +35,7 @@ export const TextImageSection = ({
     'flex gap-8',
     reversedOrder ? 'md:flex-row-reverse flex-col-reverse' : 'flex-col md:flex-row'
   );
-  const textWidth = classNames(image && 'md:w-1/2 w-full', `opacity-0 ${inView ? 'animate-fadeInLeft' : ''}`);
+  const textWidth = classNames(image && 'md:w-2/3 w-full', `opacity-0 ${inView ? 'animate-fadeInLeft' : ''}`);
   const container = classNames(className, 'p-10 container m-auto');
   const img = classNames(`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`, 'm-auto');
 
@@ -49,7 +49,7 @@ export const TextImageSection = ({
       <div ref={ref} className={flex}>
         <div className={textWidth}>{children}</div>
         {image && (
-          <div className='md:w-1/2 w-full'>
+          <div className='md:w-1/3 w-full'>
             <img className={img} {...image} />
           </div>
         )}
