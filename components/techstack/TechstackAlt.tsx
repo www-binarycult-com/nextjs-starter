@@ -55,18 +55,24 @@ export const TechstackAlt = () => {
   });
 
   return (
-    <div ref={ref} className='flex container mx-auto'>
-      <div className={`hidden md:w-1/2 p-10 pb-[50vh] md:block`}>
+    <div ref={ref} className='flex container mx-auto md:flex-row flex-col'>
+      <div className={`md:w-1/2 p-10`}>
         <div className={`sticky top-10 `}>
-          <div className='relative pb-10'>
-            <Headline tag='h2'>Technologien</Headline>
-          </div>
+          <Headline tag='h2'>Technologien</Headline>
+          <p className='pb-8 pt-16'>
+            As performance marketing experts and brand strategists, our custom services are designed to achieve every
+            brand’s goals and over-deliver on results. We are a full-service agency ready to partner up with you in
+            order to reach and exceed your expectations.
+          </p>
+          <a className=' hover-underline-animation' href={'/#contact-form'}>
+            <b>Mehr Erfahren</b>
+          </a>
         </div>
       </div>
       <div className='w-full md:w-1/2 '>
-        <div className='pt-8'>
+        <div className='md:pt-8'>
           <div className={`flex justify-center items-center`}>
-            <div className={`p-4 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
+            <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
               <div>
                 <Headline tag='h3'>Frontend</Headline>
               </div>
@@ -90,7 +96,7 @@ export const TechstackAlt = () => {
             </div>
           </div>
           <div className={`flex justify-center items-center`}>
-            <div className={`p-4 md:p-6 rounded w-full md:w-[80%] flex flex-col gap-8 duration-200 `}>
+            <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
               <div>
                 <Headline tag='h3'>Backend</Headline>
               </div>{' '}
@@ -112,7 +118,7 @@ export const TechstackAlt = () => {
             </div>
           </div>
           <div className={`flex justify-center items-center`}>
-            <div className={`p-4 md:p-6 rounded w-full md:w-[80%] flex flex-col gap-8 duration-200 `}>
+            <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
               <div>
                 <Headline tag='h3'>Mobile / Apps</Headline>
               </div>{' '}
@@ -133,7 +139,7 @@ export const TechstackAlt = () => {
             </div>
           </div>
           <div className={`flex justify-center items-center`}>
-            <div className={`p-4 md:p-6 rounded w-full md:w-[80%] flex flex-col gap-8 duration-200 `}>
+            <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
               <div>
                 <Headline tag='h3'>CMS</Headline>
               </div>{' '}
