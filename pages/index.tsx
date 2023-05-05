@@ -15,6 +15,7 @@ import { Spacing } from '../components/Spacing';
 import Slider from '../components/slider/SliderAlt';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
+import { TechstackAlt } from '../components/techstack/TechstackAlt';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -108,8 +109,8 @@ const Home: NextPage = () => {
         <Done />
         <Workflow />
         <Services />
+        <TechstackAlt />
         <Slider images={images} />
-        <TechStack />
         <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
