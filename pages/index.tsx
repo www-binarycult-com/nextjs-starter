@@ -11,7 +11,7 @@ import { Footer } from '../components/footer/Footer';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
-import Slider from '../components/slider/Slider';
+import Clients from '../components/clients/Clients';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 import { Techstack } from '../components/techstack/Techstack';
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
         <Workflow />
         <Services />
         <Techstack />
-        <Slider images={images} />
+        <Clients images={images} />
         <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
