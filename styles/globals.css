@@ -104,6 +104,8 @@ menu > div {
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
+.vertical-timeline-element-date {
+  font-size: 1rem !important; }
 
 @keyframes gradient {
   0% {

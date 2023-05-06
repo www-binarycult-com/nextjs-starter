@@ -18,7 +18,7 @@ export const Services = () => {
         <SubHeadline>Von der Beratung bis zum Full-Service.</SubHeadline>
         <Spacing type='content' />
         {/* <ServicesBox position={position} /> */}
-        <div className={`pt-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-8`}>
+        <div className={`md:pt-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-5`}>
           <ServicesItem inView={inView} animation='animate-fadeInLeft' href='' title='Technical SEO'>
             Ganz gleich, ob Sie eine einfache Website zur Präsentation Ihres Unternehmens oder eine komplexere Plattform
             zur Unterstützung Ihrer Online-Aktivitäten benötigen, unser Expertenteam verfügt über die Fähigkeiten und

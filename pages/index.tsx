@@ -11,7 +11,7 @@ import { Footer } from '../components/footer/Footer';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
-import Slider from '../components/slider/SliderAlt';
+import Slider from '../components/slider/Slider';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 import { Techstack } from '../components/techstack/Techstack';

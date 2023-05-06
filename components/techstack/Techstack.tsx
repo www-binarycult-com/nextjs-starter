@@ -1,4 +1,6 @@
 import { Headline } from '../Headline';
+import { Spacing } from '../Spacing';
+import { SubHeadline } from '../SubHeadline';
 import { TechstackItem } from './TechstackItem';
 
 type TechStackTypes = {
@@ -50,17 +52,22 @@ const cmsStack: TechStackTypes = [
 export const Techstack = () => {
   return (
     <div className='flex container mx-auto md:flex-row flex-col'>
-      <div className={`md:w-1/2 p-10`}>
-        <div className={`sticky top-10 `}>
+      <div className={`md:w-1/2 md:p-10 px-10`}>
+        <div className={`relative md:sticky top-10 `}>
           <Headline tag='h2'>Technologien</Headline>
-          <p className='pb-8 pt-16'>
-            As performance marketing experts and brand strategists, our custom services are designed to achieve every
-            brand’s goals and over-deliver on results. We are a full-service agency ready to partner up with you in
-            order to reach and exceed your expectations.
-          </p>
-          <a className=' hover-underline-animation' href={'/#contact-form'}>
-            <b>Mehr Erfahren</b>
-          </a>
+          <SubHeadline>Mit unseren Technologien sind Sie für die Zukunft gewappnet.</SubHeadline>
+          <Spacing type='content' />
+          <div className='pb-5'>
+            <p>
+              As performance marketing experts and brand strategists, our custom services are designed to achieve every
+              brand’s goals and over-deliver on results. We are a full-service agency ready to partner up with you in
+              order to reach and exceed your expectations.
+            </p>
+            <br />
+            <a className=' hover-underline-animation' href={'/#contact-form'}>
+              <b>Mehr Erfahren</b>
+            </a>
+          </div>
         </div>
       </div>
       <div className='w-full md:w-1/2 '>

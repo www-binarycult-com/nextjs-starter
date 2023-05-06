@@ -14,7 +14,7 @@ type ServiceItemsTypes = {
 export const TechstackItem = ({ title, children, stack }: ServiceItemsTypes) => {
   return (
     <div className={`flex justify-center items-center`}>
-      <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
+      <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-5 duration-200 `}>
         <div>
           <Headline tag='h3'>{title}</Headline>
         </div>

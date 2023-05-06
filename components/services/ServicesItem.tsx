@@ -14,14 +14,15 @@ type ServiceItemsTypes = {
 export const ServicesItem = ({ title, children, href, animation, inView }: ServiceItemsTypes) => {
   return (
     <div className={`flex opacity-0 justify-center  ${inView ? animation : ''}`}>
-      <div className={`flex flex-col gap-8 duration-200`}>
+      <div className={`flex flex-col gap-5 duration-200`}>
         <div>
           <Headline hasSpacing={false} tag='h3'>
             {title}
           </Headline>
         </div>
         <div>
-          <div className='mb-4'>{children}</div>
+          <p>{children}</p>
+          <br />
           <a className=' hover-underline-animation' href={'/#contact-form'}>
             <b>Mehr Erfahren</b>
           </a>

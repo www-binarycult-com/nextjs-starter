@@ -11,8 +11,10 @@ export const ProjectHeadline = ({
   className?: string;
 }) => {
   return (
-    <div className={`${position} pb-10`}>
-      <Headline tag='h2'>{children}</Headline>
+    <div className={`${position} pb-5`}>
+      <Headline hasSpacing={false} tag='h3'>
+        {children}
+      </Headline>
     </div>
   );
 };

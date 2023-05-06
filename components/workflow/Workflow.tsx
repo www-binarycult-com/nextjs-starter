@@ -36,9 +36,11 @@ export const Workflow = ({ className }: ITextImageSection) => {
           icon={<h3 className='text-3xl'>01</h3>}
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline hasSpacing={false} tag='h2'>
-              Erstberatung
-            </Headline>
+            <div>
+              <Headline hasSpacing={false} tag='h2'>
+                Erstberatung
+              </Headline>
+            </div>
             <div className='mt-4'>
               <img width={200} {...{ src: './workflow/video.svg' }} />
             </div>
@@ -61,7 +63,9 @@ export const Workflow = ({ className }: ITextImageSection) => {
           erschaffen Ihre digitale Visitenkarte und erarbeiten den Grundaufbau Ihrer Website.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Strategie & Planung</Headline>
+            <div>
+              <Headline tag='h2'>Strategie & Planung</Headline>
+            </div>
             <div className='mt-4'>
               <img width={200} {...{ src: './workflow/meeting.svg' }} />
             </div>
@@ -90,7 +94,9 @@ export const Workflow = ({ className }: ITextImageSection) => {
           Abstimmungswege in den Entwicklungsprozess ein und schaffen Transparenz.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Umsetzung</Headline>
+            <div>
+              <Headline tag='h2'>Umsetzung</Headline>
+            </div>
             <div className='mt-4'>
               <img width={200} {...{ src: './workflow/app.svg' }} />
             </div>
@@ -119,7 +125,9 @@ export const Workflow = ({ className }: ITextImageSection) => {
           für Ihr Unternehmen an.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Betreuung & Optimierung</Headline>
+            <div>
+              <Headline tag='h2'>Betreuung & Optimierung</Headline>
+            </div>
             <div className='mt-4'>
               <img width={200} {...{ src: './workflow/launch.svg' }} />
             </div>

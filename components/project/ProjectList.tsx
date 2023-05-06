@@ -1,6 +1,9 @@
 import { useProject } from './ProjectProvider';
 import { ProjectItem } from './ProjectItem';
 import { ProjectText } from './ProjectText';
+import { Headline } from '../Headline';
+import { SubHeadline } from '../SubHeadline';
+import { Spacing } from '../Spacing';
 
 const projectListArray = [
   {
@@ -52,10 +55,13 @@ export const ProjectList = () => {
 
   return (
     <div id='trigger'>
-      <div className='flex container mx-auto'>
+      <div className='flex md:flex-row flex-col container mx-auto'>
         <div id='test' className='hidden md:w-1/2 p-10 pb-[50vh] md:block'>
           <div className='sticky top-10'>
-            <div className='relative pb-10'>
+            <div className='relative'>
+              <Headline tag='h2'>Unsere Projekte</Headline>
+              <SubHeadline>Von Wordpress bis hinzu einer indivudellen Softwarelösung</SubHeadline>
+              <Spacing type='content' />
               {projectListArray.map(({ content, headline }, key) => {
                 return (
                   <ProjectText headline={headline} position={key + 1} key={'projectText' + key}>
@@ -66,11 +72,20 @@ export const ProjectList = () => {
             </div>
           </div>
         </div>
+        <div className='md:hidden px-10'>
+          <Headline tag='h2'>Unsere Projekte</Headline>
+          <SubHeadline>Von Wordpress bis hinzu einer indivudellen Softwarelösung</SubHeadline>
+          <Spacing type='content' />
+        </div>
         <div
           id='right'
           className='w-full md:w-1/2 transition-all duration-300 ease-in '
           style={{ background: state.color }}
         >
+          <div className='hidden md:block'>
+            <Headline tag='h2'>Unsere Projekte</Headline>
+            <SubHeadline>Von Wordpress bis hinzu einer indivudellen Softwarelösung</SubHeadline>
+          </div>
           {projectListArray.map(({ headline, content, backgroundColor, imgSrc }, key) => {
             return (
               <ProjectItem

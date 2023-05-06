@@ -35,11 +35,11 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
   }, [inView]);
 
   return (
-    <a className='block group min-h-[100vh]'>
+    <a className='block group my-24'>
       <div id='test' className='relative min-h-[80vh]'>
         <div id='inner' className='flex items-center justify-items-center absolute w-full h-full inset-0 min-h-[80vh]'>
           <div className='relative flex flex-col'>
-            <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-white'>{headline}</h1>
+            <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-white mb-8'>{headline}</h1>
             <div className='relative'>
               <div id='item_screen' className='items-center flex flex-col justify-items-center relative w-full'>
                 <img
