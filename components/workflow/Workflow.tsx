@@ -2,10 +2,6 @@ import classNames from 'classnames';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Headline } from '../Headline';
-import { Call } from '../icons/Call';
-import { Notebook } from '../icons/Notebook';
-import { Optimization } from '../icons/Optimization';
-import { Strategie } from '../icons/Strategie';
 import { Spacing } from '../Spacing';
 import { SubHeadline } from '../SubHeadline';
 
@@ -96,7 +92,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
           <div className='flex items-center flex-col justify-start'>
             <Headline tag='h2'>Umsetzung</Headline>
             <div className='mt-4'>
-              <img width={200} {...{ src: './services/upload.svg' }} />
+              <img width={200} {...{ src: './services/app.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>

@@ -2,20 +2,19 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ProjectProvider } from '../components/project/ProjectProvider';
 import { ProjectList } from '../components/project/ProjectList';
-import { Services } from '../components/services/ServicesAlt';
+import { Services } from '../components/services/Services';
 import { Hero } from '../components/hero/Hero';
 import { TextImageSection } from '../components/text-image/TextImageSection';
 import { ContactForm } from '../components/form/ContactForm';
 import { ContactCTA } from '../components/callToActions/ContactCTA';
 import { Footer } from '../components/footer/Footer';
-import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
 import Slider from '../components/slider/SliderAlt';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
-import { TechstackAlt } from '../components/techstack/TechstackAlt';
+import { Techstack } from '../components/techstack/Techstack';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -109,7 +108,7 @@ const Home: NextPage = () => {
         <Done />
         <Workflow />
         <Services />
-        <TechstackAlt />
+        <Techstack />
         <Slider images={images} />
         <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>

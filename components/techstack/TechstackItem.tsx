@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
+import { Headline } from '../Headline';
 
 type ServiceItemsTypes = {
-  position: number;
-  hoveredPosition?: number;
   title: string;
   href: string;
   children: ReactNode;
@@ -12,11 +11,13 @@ type ServiceItemsTypes = {
   }[];
 };
 
-export const TechItem = ({ position, hoveredPosition, title, children, stack }: ServiceItemsTypes) => {
-  return hoveredPosition === position ? (
-    <div className={`z-0 w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
-      <div className={`p-4 md:p-6 rounded w-full md:w-[80%] flex flex-col gap-8 duration-200 bg-white`}>
-        <div className='flex text-2xl'>{title}</div>
+export const TechstackItem = ({ title, children, stack }: ServiceItemsTypes) => {
+  return (
+    <div className={`flex justify-center items-center`}>
+      <div className={`px-10 md:p-6 rounded w-full flex flex-col gap-8 duration-200 `}>
+        <div>
+          <Headline tag='h3'>{title}</Headline>
+        </div>
         <div>
           <div className='mb-8'>{children}</div>
           <div className='flex flex-wrap gap-4'>
@@ -30,5 +31,5 @@ export const TechItem = ({ position, hoveredPosition, title, children, stack }: 
         </div>
       </div>
     </div>
-  ) : null;
+  );
 };
