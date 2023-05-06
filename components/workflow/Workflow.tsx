@@ -40,7 +40,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
               Erstberatung
             </Headline>
             <div className='mt-4'>
-              <img width={200} {...{ src: './services/video.svg' }} />
+              <img width={200} {...{ src: './workflow/video.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -63,7 +63,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
           <div className='flex items-center flex-col justify-start'>
             <Headline tag='h2'>Strategie & Planung</Headline>
             <div className='mt-4'>
-              <img width={200} {...{ src: './services/meeting.svg' }} />
+              <img width={200} {...{ src: './workflow/meeting.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -92,7 +92,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
           <div className='flex items-center flex-col justify-start'>
             <Headline tag='h2'>Umsetzung</Headline>
             <div className='mt-4'>
-              <img width={200} {...{ src: './services/app.svg' }} />
+              <img width={200} {...{ src: './workflow/app.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -121,7 +121,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
           <div className='flex items-center flex-col justify-start'>
             <Headline tag='h2'>Betreuung & Optimierung</Headline>
             <div className='mt-4'>
-              <img width={200} {...{ src: './services/launch.svg' }} />
+              <img width={200} {...{ src: './workflow/launch.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>

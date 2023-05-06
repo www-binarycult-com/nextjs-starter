@@ -94,10 +94,10 @@ menu > div {
 .hero {
   background: radial-gradient(
     circle,
-    rgba(205, 179, 156, 1) 20%,
-    rgba(224, 171, 104, 1) 40%,
-    rgba(222, 151, 128, 1) 60%,
-    rgba(242, 153, 62, 1) 80%,
+    rgba(253, 222, 156, 1) 20%,
+    rgba(252, 214, 125, 1) 40%,
+    rgba(251, 207, 97, 1) 60%,
+    rgba(255, 242, 173, 1) 80%,
     rgba(181, 198, 212, 1) 100%
   );
   /* background: linear-gradient(-45deg, #CDB39C, #e73c7e, #23a6d5, #23d5ab); */
