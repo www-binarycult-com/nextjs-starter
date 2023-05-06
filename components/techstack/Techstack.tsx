@@ -59,9 +59,10 @@ export const Techstack = () => {
           <Spacing type='content' />
           <div className='pb-5'>
             <p>
-              As performance marketing experts and brand strategists, our custom services are designed to achieve every
-              brand’s goals and over-deliver on results. We are a full-service agency ready to partner up with you in
-              order to reach and exceed your expectations.
+              Ob Sie nun ein kleines Start-up oder ein etabliertes Unternehmen sind, unser Technologiestack ist
+              skalierbar und anpassungsfähig, um den Bedürfnissen Ihres Unternehmens gerecht zu werden. Sie setzen somit
+              auf die neuesten und besten Technologien um das Optimale aus Ihrer Webseite herauszuholen und Sorgenfrei
+              in die Zukunft zu blicken.
             </p>
             <br />
             <a className=' hover-underline-animation' href={'/#contact-form'}>
