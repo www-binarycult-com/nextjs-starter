@@ -81,7 +81,7 @@ export const ContactForm: React.FC = () => {
         <div>
           <button
             disabled={!accepted}
-            className={`bg-cta font-bold py-2 px-4 rounded ${!accepted ? 'opacity-50' : ''}`}
+            className={`bg-primary font-bold py-2 px-4 rounded ${!accepted ? 'opacity-50' : ''}`}
             type='submit'
           >
             Absenden

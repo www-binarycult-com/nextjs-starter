@@ -7,12 +7,13 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    colors: {
-      cta: '#FFFD54',
-      black: 'black',
-      white: 'white',
-    },
     extend: {
+      colors: {
+        primary: '#FFFD54',
+        secondary: 'black',
+        white: 'white',
+        black: 'black',
+      },
       backgroundImage: {
         'gradient-slider': 'linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
       },

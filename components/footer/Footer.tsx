@@ -4,7 +4,7 @@ import { Headline } from '../Headline';
 
 export const Footer = () => {
   return (
-    <footer className='bg-cta text-center p-10'>
+    <footer className='bg-primary text-center p-10'>
       <div className='mx-auto'>
         <div className='flex items-center justify-between flex-col'>
           <nav className='text-sm font-semibold'>
