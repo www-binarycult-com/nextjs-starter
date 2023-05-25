@@ -17,6 +17,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, oldPrice, newPrice, fe
           <div className='relative flex flex-col h-full bg-black rounded-lg shadow-lg p-5'>
             <header className='pb-4 mb-4 border-b border-indigo-200 border-opacity-30'>
               <h3 className='text-xl font-extrabold text-indigo-50 leading-snug mb-2'>{title}</h3>
+              <h3 className='text-xs font-extrabold text-indigo-50 leading-snug mb-2'>
+                Eklusives Angebot fur Neukunden
+              </h3>
 
               <div className='font-extrabold mb-1'>
                 <span className='text-lg text-red line-through'>{oldPrice} €</span>
