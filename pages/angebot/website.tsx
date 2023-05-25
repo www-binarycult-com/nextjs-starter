@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       {/* </Head> */}
       <main>
         <PricingCard
-          title='Website'
+          title='Websiteprogrammierung'
           oldPrice='1500'
           newPrice='750'
           features={['Responsive Design', 'Kein Template', 'Inklusive CMS', 'SEO Optimiert']}

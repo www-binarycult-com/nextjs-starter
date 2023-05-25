@@ -11,6 +11,20 @@ module.exports = {
       cta: '#FFFD54',
       black: 'black',
       white: 'white',
+      red: 'red',
+      gray: {
+        900: '#1F2937',
+        600: '#475569',
+      },
+      indigo: {
+        700: '#1E40AF',
+        200: '#BFDBFE',
+        50: '#EFF6FF',
+      },
+      green: {
+        500: '#10B981',
+        400: '#34D399',
+      },
     },
     extend: {
       backgroundImage: {
