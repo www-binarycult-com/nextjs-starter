@@ -79,7 +79,7 @@ export const ProjectList = () => {
         </div>
         <div
           id='right'
-          className='w-full md:w-1/2 transition-all duration-300 ease-in '
+          className='w-full md:w-1/2 transition-all duration-300 ease-in bg-black'
           style={{ background: state.color }}
         >
           <div className='hidden md:block'>

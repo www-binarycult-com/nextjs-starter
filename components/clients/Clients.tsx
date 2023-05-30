@@ -4,7 +4,9 @@ import { SubHeadline } from '../SubHeadline';
 import { Spacing } from '../Spacing';
 import { useInView } from 'react-intersection-observer';
 
-type SliderProps = { images: { src: string; href: string }[] };
+type ClientsImageTypes = { src: string; alt?: string; href?: string };
+
+type SliderProps = { images: ClientsImageTypes[] };
 
 const Clients = ({ images }: SliderProps) => {
   const { ref, inView } = useInView({
@@ -21,13 +23,23 @@ const Clients = ({ images }: SliderProps) => {
       <Spacing type='content' />
       <div
         ref={ref}
-        className={`flex flex-wrap flex gap-8 justify-center items-center opacity-0 ${inView ? 'animate-fadeIn' : ''}`}
+        className={`flex flex-wrap flex gap-16 md:gap-32 justify-center items-center opacity-0 ${
+          inView ? 'animate-fadeIn' : ''
+        }`}
       >
         {images.map((image, key) => (
-          <Image key={key} width={100} height={100} src={image.src} alt='client logo' />
+          <ClientsImage src={image.src} alt={image.alt} key={key} />
         ))}
       </div>
     </div>
+  );
+};
+
+const ClientsImage = ({ src, alt, href }: ClientsImageTypes) => {
+  return (
+    <a className='grayscale  hover:grayscale-0' href={href}>
+      <Image alt={alt || 'client logo'} width={100} height={100} src={src} />
+    </a>
   );
 };
 
