@@ -49,7 +49,7 @@ export const TextImageSection = ({
       <div ref={ref} className={flex}>
         <div className={textWidth}>{children}</div>
         {image && (
-          <div className='md:w-1/3 w-full'>
+          <div className='md:w-1/3 w-full flex p-0 xl:px-8'>
             <img className={img} {...image} />
           </div>
         )}
