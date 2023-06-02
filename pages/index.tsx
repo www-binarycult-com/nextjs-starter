@@ -8,13 +8,13 @@ import { TextImageSection } from '../components/text-image/TextImageSection';
 import { ContactForm } from '../components/form/ContactForm';
 import { ContactCTA } from '../components/callToActions/ContactCTA';
 import { Footer } from '../components/footer/Footer';
-import { TechStack } from '../components/techstack/Techstack';
 import { LinkCTA } from '../components/callToActions/LinkCTA';
 import CookieBanner from '../components/cookieConsent/CookieBanner';
 import { Spacing } from '../components/Spacing';
-import Slider from '../components/slider/Slider';
+import Clients from '../components/clients/Clients';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
+import { Techstack } from '../components/techstack/Techstack';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -27,8 +27,6 @@ const images = [
   { href: '/', src: '/clients/change-mediated.png' },
   { href: '/', src: '/clients/oralchirurgie.png' },
   { href: '/', src: '/clients/logo_cleanin.png' },
-  { href: '/', src: '/clients/spax.png' },
-  { href: '/', src: '/clients/wt.jpg' },
 ];
 
 const Home: NextPage = () => {
@@ -71,7 +69,6 @@ const Home: NextPage = () => {
             <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
           </>
         </TextImageSection>
-        <ContactCTA />
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
@@ -107,11 +104,12 @@ const Home: NextPage = () => {
             <br />
           </>
         </TextImageSection>
+        <ContactCTA />
         <Done />
         <Workflow />
         <Services />
-        <Slider images={images} />
-        <TechStack />
+        <Techstack />
+        <Clients images={images} />
         <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
@@ -128,6 +126,9 @@ const Home: NextPage = () => {
               eine E-Mail an <br />
             </p>
             <LinkCTA href=''>info@immajung.de</LinkCTA>. Wir freuen uns darauf, von Ihnen zu hören.
+            <div className='flex'>
+              <img className='pt-16' width={300} {...{ src: './contact.svg' }} />
+            </div>
           </div>
         </div>
       </main>

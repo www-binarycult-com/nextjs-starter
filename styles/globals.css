@@ -42,7 +42,6 @@ html{
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
 }
 
 .hover-underline-animation:after {
@@ -95,16 +94,18 @@ menu > div {
 .hero {
   background: radial-gradient(
     circle,
-    rgba(205, 179, 156, 1) 20%,
-    rgba(224, 171, 104, 1) 40%,
-    rgba(222, 151, 128, 1) 60%,
-    rgba(242, 153, 62, 1) 80%,
+    rgba(253, 222, 156, 1) 20%,
+    rgba(252, 214, 125, 1) 40%,
+    rgba(251, 207, 97, 1) 60%,
+    rgba(255, 242, 173, 1) 80%,
     rgba(181, 198, 212, 1) 100%
   );
   /* background: linear-gradient(-45deg, #CDB39C, #e73c7e, #23a6d5, #23d5ab); */
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
+.vertical-timeline-element-date {
+  font-size: 1rem !important; }
 
 @keyframes gradient {
   0% {
@@ -116,4 +117,52 @@ menu > div {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+
+ .ctaButton {
+  display: block;
+  border-radius: 2px;
+  background: transparent;
+  width: fit-content;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top:4px;
+  padding-bottom:4px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.ctaButtonSpan {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaButton:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FFFD54;
+  transition: all .35s;
+}
+
+.ctaButton:hover{
+  color: black;
+}
+
+
+.ctaButton:hover:after{
+  width: 100%;
+}
+
+.ctaButton:disabled {
+  pointer-events: none;
 }

@@ -2,10 +2,6 @@ import classNames from 'classnames';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Headline } from '../Headline';
-import { Call } from '../icons/Call';
-import { Notebook } from '../icons/Notebook';
-import { Optimization } from '../icons/Optimization';
-import { Strategie } from '../icons/Strategie';
 import { Spacing } from '../Spacing';
 import { SubHeadline } from '../SubHeadline';
 
@@ -18,7 +14,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
 
   return (
     <div className={container}>
-      <Headline>Our Workflow</Headline>
+      <Headline tag='h2'>Our Workflow</Headline>
       <SubHeadline>Unsere 4-Stufen-Methode für Ihr Projekt.</SubHeadline>
       <Spacing type='content' />
       <VerticalTimeline lineColor='black'>
@@ -40,11 +36,13 @@ export const Workflow = ({ className }: ITextImageSection) => {
           icon={<h3 className='text-3xl'>01</h3>}
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline hasSpacing={false} tag='h2'>
-              Erstberatung
-            </Headline>
+            <div>
+              <Headline hasSpacing={false} tag='h2'>
+                Erstberatung
+              </Headline>
+            </div>
             <div className='mt-4'>
-              <Call />
+              <img width={200} {...{ src: './workflow/video.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -65,9 +63,11 @@ export const Workflow = ({ className }: ITextImageSection) => {
           erschaffen Ihre digitale Visitenkarte und erarbeiten den Grundaufbau Ihrer Website.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Strategie & Planung</Headline>
+            <div>
+              <Headline tag='h2'>Strategie & Planung</Headline>
+            </div>
             <div className='mt-4'>
-              <Strategie />
+              <img width={200} {...{ src: './workflow/meeting.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -94,9 +94,11 @@ export const Workflow = ({ className }: ITextImageSection) => {
           Abstimmungswege in den Entwicklungsprozess ein und schaffen Transparenz.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Umsetzung</Headline>
+            <div>
+              <Headline tag='h2'>Umsetzung</Headline>
+            </div>
             <div className='mt-4'>
-              <Notebook />
+              <img width={200} {...{ src: './workflow/app.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>
@@ -123,9 +125,11 @@ export const Workflow = ({ className }: ITextImageSection) => {
           für Ihr Unternehmen an.'
         >
           <div className='flex items-center flex-col justify-start'>
-            <Headline tag='h2'>Betreuung & Optimierung</Headline>
+            <div>
+              <Headline tag='h2'>Betreuung & Optimierung</Headline>
+            </div>
             <div className='mt-4'>
-              <Optimization />
+              <img width={200} {...{ src: './workflow/launch.svg' }} />
             </div>
           </div>
         </VerticalTimelineElement>

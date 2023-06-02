@@ -1,26 +1,33 @@
 import { ReactNode } from 'react';
-import JSXStyle from 'styled-jsx/style';
+import { Headline } from '../Headline';
+import { useInView } from 'react-intersection-observer';
+import { animated } from 'react-spring';
 
 type ServiceItemsTypes = {
-  position: number;
-  hoveredPosition?: number;
   title: string;
   href: string;
   children: ReactNode;
+  animation?: string;
+  inView: boolean;
 };
 
-export const ServicesItem = ({ position, hoveredPosition, title, children, href }: ServiceItemsTypes) => {
-  return hoveredPosition === position ? (
-    <div className={`z-0  rounded w-full flex justify-center items-center transition-opacity animate-fadeIn`}>
-      <div className={`p-4 md:p-8 w-full md:w-[60%] bg-white flex flex-col  gap-8 duration-200`}>
-        <div className='flex text-2xl'>{title}</div>
+export const ServicesItem = ({ title, children, href, animation, inView }: ServiceItemsTypes) => {
+  return (
+    <div className={`flex opacity-0 justify-center  ${inView ? animation : ''}`}>
+      <div className={`flex flex-col gap-5 duration-200`}>
         <div>
-          <div className='mb-8'>{children}</div>
-          <a className='text-white hover-underline-animation' href={'/#contact-form'}>
-            Mehr Erfahren
+          <Headline hasSpacing={false} tag='h3'>
+            {title}
+          </Headline>
+        </div>
+        <div>
+          <p>{children}</p>
+          <br />
+          <a className=' hover-underline-animation' href={'/#contact-form'}>
+            <b>Mehr Erfahren</b>
           </a>
         </div>
       </div>
     </div>
-  ) : null;
+  );
 };

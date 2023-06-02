@@ -6,7 +6,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const burgerClassNames = classNames('fixed space-y-2 z-50', isOpen ? 'menu-open' : 'menu-closed');
   const menuClassNames = classNames(
-    'fixed bg-cta w-full h-screen top-0 left-0 z-40 flex justify-center items-center',
+    'fixed bg-primary w-full h-screen top-0 left-0 z-40 flex justify-center items-center',
     isOpen ? 'opacity-100' : 'opacity-0 hidden'
   );
   return (
