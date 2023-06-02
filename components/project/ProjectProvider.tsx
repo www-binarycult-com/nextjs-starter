@@ -7,7 +7,7 @@ type CountProviderProps = { children: React.ReactNode };
 const ProjectContext = React.createContext<{ state: State; changeConfig: Dispatch } | undefined>(undefined);
 
 function ProjectProvider({ children }: CountProviderProps) {
-  const [config, setConfig] = React.useState<State>({ color: '#1F132C', position: 0, prevPosition: 0 });
+  const [config, setConfig] = React.useState<State>({ color: 'black', position: 0, prevPosition: 0 });
   // NOTE: you *might* need to memoize this value
   // Learn more in http://kcd.im/optimize-context
 

@@ -118,3 +118,51 @@ menu > div {
     background-position: 0% 50%;
   }
 }
+
+
+
+ .ctaButton {
+  display: block;
+  border-radius: 2px;
+  background: transparent;
+  width: fit-content;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top:4px;
+  padding-bottom:4px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.ctaButtonSpan {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaButton:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FFFD54;
+  transition: all .35s;
+}
+
+.ctaButton:hover{
+  color: black;
+}
+
+
+.ctaButton:hover:after{
+  width: 100%;
+}
+
+.ctaButton:disabled {
+  pointer-events: none;
+}

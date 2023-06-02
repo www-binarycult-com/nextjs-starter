@@ -3,6 +3,7 @@ import { Spacing } from '../Spacing';
 import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { LinkCTA } from '../callToActions/LinkCTA';
+import { Button } from '../button/Button';
 
 export const ContactForm: React.FC = () => {
   const [name, setName] = useState('');
@@ -79,13 +80,9 @@ export const ContactForm: React.FC = () => {
           </label>
         </div>
         <div>
-          <button
-            disabled={!accepted}
-            className={`bg-primary font-bold py-2 px-4 rounded ${!accepted ? 'opacity-50' : ''}`}
-            type='submit'
-          >
+          <Button disabled={!accepted} className={`${!accepted ? 'opacity-50' : ''}`} type='submit'>
             Absenden
-          </button>
+          </Button>
         </div>
       </form>
     </div>
