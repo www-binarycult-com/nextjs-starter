@@ -10,7 +10,7 @@ export const Hero = () => {
           <div className='flex justify-between'>
             <div>
               <Link href='/'>
-                <Headline tag='h5'>{'<immajung />'}</Headline>
+                <h5>{String('<immajung />')}</h5>
               </Link>
             </div>
             <div className='mt-8 md:mr-8'>

@@ -71,7 +71,9 @@ export const Productbox = () => {
           Eigene Bearbeitung der Webseite
         </li>
       </ul>
-      <p className='mb-6 text-center'>Domain & Hosting 12 geschenkt</p>
+      <p className='mb-6 text-center'>
+        Domain & Hosting <span className='underline decoration-primary decoration-4'>12 Monate</span> geschenkt
+      </p>
       <div className='flex justify-center'>
         <Button>Kontaktieren</Button>
       </div>
