@@ -9,6 +9,12 @@
     font-weight: 400;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Miriam Libre';
+    src: url('/fonts/MiriamLibre-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 }
 
 @keyframes leftright {
@@ -165,4 +171,8 @@ menu > div {
 
 .ctaButton:disabled {
   pointer-events: none;
+}
+
+.bw-saturation {
+  filter: grayscale(100%) saturate(65%);
 }

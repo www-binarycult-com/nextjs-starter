@@ -5,28 +5,21 @@ import { Productbox } from '../productbox/Productbox';
 
 export const LandingpageHero = () => {
   return (
-    <>
-      <div className='relative h-[100vh] hero'>
-        <div className='p-10 container m-auto'>
-          <div className='flex justify-between'>
-            <div>
-              <Link href='/'>
-                <Headline tag='h5'>{'<immajung />'}</Headline>
-              </Link>
-            </div>
-            <div className='mt-8 md:mr-8'>
-              <Navigation />
+    <div className='bg-landingpage-hero bg-cover bg-center '>
+      <div className='container m-auto gap-16'>
+        <div className='py-32 flex'>
+          <div className='flex flex-col '>
+            <h1 className='text-6xl uppercase text-white mb-8'>Die Webseite für dein Business</h1>
+            <p className='text-6xl uppercase text-primary'>Jetzt erstellen lassen</p>
+            <div className='flex justify-end'>
+              <img className='rotate-90' width={250} src='/landingpage/arrow.svg' />
             </div>
           </div>
-          <div className='mt-16 md:mt-32'>
-            <h1 className='font-bold text-5xl md:text-8xl'>immajung</h1>
-            <h2 className='text-2xl mt-10 md:text-4xl:'>
-              Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
-            </h2>
+          <div>
+            <Productbox />
           </div>
         </div>
       </div>
-      <Productbox />
-    </>
+    </div>
   );
 };

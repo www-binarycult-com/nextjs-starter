@@ -1,7 +1,9 @@
 import classNames from 'classnames';
 import React, { ButtonHTMLAttributes } from 'react';
 
-export const Button = ({ children, className, ...props }: ButtonHTMLAttributes<HTMLButtonElement>) => {
+type ButtonProps = { size?: 'cta' | 'landingCta' } & ButtonHTMLAttributes<HTMLButtonElement>;
+
+export const Button = ({ children, className, size = 'cta', ...props }: ButtonProps) => {
   const classes = classNames(className, 'ctaButton');
   return (
     <button className={classes} {...props}>
