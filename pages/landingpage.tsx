@@ -6,6 +6,7 @@ import ContactForm from '../components/form/ContactForm';
 import { Spacing } from '../components/Spacing';
 import { Advantages } from '../components/Landingpage/Advantages';
 import { TextImageList } from '../components/Landingpage/TextImageList';
+import { Cta } from '../components/Landingpage/Cta';
 
 const items = [
   {
@@ -53,6 +54,7 @@ const Landingpage: NextPage = () => {
         </div>
         <Advantages />
         <TextImageList heading="So Funktioniert's" subheading='Schritt für Schritt zu Ihrem Erfolg' items={items} />
+        <Cta />
       </main>
       <Footer />
     </div>

@@ -17,6 +17,7 @@ module.exports = {
       backgroundImage: {
         'gradient-slider': 'linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
         'landingpage-hero': "url('/landingpage/hero.png')",
+        'landingpage-cta': "url('/landingpage/office.png')",
       },
       fontWeight: { bold: '500' },
       fontFamily: { miriamLibre: 'Miriam Libre' },

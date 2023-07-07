@@ -4,7 +4,7 @@ import React, { ButtonHTMLAttributes } from 'react';
 type ButtonProps = { size?: 'cta' | 'landingCta' } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({ children, className, size = 'cta', ...props }: ButtonProps) => {
-  const classes = classNames(className, 'ctaButton');
+  const classes = classNames('ctaButton transparent', className);
   return (
     <button className={classes} {...props}>
       <span className='ctaButtonSpan'>{children}</span>
