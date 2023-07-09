@@ -6,23 +6,38 @@ import { SubHeadline } from '../SubHeadline';
 const faqs = [
   {
     id: 1,
-    header: 'What is Lorem Ipsum?',
-    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    header: 'Wie schafft ihr das, dass die Website jedem gefällt',
+    text: 'Bei Immajung erstellen wir jede Website individuell nach Maß. Kein Baukasten - Kreativität pur. Dabei profitieren Sie von unserer Erfahrung aus über 500 realisierten Projekten und unseren intelligenten Prozessen. Deshalb besprechen wir im Vorfeld ganz genau, welche Vorstellungen Sie an das Design und die Funktionalität Ihrer Website haben. Unser Ziel ist es dabei, Sie von Beginn an so weit wie möglich zu entlasten. Unsere Webdesigner entwerfen dann die Website nach Ihren Wünschen und unseren kreativen Ideen. ',
   },
   {
     id: 2,
-    header: 'Where does it come from?',
-    text: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. `,
+    header: 'Kann ich nach Erhalt des Entwurfs Anpassungen vornehmen lassen?',
+    text: 'Die von uns erstellten Website-Designs entsprechen in der Regel direkt dem Geschmack unserer Kunden. Dies erreichen wir zum einen durch unsere jahrelange Erfahrung  und zum anderen durch unsere intelligenten Prozesse. Dazu gehört auch der Feedback-Prozess, falls Sie Änderungen wünschen. Hierfür haben wir eigens unser Feedback-Tool entwickelt, mit dem Sie innerhalb weniger Minuten direkt auf der Website Ihr Feedback hinterlassen können. Ihr Webdesigner übernimmt dann unkompliziert die Änderungen für Sie.',
   },
   {
     id: 3,
-    header: 'Why do we use it?',
-    text: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,`,
+    header: 'Kann ich meine aktuelle Domain behalten?',
+    text: 'Selbstverständlich können Sie Ihre bisherige Domain weiter verwenden. Wir übernehmen entweder den Umzug für Sie oder stellen eine Verbindung von Ihrem bisherigen Provider zu Ihrer Website her. Ein Full-Service, der auch Sie begeistern wird.',
   },
   {
     id: 4,
-    header: 'Where can I get some?',
-    text: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
+    header: 'Entstehen weitere Kosten?',
+    text: 'Nein, die Investition von 799€ netto beinhaltet die komplette Erstellung Ihrer Website. Domain & Hosting sind auf Wunsch für 12 Monate inklusive. Dabei nutzen Sie unsere schnellen und CO2-neutralen Server, welche sich ausschließlich in Deutschland befinden. Nach den 12 Monaten profitieren Sie von den Immajung Sonderkonditionen. Für nur 19,99€ im Monat erhalten Sie Ihre Website und weiterhin folgende Vorteile: Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal. Dort können Sie Statistiken einsehen, Ihre Website bearbeiten und vieles mehr.',
+  },
+  {
+    id: 5,
+    header: 'Was bedeutet die Geld zurück Gerantie ?',
+    text: 'Immajung ist für Hunderte von Kunden die Nummer 1 im Website-Dschungel. Nicht umsonst wurden wir mit dem German Web Award als beste Webagentur im Bereich Kundenservice und Design ausgezeichnet. Das werden wir auch Ihnen beweisen. Sollten Sie wider Erwarten mit dem Aussehen des erstellten 1. Entwurfs nicht zufrieden sein und keine Änderungen gewünscht haben, erhalten Sie Ihr Geld zurück.',
+  },
+  {
+    id: 6,
+    header: 'Wie lange dauert die Erstellung?',
+    text: 'Dank unseres engagierten Teams sind wir schnell. Wie schnell? Im Durchschnitt benötigen wir nur ca. 14 Tage bis zur Online Stellung. Die genaue Bearbeitungszeit hängt dabei vom Aufwand ab. In einem persönlichen Gespräch können wir Ihnen das ganz genau sagen.',
+  },
+  {
+    id: 7,
+    header: 'Gibt es weitere optinale Dienstleistungen ?',
+    text: 'Profitieren Sie auch von weiteren Dienstleistungen - zum besten Preis-Leistungs-Verhältnis auf dem Markt. Wie zum Beispiel: Logoerstellung, Texterstellung, Online Marketing, SEO-Optimierung, Google My Business, Social Media.',
   },
 ];
 
