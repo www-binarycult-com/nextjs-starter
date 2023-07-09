@@ -8,6 +8,9 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      transitionProperty: {
+        height: 'height',
+      },
       colors: {
         primary: '#FFFD54',
         secondary: 'black',

@@ -7,6 +7,7 @@ import { Spacing } from '../components/Spacing';
 import { Advantages } from '../components/Landingpage/Advantages';
 import { TextImageList } from '../components/Landingpage/TextImageList';
 import { Cta } from '../components/Landingpage/Cta';
+import { Accordion } from '../components/Landingpage/Accordion';
 
 const items = [
   {
@@ -55,6 +56,7 @@ const Landingpage: NextPage = () => {
         <Advantages />
         <TextImageList heading="So Funktioniert's" subheading='Schritt für Schritt zu Ihrem Erfolg' items={items} />
         <Cta />
+        <Accordion />
       </main>
       <Footer />
     </div>
