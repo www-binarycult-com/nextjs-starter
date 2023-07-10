@@ -82,10 +82,6 @@ export const ProjectList = () => {
           className='w-full md:w-1/2 transition-all duration-300 ease-in bg-black'
           style={{ background: state.color }}
         >
-          <div className='hidden md:block'>
-            <Headline tag='h2'>Unsere Projekte</Headline>
-            <SubHeadline>Von Wordpress bis hinzu einer indivudellen Softwarelösung</SubHeadline>
-          </div>
           {projectListArray.map(({ headline, content, backgroundColor, imgSrc }, key) => {
             return (
               <ProjectItem

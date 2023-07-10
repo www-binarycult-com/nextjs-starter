@@ -128,7 +128,9 @@ menu > div {
 
 
  .ctaButton {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px;
   width: fit-content;
   padding-left: 16px;
@@ -158,6 +160,7 @@ menu > div {
   background: #FFFD54;
   transition: all .35s;
 }
+
 
 .ctaButton:hover{
   color: black;

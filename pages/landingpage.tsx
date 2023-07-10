@@ -42,7 +42,7 @@ const Landingpage: NextPage = () => {
         <LandingpageHero />
         <div id='contact-form' className='flex flex-col md:flex-row container m-auto'>
           <div className='w-full md:w-2/3 '>
-            <ContactForm />
+            <ContactForm classNameButton='uppercase bg-primary after:bg-white h-10' />
           </div>
           <div className='w-full p-10 md:w-1/3'>
             <div className='hidden md:block'>

@@ -75,7 +75,9 @@ export const Productbox = () => {
         Domain & Hosting <span className='underline decoration-primary decoration-4'>12 Monate</span> geschenkt
       </p>
       <div className='flex justify-center'>
-        <Button>Kontaktieren</Button>
+        <Button className='uppercase bg-primary after:bg-white h-12' asButton={false} href='#contact'>
+          Kontaktieren
+        </Button>
       </div>
     </div>
   );

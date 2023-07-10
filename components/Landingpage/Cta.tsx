@@ -13,8 +13,9 @@ export const Cta = () => {
           doch diese überzeugt oft so gut wie keine Kunden. Wir erstellen Ihnen eine moderne Website, mit denen Sie sich
           von Ihren Mitbewerbern abheben.
         </p>
-
-        <Button className='uppercase bg-white'>Kontaktiere uns</Button>
+        <Button className='uppercase bg-primary after:bg-white h-12' asButton={false} href='#contact'>
+          Kontaktiere uns
+        </Button>
       </div>
     </div>
   );
