@@ -45,7 +45,12 @@ export const TextImageItem = ({ reversedOrder, headline, text, list, image }: IT
         <p>{text}</p>
         <ul>
           {list.map((element, key) => (
-            <li key={key}>{element}</li>
+            <li key={key} className='flex gap-2 pt-2'>
+              <span>
+                <img width={16} src='landingpage/check.svg' />
+              </span>
+              {element}
+            </li>
           ))}
         </ul>
       </div>

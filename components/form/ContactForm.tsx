@@ -52,7 +52,7 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
             Nachricht:
           </label>
           <textarea
-            className='border rounded py-2 px-3 w-full'
+            className='border rounded py-2 px-3 w-full h-48'
             id='message'
             name='message'
             value={message}

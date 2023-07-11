@@ -4,52 +4,40 @@ import { Headline } from '../Headline';
 
 export const Footer = () => {
   return (
-    <footer className='bg-primary text-center p-10'>
-      <div className='mx-auto'>
-        <div className='flex items-center justify-between flex-col'>
+    <footer className='bg-black border-t-2 border-solid border-black mt-16'>
+      <div className='p-10 container m-auto flex gap-8 md:flex-row flex-col-reverse'>
+        <div className='md:w-1/2 w-full'>
+          <h3 className='text-white text-2xl animate-pulse'>immajung</h3>
+          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
+            Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
+          </p>
+          <p className='text-sm mt-4'>Copyright 2023, immajung</p>
+        </div>
+        <div className='md:w-1/2 w-full flex items-center justify-center flex-col'>
           <nav className='text-sm font-semibold'>
-            <ul className='flex items-center'>
+            <ul className='flex items-center gap-4 flex-wrap'>
               <li className='mr-3'>
-                <Link
-                  href='/'
-                  className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
-                >
-                  Home
+                <Link href='/'>
+                  <span className='hover-underline-animation text-white '>Kostenlose Erstberatung</span>
                 </Link>
               </li>
               <li className='mr-3'>
-                <Link
-                  href='/dsgvo'
-                  className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
-                >
-                  Datenschutz
+                <Link href='/dsgvo'>
+                  <span className='hover-underline-animation text-white '>Datenschutz</span>
                 </Link>
               </li>
               <li className='mr-3'>
-                <Link
-                  href='/impressum'
-                  className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
-                >
-                  Impressum
+                <Link href='/impressum'>
+                  <span className='hover-underline-animation text-white '>Impressum</span>
                 </Link>
               </li>
               <li className='mr-3'>
-                <Link
-                  href='/#contact-form'
-                  className='text-gray-700 hover:text-gray-900 focus:outline-none focus:underline transition duration-150 ease-in-out'
-                >
-                  Kontakt
+                <Link href='/#contact-form'>
+                  <span className='hover-underline-animation text-white '>Kontakt</span>
                 </Link>
               </li>
             </ul>
           </nav>
-        </div>
-        <div className='mt-8'>
-          <Headline>immajung</Headline>
-          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
-            Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
-          </p>
-          <p className='text-sm mt-24'>Copyright 2023, immajung</p>
         </div>
       </div>
     </footer>
