@@ -8,25 +8,30 @@ import { Advantages } from '../components/Landingpage/Advantages';
 import { TextImageList } from '../components/Landingpage/TextImageList';
 import { Cta } from '../components/Landingpage/Cta';
 import { Accordion } from '../components/Landingpage/Accordion';
+import { Button } from '../components/button/Button';
 
 const items = [
   {
-    headline: '1. Wir beraten Sie',
-    text: 'Durch die Kontaktaufnahme sichern Sie sich unverbindlich das aktuelle Top-Angebot. In einem persönlichen 1. Gespräch besprechen wir Ihre Wünsche und Vorstellungen.',
+    headline: '1. Wir begleiten Sie durch den Prozess',
+    text: 'Bei uns steht Ihr Projekt an erster Stelle. Nehmen Sie unverbindlich Kontakt auf und sichern Sie sich unser exklusives Angebot. Wir besprechen Ihre Ideen und Wünsche im Detail während eines persönlichen Gesprächs.',
     image: '/landingpage/code.svg',
-    list: ['Experten als Ansprechpartner', 'Unkompliziert und Verständlich', 'indivudell und schnell'],
+    list: ['Direkter Kontakt zu Experten', 'Einfache und verständliche Beratung', 'Schnelle und individuelle Lösungen'],
   },
   {
-    headline: '2. Wir erstellen ihre Webseite',
-    text: 'Ihr ganz persönlicher Webdesigner beginnt, auf Basis Ihrer Wünsche, Ihre individuelle neue Website raketenschnell zu erstellen. Modernste Website Designs auf Sie und Ihr Business abgestimmt.',
+    headline: '2. Erstellung Ihrer maßgeschneiderten Webseite',
+    text: 'Ihr persönlicher Webdesigner verwandelt Ihre Vision in eine moderne, maßgeschneiderte Website, die genau auf Ihre Bedürfnisse und Ihr Geschäft zugeschnitten ist. Erleben Sie Geschwindigkeit und Design auf einem neuen Niveau.',
     image: '/landingpage/new.svg',
-    list: ['Upload ihrer Dateien', 'Ihre Vorstellung unsere Umsetzung', 'Support zu jeder Zeit'],
+    list: ['Problemloses Hochladen Ihrer Dateien', 'Ihre Ideen sind unsere Blaupause', 'Support zu jeder Zeit'],
   },
   {
-    headline: '3. Die letzten Kleinigkeiten',
-    text: 'Gemeinsam veredeln wir Ihre Website und geben ihr den letzten, optimalen Schliff. Im Anschluss kümmern wir uns für Sie um die komplette Abwicklung und Onlinestellung Ihrer neuen Traumwebsite.',
+    headline: '3. Die Feinarbeit und Fertigstellung',
+    text: 'Zusammen verfeinern wir Ihre Website und geben ihr den letzten, perfekten Schliff. Nach der Fertigstellung kümmern wir uns um die gesamte Abwicklung und die Online-Schaltung Ihrer neuen Traumwebsite.',
     image: '/landingpage/virtual.svg',
-    list: ['Webseitenvorschau', 'Domain, Hosting & E-Mails inklusive', 'CMS zur Pflege Ihrer Website'],
+    list: [
+      'Vorab Webseitenansicht',
+      'Domain, Hosting & E-Mails inklusive',
+      'CMS für einfache Pflege und Aktualisierungen Ihrer Website',
+    ],
   },
 ];
 
@@ -57,6 +62,16 @@ const Landingpage: NextPage = () => {
         <TextImageList heading="So Funktioniert's" subheading='Schritt für Schritt zu Ihrem Erfolg' items={items} />
         <Cta />
         <Accordion />
+        <Spacing type='section' />
+        <div className='container m-auto'>
+          <Button
+            className='animate-bounce uppercase bg-primary after:bg-white h-12 w-full m-auto'
+            asButton={false}
+            href='#contact'
+          >
+            Kontaktiere uns
+          </Button>
+        </div>
       </main>
       <Footer />
     </div>

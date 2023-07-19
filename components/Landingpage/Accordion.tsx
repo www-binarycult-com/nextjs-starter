@@ -6,38 +6,38 @@ import { SubHeadline } from '../SubHeadline';
 const faqs = [
   {
     id: 1,
-    header: 'Wie schafft ihr das, dass die Website jedem gefällt',
-    text: 'Bei Immajung erstellen wir jede Website individuell nach Maß. Kein Baukasten - Kreativität pur. Dabei profitieren Sie von unserer Erfahrung aus über 500 realisierten Projekten und unseren intelligenten Prozessen. Deshalb besprechen wir im Vorfeld ganz genau, welche Vorstellungen Sie an das Design und die Funktionalität Ihrer Website haben. Unser Ziel ist es dabei, Sie von Beginn an so weit wie möglich zu entlasten. Unsere Webdesigner entwerfen dann die Website nach Ihren Wünschen und unseren kreativen Ideen. ',
+    header: 'Wie gewährleisten wir eine Website, die alle begeistert?',
+    text: 'Bei Immajung kreieren wir maßgeschneiderte Websites - keine vorgefertigten Bausteine, reine Kreativität. Sie profitieren von unserer Expertise aus über 500 Projekten und unseren innovativen Prozessen. Wir arbeiten eng mit Ihnen zusammen, um Ihre Erwartungen an Design und Funktion zu erfüllen und übernehmen den Großteil der Arbeit. Ihr Wunsch trifft auf unsere Kreativität - ein unschlagbares Team.',
   },
   {
     id: 2,
-    header: 'Kann ich nach Erhalt des Entwurfs Anpassungen vornehmen lassen?',
-    text: 'Die von uns erstellten Website-Designs entsprechen in der Regel direkt dem Geschmack unserer Kunden. Dies erreichen wir zum einen durch unsere jahrelange Erfahrung  und zum anderen durch unsere intelligenten Prozesse. Dazu gehört auch der Feedback-Prozess, falls Sie Änderungen wünschen. Hierfür haben wir eigens unser Feedback-Tool entwickelt, mit dem Sie innerhalb weniger Minuten direkt auf der Website Ihr Feedback hinterlassen können. Ihr Webdesigner übernimmt dann unkompliziert die Änderungen für Sie.',
+    header: 'Sind Änderungen nach Erhalt des Entwurfs möglich?',
+    text: 'Wir sind erst zufrieden, wenn Sie es sind. Daher ermöglicht unser Feedback-Tool schnelle und präzise Anpassungen an Ihrem Website-Design. Geben Sie Ihr Feedback direkt auf der Website und unser Webdesigner setzt Ihre Änderungswünsche problemlos um.',
   },
   {
     id: 3,
-    header: 'Kann ich meine aktuelle Domain behalten?',
-    text: 'Selbstverständlich können Sie Ihre bisherige Domain weiter verwenden. Wir übernehmen entweder den Umzug für Sie oder stellen eine Verbindung von Ihrem bisherigen Provider zu Ihrer Website her. Ein Full-Service, der auch Sie begeistern wird.',
+    header: 'Können Sie Ihre aktuelle Domain behalten?',
+    text: 'Selbstverständlich! Wir können Ihre bestehende Domain entweder umziehen oder eine Verbindung zu Ihrer neuen Website herstellen. Unser Rundum-Service ist darauf ausgelegt, Ihnen den Prozess so einfach wie möglich zu gestalten.',
   },
   {
     id: 4,
-    header: 'Entstehen weitere Kosten?',
-    text: 'Nein, die Investition von 799€ netto beinhaltet die komplette Erstellung Ihrer Website. Domain & Hosting sind auf Wunsch für 12 Monate inklusive. Dabei nutzen Sie unsere schnellen und CO2-neutralen Server, welche sich ausschließlich in Deutschland befinden. Nach den 12 Monaten profitieren Sie von den Immajung Sonderkonditionen. Für nur 19,99€ im Monat erhalten Sie Ihre Website und weiterhin folgende Vorteile: Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal. Dort können Sie Statistiken einsehen, Ihre Website bearbeiten und vieles mehr.',
+    header: 'Fallen zusätzliche Kosten an?',
+    text: 'Die Investition von 799€ netto umfasst die vollständige Erstellung Ihrer Website. Domain & Hosting sind für die ersten 12 Monate inklusive und nutzen unsere schnellen, CO2-neutralen Server in Deutschland. Danach bieten wir spezielle Konditionen für nur 19,99€ pro Monat, die Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal umfassen.',
   },
   {
     id: 5,
-    header: 'Was bedeutet die Geld zurück Gerantie ?',
-    text: 'Immajung ist für Hunderte von Kunden die Nummer 1 im Website-Dschungel. Nicht umsonst wurden wir mit dem German Web Award als beste Webagentur im Bereich Kundenservice und Design ausgezeichnet. Das werden wir auch Ihnen beweisen. Sollten Sie wider Erwarten mit dem Aussehen des erstellten 1. Entwurfs nicht zufrieden sein und keine Änderungen gewünscht haben, erhalten Sie Ihr Geld zurück.',
+    header: 'Was beinhaltet unsere Geld-zurück-Garantie?',
+    text: 'Wir sind überzeugt von unserer Arbeit und möchten, dass Sie es auch sind. Sollten Sie wider Erwarten mit dem ersten Entwurf unzufrieden sein und keine Änderungen wünschen, erhalten Sie Ihr Geld zurück. Es ist unser Anspruch, Ihre Nummer 1 im Website-Dschungel zu sein.',
   },
   {
     id: 6,
-    header: 'Wie lange dauert die Erstellung?',
-    text: 'Dank unseres engagierten Teams sind wir schnell. Wie schnell? Im Durchschnitt benötigen wir nur ca. 14 Tage bis zur Online Stellung. Die genaue Bearbeitungszeit hängt dabei vom Aufwand ab. In einem persönlichen Gespräch können wir Ihnen das ganz genau sagen.',
+    header: 'Wie lange dauert die Erstellung einer Website?',
+    text: 'Dank unseres engagierten Teams können wir Ihre Website in der Regel innerhalb von 14 Tagen online stellen. Die genaue Dauer hängt vom jeweiligen Aufwand ab. In einem persönlichen Gespräch können wir Ihnen genauere Details geben.',
   },
   {
     id: 7,
-    header: 'Gibt es weitere optinale Dienstleistungen ?',
-    text: 'Profitieren Sie auch von weiteren Dienstleistungen - zum besten Preis-Leistungs-Verhältnis auf dem Markt. Wie zum Beispiel: Logoerstellung, Texterstellung, Online Marketing, SEO-Optimierung, Google My Business, Social Media.',
+    header: 'Bieten wir weitere optionale Dienstleistungen?',
+    text: 'Nutzen Sie unseren erweiterten Service zu einem herausragenden Preis-Leistungs-Verhältnis. Zusätzliche Angebote umfassen Logoerstellung, Texterstellung, Online Marketing, SEO-Optimierung, Google My Business und Social Media Dienstleistungen.',
   },
 ];
 

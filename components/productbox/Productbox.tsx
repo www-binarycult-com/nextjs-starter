@@ -11,7 +11,7 @@ export const Productbox = () => {
       </div>
       <div className='flex flex-col'>
         <p className='text-gray-400'>nur:</p>
-        <p className='text-6xl text-center'>800€</p>
+        <p className='text-6xl text-center'>900€</p>
         <p className='text-gray-400'>exkl. Mwst.</p>
       </div>
       <div className='border rounded mt-2 xl:mt-4' />
@@ -39,6 +39,12 @@ export const Productbox = () => {
             <img width={16} src='landingpage/check.svg' />
           </span>
           Google Indexierung
+        </li>
+        <li className='flex gap-2 pt-2'>
+          <span>
+            <img width={16} src='landingpage/check.svg' />
+          </span>
+          SEO optimiert
         </li>
         <li className='flex gap-2 py-2'>
           <span>
