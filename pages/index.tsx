@@ -69,6 +69,10 @@ const Home: NextPage = () => {
             <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
           </>
         </TextImageSection>
+
+        <div className='flex container mx-auto mt-5 mb-5 justify-center'>
+          <img className='' width={800} {...{ src: './image_1.jpg' }} />
+        </div>
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
@@ -106,6 +110,9 @@ const Home: NextPage = () => {
         </TextImageSection>
         <ContactCTA />
         <Done />
+        <div className='flex container mx-auto mt-5 mb-5 justify-center'>
+          <img className='' width={800} {...{ src: './image_2.jpg' }} />
+        </div>
         <Workflow />
         <Services />
         <Techstack />
