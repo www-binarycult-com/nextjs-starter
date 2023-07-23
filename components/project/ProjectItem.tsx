@@ -38,18 +38,18 @@ export const ProjectItem = ({ position, imgSrc, svgSrc, headline, children }: Pr
       <div id='test' className='relative min-h-[80vh]'>
         <div id='inner' className='flex items-center justify-items-center absolute w-full h-full inset-0 min-h-[80vh]'>
           <div className='relative flex flex-col'>
-            <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-white mb-8'>{headline}</h1>
+            <h1 className='text-3xl md:text-4xl p-6 md:p-12 md:hidden text-black mb-8'>{headline}</h1>
             <div className='relative'>
               <div id='item_screen' className='items-center flex flex-col justify-items-center relative w-full'>
                 <img
                   ref={ref}
                   alt=''
                   src={imgSrc}
-                  className='rounded duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%]'
+                  className='rounded duration-700 transition-all max-w-[80%] group-hover:scale-110 md:max-h-[30vw] md:max-w-[70%] border solid border-gray-400 shadow-xl'
                 />
               </div>
             </div>
-            {<div className='relative p-6 md:p-12 md:hidden text-white'>{children}</div>}
+            {<div className='relative p-6 md:p-12  text-white'>{children}</div>}
           </div>
         </div>
       </div>

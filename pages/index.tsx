@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           heading='Hallo!'
           id='agency'
           subheading='Wir sind Ihr Partner für Web Development und mehr.'
-          image={{ src: './image_2.jpg' }}
+          image={{ src: './test.svg' }}
           className=' '
         >
           <>
