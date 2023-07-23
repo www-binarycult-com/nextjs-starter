@@ -15,6 +15,7 @@ import Clients from '../components/clients/Clients';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 import { Techstack } from '../components/techstack/Techstack';
+import { Cta } from '../components/Landingpage/Cta';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -85,6 +86,7 @@ const Home: NextPage = () => {
         <Done />
         <Workflow />
         <Services />
+        <Cta />
         <Techstack />
         <Clients images={images} />
         <div id='contact-form' className='flex flex-col md:flex-row container m-auto'>
