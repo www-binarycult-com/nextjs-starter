@@ -4,14 +4,14 @@ import { Headline } from '../Headline';
 
 export const Footer = () => {
   return (
-    <footer className='bg-black border-t-2 border-solid border-black mt-16'>
+    <footer className='bg-secondary border-t-2 border-solid border-black mt-16'>
       <div className='p-10 container m-auto flex gap-8 md:flex-row flex-col-reverse'>
         <div className='md:w-1/2 w-full'>
           <h3 className='text-white text-2xl animate-pulse'>immajung</h3>
-          <p className='mt-1 text-gray-500 text-xs font-medium tracking-wide'>
+          <p className='mt-1 text-tertiary text-xs font-medium tracking-wide'>
             Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
           </p>
-          <p className='text-sm mt-4'>Copyright 2023, immajung</p>
+          <p className='text-sm mt-4 text-white'>Copyright 2023, immajung</p>
         </div>
         <div className='md:w-1/2 w-full flex items-center justify-center flex-col'>
           <nav className='text-sm font-semibold'>

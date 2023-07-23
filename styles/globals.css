@@ -58,7 +58,7 @@ html{
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: yellow;
+  background-color: #FCA311;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -100,11 +100,11 @@ menu > div {
 .hero {
   background: radial-gradient(
     circle,
-    rgba(253, 222, 156, 1) 20%,
-    rgba(252, 214, 125, 1) 40%,
-    rgba(251, 207, 97, 1) 60%,
-    rgba(255, 242, 173, 1) 80%,
-    rgba(181, 198, 212, 1) 100%
+    rgba(255, 211, 155, 1) 20%,
+    rgba(255, 192, 111, 1) 40%,
+    rgba(255, 173, 67, 1) 60%,
+    rgba(255, 230, 128, 1) 80%,
+    rgba(227, 199, 168, 1) 100%
   );
   /* background: linear-gradient(-45deg, #CDB39C, #e73c7e, #23a6d5, #23d5ab); */
   background-size: 400% 400%;
@@ -157,7 +157,7 @@ menu > div {
   left: 0;
   width: 0;
   height: 100%;
-  background: #FFFD54;
+  background: #FCA311;
   transition: all .35s;
 }
 

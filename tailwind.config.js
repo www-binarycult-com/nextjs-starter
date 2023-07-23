@@ -12,13 +12,13 @@ module.exports = {
         height: 'height',
       },
       colors: {
-        primary: '#fff055',
-        secondary: 'black',
+        primary: '#FCA311',
+        secondary: '#14213D',
+        tertiary: '#E5E5E5',
         white: 'white',
         black: 'black',
       },
       backgroundImage: {
-        'gradient-slider': 'linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
         'landingpage-hero': "url('/landingpage/hero.png')",
         hero: "url('/image_1.png')",
         'landingpage-cta': "url('/landingpage/office.png')",

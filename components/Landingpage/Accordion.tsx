@@ -47,7 +47,7 @@ const AccordionItem = (props: any) => {
   const { header, id, text } = faq;
 
   return (
-    <div className='border-b-2 border-solid border-black'>
+    <div className='border-b-2 border-solid border-secondary'>
       <div>
         <div className={`flex items-start cursor-pointer justify-between py-4 pr-4 `} onClick={() => handleToggle(id)}>
           <h5 className=''>{header}</h5>

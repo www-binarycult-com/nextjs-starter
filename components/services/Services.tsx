@@ -19,7 +19,7 @@ export const Services = () => {
         <Spacing type='content' />
         {/* <ServicesBox position={position} /> */}
         <div className={`md:pt-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-5`}>
-          <ServicesItem inView={inView} animation='animate-fadeInLeft' href='' title='Technical SEO'>
+          <ServicesItem inView={inView} animation='animate-fadeInLeft' href='' title='Full Service'>
             Ganz gleich, ob Sie eine einfache Website zur Präsentation Ihres Unternehmens oder eine komplexere Plattform
             zur Unterstützung Ihrer Online-Aktivitäten benötigen, unser Expertenteam verfügt über die Fähigkeiten und
             die Erfahrung, um die von Ihnen benötigten Lösungen zu liefern. Mit einem Schwerpunkt auf moderner Technik

@@ -71,17 +71,21 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
             />
             <span className='ml-2'>
               Ich habe die{' '}
-              <LinkCTA href='/dsgvo' title='Datenschutzvereinbarung'>
+              <a href='/dsgvo' title='Datenschutzvereinbarung'>
                 Datenschutzvereinbarung
-              </LinkCTA>{' '}
+              </a>{' '}
               gelesen und akzeptiert. Keine Sorge wir werden Sie nicht mit Spam E-Mails nerven oder Ihre Daten
               weitergeben.
             </span>
           </label>
         </div>
         <div>
-          <Button disabled={!accepted} className={`${!accepted ? 'opacity-50' : ''} ${classNameButton}`} type='submit'>
-            Absenden
+          <Button
+            disabled={!accepted}
+            className={`uppercase bg-primary after:bg-white h-12 ${!accepted ? 'opacity-50' : ''}`}
+            href='#contact'
+          >
+            Kontaktiere uns
           </Button>
         </div>
       </form>

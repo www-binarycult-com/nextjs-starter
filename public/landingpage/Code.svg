@@ -48,12 +48,12 @@
   </g>
   <g>
     <g>
-      <rect x="485.233" y="139.974" width="4.681" height="35.442" fill="#262626"></rect>
-      <rect x="485.233" y="131.986" width="4.681" height="15.976" transform="translate(627.548 -347.6) rotate(90)" fill="#262626"></rect>
-      <rect x="485.233" y="166.539" width="4.681" height="15.976" transform="translate(662.101 -313.047) rotate(90)" fill="#262626"></rect>
+      <rect x="485.233" y="139.974" width="4.681" height="35.442" fill="#14213D"></rect>
+      <rect x="485.233" y="131.986" width="4.681" height="15.976" transform="translate(627.548 -347.6) rotate(90)" fill="#14213D"></rect>
+      <rect x="485.233" y="166.539" width="4.681" height="15.976" transform="translate(662.101 -313.047) rotate(90)" fill="#14213D"></rect>
     </g>
     <g>
-      <rect x="384.546" y="169.179" width="86.87" height="35.352" transform="translate(855.961 373.71) rotate(-180)" fill="#262626"></rect>
+      <rect x="384.546" y="169.179" width="86.87" height="35.352" transform="translate(855.961 373.71) rotate(-180)" fill="#14213D"></rect>
       <g>
         <path d="M406.385,187.41l12.835-6.228v2.437l-10.182,4.739v.054l10.182,4.766v2.41l-12.835-6.228Z" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.628"></path>
         <path d="M422.175,196.671l6.607-19.632h2.329L424.5,196.671Z" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.628"></path>
@@ -63,12 +63,12 @@
   </g>
   <g>
     <g>
-      <rect x="414.978" y="374.688" width="4.681" height="35.442" fill="#FFEB3B"></rect>
-      <rect x="414.978" y="366.699" width="4.681" height="15.976" transform="translate(792.006 -42.631) rotate(90)" fill="#FFEB3B"></rect>
-      <rect x="414.978" y="401.253" width="4.681" height="15.976" transform="translate(826.559 -8.077) rotate(90)" fill="#FFEB3B"></rect>
+      <rect x="414.978" y="374.688" width="4.681" height="35.442" fill="#E5E5E5"></rect>
+      <rect x="414.978" y="366.699" width="4.681" height="15.976" transform="translate(792.006 -42.631) rotate(90)" fill="#E5E5E5"></rect>
+      <rect x="414.978" y="401.253" width="4.681" height="15.976" transform="translate(826.559 -8.077) rotate(90)" fill="#E5E5E5"></rect>
     </g>
     <g>
-      <rect x="314.958" y="403.104" width="86.87" height="35.352" transform="translate(716.786 841.56) rotate(-180)" fill="#FFEB3B"></rect>
+      <rect x="314.958" y="403.104" width="86.87" height="35.352" transform="translate(716.786 841.56) rotate(-180)" fill="#E5E5E5"></rect>
       <g>
         <path d="M337.257,420.335l12.836-6.228v2.437l-10.182,4.739v.054l10.182,4.766v2.41l-12.836-6.228Z" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.628"></path>
         <path d="M353.047,429.6l6.608-19.632h2.329L355.377,429.6Z" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.628"></path>

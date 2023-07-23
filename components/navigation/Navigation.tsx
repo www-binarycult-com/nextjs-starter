@@ -12,9 +12,9 @@ export const Navigation = () => {
   return (
     <menu>
       <button onClick={() => setIsOpen(!isOpen)} className={burgerClassNames}>
-        <div className='w-8 h-1 bg-black'></div>
-        <div className='w-8 h-1 bg-black'></div>
-        <div className='w-8 h-1 bg-black'></div>
+        <div className='w-8 h-1 bg-secondary'></div>
+        <div className='w-8 h-1 bg-secondary'></div>
+        <div className='w-8 h-1 bg-secondary'></div>
       </button>
       <div className={menuClassNames}>
         <div>

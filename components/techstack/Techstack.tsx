@@ -65,7 +65,7 @@ export const Techstack = () => {
               in die Zukunft zu blicken.
             </p>
             <br />
-            <a className=' hover-underline-animation' href={'/#contact-form'}>
+            <a className=' hover-underline-animation text-secondary' href={'/#contact-form'}>
               <b>Mehr Erfahren</b>
             </a>
           </div>
