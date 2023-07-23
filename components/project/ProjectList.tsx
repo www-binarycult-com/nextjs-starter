@@ -18,7 +18,6 @@ const projectListArray = [
       </p>
     ),
     imgSrc: 'iks-hannover.png',
-    backgroundColor: 'black',
   },
   {
     headline: 'Vitalist',
@@ -32,7 +31,6 @@ const projectListArray = [
       </p>
     ),
     imgSrc: 'vita-list.png',
-    backgroundColor: '#9FA365',
   },
   {
     headline: 'Faber Ernährungsberatung',
@@ -46,7 +44,6 @@ const projectListArray = [
       </p>
     ),
     imgSrc: 'faber.png',
-    backgroundColor: '#01072e',
   },
 ];
 
@@ -77,20 +74,10 @@ export const ProjectList = () => {
           <SubHeadline>Von Wordpress bis hinzu einer indivudellen Softwarelösung</SubHeadline>
           <Spacing type='content' />
         </div>
-        <div
-          id='right'
-          className='w-full md:w-1/2 transition-all duration-300 ease-in bg-black'
-          style={{ background: state.color }}
-        >
-          {projectListArray.map(({ headline, content, backgroundColor, imgSrc }, key) => {
+        <div id='right' className='w-full md:w-1/2 transition-all duration-300 ease-in'>
+          {projectListArray.map(({ headline, content, imgSrc }, key) => {
             return (
-              <ProjectItem
-                key={'ProjectItem-' + key}
-                imgSrc={imgSrc}
-                backgroundColor={backgroundColor}
-                position={key + 1}
-                headline={headline}
-              >
+              <ProjectItem key={'ProjectItem-' + key} imgSrc={imgSrc} position={key + 1} headline={headline}>
                 {content}
               </ProjectItem>
             );

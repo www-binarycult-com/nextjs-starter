@@ -7,12 +7,11 @@ type ProjectItemProps = {
   imgSrc?: string;
   svgSrc?: string;
   position: number;
-  backgroundColor: string;
   children: ReactNode;
   headline: string;
 };
 
-export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headline, children }: ProjectItemProps) => {
+export const ProjectItem = ({ position, imgSrc, svgSrc, headline, children }: ProjectItemProps) => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.3,
@@ -22,14 +21,14 @@ export const ProjectItem = ({ position, backgroundColor, imgSrc, svgSrc, headlin
 
   useEffect(() => {
     if (inView) {
-      changeConfig({ position: position, color: backgroundColor });
+      changeConfig({ position: position });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
   useEffect(() => {
     if (inView) {
-      changeConfig({ position: position, color: backgroundColor });
+      changeConfig({ position: position });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
