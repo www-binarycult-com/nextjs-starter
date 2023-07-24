@@ -4,6 +4,7 @@ import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { LinkCTA } from '../callToActions/LinkCTA';
 import { Button } from '../button/Button';
+import Link from 'next/link';
 
 export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string }) => {
   const [name, setName] = useState('');
@@ -71,9 +72,9 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
             />
             <span className='ml-2'>
               Ich habe die{' '}
-              <a href='/dsgvo' title='Datenschutzvereinbarung'>
+              <Link href='/dsgvo' title='Datenschutzvereinbarung'>
                 Datenschutzvereinbarung
-              </a>{' '}
+              </Link>{' '}
               gelesen und akzeptiert. Keine Sorge wir werden Sie nicht mit Spam E-Mails nerven oder Ihre Daten
               weitergeben.
             </span>
