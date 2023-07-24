@@ -58,7 +58,7 @@ html{
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #FCA311;
+  background-color: #f47a60;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -157,7 +157,7 @@ menu > div {
   left: 0;
   width: 0;
   height: 100%;
-  background: #FCA311;
+  background: #f47a60;
   transition: all .35s;
 }
 

@@ -12,7 +12,7 @@ module.exports = {
         height: 'height',
       },
       colors: {
-        primary: '#FCA311',
+        primary: '#f47a60',
         secondary: '#14213D',
         tertiary: '#E5E5E5',
         white: 'white',
