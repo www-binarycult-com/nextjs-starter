@@ -15,6 +15,7 @@ import Clients from '../components/clients/Clients';
 import { Done } from '../components/done/Done';
 import { Workflow } from '../components/workflow/Workflow';
 import { Techstack } from '../components/techstack/Techstack';
+import { Cta } from '../components/Landingpage/Cta';
 
 const images = [
   { href: '/', src: '/clients/casa.png' },
@@ -43,7 +44,7 @@ const Home: NextPage = () => {
           heading='Hallo!'
           id='agency'
           subheading='Wir sind Ihr Partner für Web Development und mehr.'
-          image={{ src: './coder.svg' }}
+          image={{ src: './test.svg' }}
           className=' '
         >
           <>
@@ -54,6 +55,11 @@ const Home: NextPage = () => {
             </p>
             <br />
             <p>
+              Die Digitalisierung ist in aller Munde und bietet für Unternehmen viele Chancen und Möglichkeiten.
+              Allerdings stellen sie auch viele Herausforderungen dar, die es zu meistern gilt. Wir von immajung möchten
+              Ihnen dabei helfen, diese Herausforderungen erfolgreich zu bewältigen.
+            </p>
+            <p>
               Unser Team besteht aus erfahrenen und hochqualifizierten Experten, die sich jeden Tag dafür einsetzen,
               unseren Kunden bei der Bewältigung der Herausforderungen der Digitalisierung zu helfen. Wir arbeiten mit
               Leidenschaft und Engagement und sind stets bemüht, unsere Leistungen stetig zu verbessern und auf dem
@@ -61,9 +67,13 @@ const Home: NextPage = () => {
             </p>
             <br />
             <p>
-              Wir freuen uns darauf, Sie kennenzulernen und Ihnen bei der Gestaltung Ihrer Web-Präsenz in Hannover und
-              Umgebung zu helfen. Schauen Sie sich gerne auf unserer Website um und lernen Sie uns und unser Angebot
-              näher kennen.
+              Mit unserem Full-Service-Angebot sind wir Ihr zuverlässiger Partner für alle Belange rund um die
+              Digitalisierung Ihres Unternehmens. Wir beraten Sie umfassend und erarbeiten gemeinsam mit Ihnen eine
+              Strategie, die auf Ihre Bedürfnisse und Ziele abgestimmt ist.
+            </p>
+            <p>
+              Lassen Sie uns gemeinsam die Herausforderungen der Digitalisierung meistern und Ihr Unternehmen
+              erfolgreich in die Zukunft führen. Kontaktieren Sie uns und lernen Sie uns und unser Angebot näher kennen.
             </p>
             <br />
             <LinkCTA href='#contact-form'>Sagen Sie uns gerne Hallo!</LinkCTA>
@@ -72,45 +82,14 @@ const Home: NextPage = () => {
         <ProjectProvider>
           <ProjectList />
         </ProjectProvider>
-        <TextImageSection
-          heading='Digitalisierung'
-          subheading='Unsere Mission: Ihnen dabei helfen, die Herausforderungen der Digitalisierung zu meistern.'
-          image={{ src: './group.svg' }}
-          reversedOrder
-        >
-          <>
-            <p>
-              Die Digitalisierung ist in aller Munde und bietet für Unternehmen viele Chancen und Möglichkeiten.
-              Allerdings stellen sie auch viele Herausforderungen dar, die es zu meistern gilt. Wir von immajung möchten
-              Ihnen dabei helfen, diese Herausforderungen erfolgreich zu bewältigen.
-            </p>
-            <br />
-            <p>
-              Unser Team besteht aus erfahrenen Experten, die sich auf die Digitalisierung von Unternehmen spezialisiert
-              haben. Wir bieten Ihnen individuelle Lösungen und unterstützen Sie bei der Gestaltung Ihrer Web-Präsenz,
-              der Optimierung für Suchmaschinen und der Entwicklung von benutzerfreundlichen Benutzeroberflächen.
-            </p>
-            <br />
-            <p>
-              Mit unserem Full-Service-Angebot sind wir Ihr zuverlässiger Partner für alle Belange rund um die
-              Digitalisierung Ihres Unternehmens. Wir beraten Sie umfassend und erarbeiten gemeinsam mit Ihnen eine
-              Strategie, die auf Ihre Bedürfnisse und Ziele abgestimmt ist.
-            </p>
-            <br />
-            <p>
-              Lassen Sie uns gemeinsam die Herausforderungen der Digitalisierung meistern und Ihr Unternehmen
-              erfolgreich in die Zukunft führen. Kontaktieren Sie uns und lernen Sie uns und unser Angebot näher kennen.{' '}
-            </p>
-            <br />
-          </>
-        </TextImageSection>
         <ContactCTA />
         <Done />
         <Workflow />
         <Services />
+        <Cta />
         <Techstack />
         <Clients images={images} />
-        <div id='contact-form' className='flex flex-col md:flex-row container p-5 m-auto'>
+        <div id='contact-form' className='flex flex-col md:flex-row container m-auto'>
           <div className='w-full md:w-1/2 '>
             <ContactForm />
           </div>

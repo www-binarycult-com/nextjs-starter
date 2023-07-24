@@ -4,15 +4,16 @@ import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
 import { LinkCTA } from '../callToActions/LinkCTA';
 import { Button } from '../button/Button';
+import Link from 'next/link';
 
-export const ContactForm: React.FC = () => {
+export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [accepted, setAccepted] = useState(false);
 
   return (
-    <div className='p-10'>
+    <div className='p-10' id='contact'>
       <form name='contact' method='POST' data-netlify='true'>
         <input type='hidden' name='form-name' value='contact' />
         <input type='hidden' name='bot-field' />
@@ -52,7 +53,7 @@ export const ContactForm: React.FC = () => {
             Nachricht:
           </label>
           <textarea
-            className='border rounded py-2 px-3 w-full'
+            className='border rounded py-2 px-3 w-full h-48'
             id='message'
             name='message'
             value={message}
@@ -71,17 +72,21 @@ export const ContactForm: React.FC = () => {
             />
             <span className='ml-2'>
               Ich habe die{' '}
-              <LinkCTA href='/dsgvo' title='Datenschutzvereinbarung'>
+              <Link href='/dsgvo' title='Datenschutzvereinbarung'>
                 Datenschutzvereinbarung
-              </LinkCTA>{' '}
+              </Link>{' '}
               gelesen und akzeptiert. Keine Sorge wir werden Sie nicht mit Spam E-Mails nerven oder Ihre Daten
               weitergeben.
             </span>
           </label>
         </div>
         <div>
-          <Button disabled={!accepted} className={`${!accepted ? 'opacity-50' : ''}`} type='submit'>
-            Absenden
+          <Button
+            disabled={!accepted}
+            className={`uppercase bg-primary after:bg-white h-12 ${!accepted ? 'opacity-50' : ''}`}
+            href='#contact'
+          >
+            Kontaktiere uns
           </Button>
         </div>
       </form>

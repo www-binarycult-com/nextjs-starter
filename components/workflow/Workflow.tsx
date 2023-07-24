@@ -17,18 +17,24 @@ export const Workflow = ({ className }: ITextImageSection) => {
       <Headline tag='h2'>Our Workflow</Headline>
       <SubHeadline>Unsere 4-Stufen-Methode für Ihr Projekt.</SubHeadline>
       <Spacing type='content' />
-      <VerticalTimeline lineColor='black'>
+      <VerticalTimeline lineColor='#14213D'>
         <VerticalTimelineElement
           position='right'
           date='Über unsere kostenlose Anfrage werden wir auf Sie aufmerksam. Innerhalb weniger Tage nehmen wir mit Ihnen
           Kontakt auf und Sie erhalten ein unverbindliches erstes Angebot.'
-          contentStyle={{ background: 'transparent', color: 'black', borderRadius: '0', boxShadow: 'none', padding: 0 }}
+          contentStyle={{
+            background: 'transparent',
+            color: '#14213D',
+            borderRadius: '0',
+            boxShadow: 'none',
+            padding: 0,
+          }}
           iconStyle={{
-            background: 'black',
+            background: '#14213D',
             color: 'white',
             borderRadius: '0',
             boxShadow: 'none',
-            borderBlockColor: ' black',
+            borderBlockColor: ' #14213D',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -48,9 +54,15 @@ export const Workflow = ({ className }: ITextImageSection) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           position='left'
-          contentStyle={{ background: 'transparent', color: 'black', borderRadius: '0', boxShadow: 'none', padding: 0 }}
+          contentStyle={{
+            background: 'transparent',
+            color: '#14213D',
+            borderRadius: '0',
+            boxShadow: 'none',
+            padding: 0,
+          }}
           iconStyle={{
-            background: 'black',
+            background: '#14213D',
             color: 'white',
             borderRadius: '0',
             boxShadow: 'none',
@@ -75,13 +87,13 @@ export const Workflow = ({ className }: ITextImageSection) => {
           icon={<h3 className='text-3xl'>03</h3>}
           contentStyle={{
             background: 'transparent',
-            color: 'black',
+            color: '#14213D',
             borderRadius: '0',
             boxShadow: 'none',
             padding: 0,
           }}
           iconStyle={{
-            background: 'black',
+            background: '#14213D',
             color: 'white',
             borderRadius: '0',
             boxShadow: 'none',
@@ -105,13 +117,13 @@ export const Workflow = ({ className }: ITextImageSection) => {
         <VerticalTimelineElement
           contentStyle={{
             background: 'transparent',
-            color: 'black',
+            color: '#14213D',
             borderRadius: '0',
             boxShadow: 'none',
             padding: 0,
           }}
           iconStyle={{
-            background: 'black',
+            background: '#14213D',
             color: 'white',
             borderRadius: '0',
             boxShadow: 'none',

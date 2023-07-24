@@ -23,7 +23,7 @@ export const ServicesItem = ({ title, children, href, animation, inView }: Servi
         <div>
           <p>{children}</p>
           <br />
-          <a className=' hover-underline-animation' href={'/#contact-form'}>
+          <a className=' hover-underline-animation text-secondary' href={'/#contact-form'}>
             <b>Mehr Erfahren</b>
           </a>
         </div>

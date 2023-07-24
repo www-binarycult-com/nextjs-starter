@@ -37,7 +37,7 @@ export const TextImageSection = ({
   );
   const textWidth = classNames(image && 'md:w-2/3 w-full', `opacity-0 ${inView ? 'animate-fadeInLeft' : ''}`);
   const container = classNames(className, 'p-10 container m-auto');
-  const img = classNames(`opacity-0 ${inView ? 'animate-fadeInRight' : ''}`, 'm-auto');
+  const img = classNames(`opacity-0 h-[400px] rounded ${inView ? 'animate-fadeInRight' : ''}`, 'm-auto');
 
   return (
     <div ref={ref} className={container} id={id}>
@@ -49,7 +49,7 @@ export const TextImageSection = ({
       <div ref={ref} className={flex}>
         <div className={textWidth}>{children}</div>
         {image && (
-          <div className='md:w-1/3 w-full flex p-0 xl:px-8'>
+          <div className='md:w-1/3 w-full flex p-0 xl:px-8 '>
             <img className={img} {...image} />
           </div>
         )}

@@ -37,6 +37,23 @@ const Impressum: NextPage = () => {
             </p>
             <Headline tag='h4'>RECHTLICHE HINWEISE</Headline>
             <br />
+            Foto auf Hompage von{' '}
+            <a href='https://unsplash.com/@jasongoodman_youxventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>
+              Jason Goodman
+            </a>{' '}
+            auf{' '}
+            <a href='https://unsplash.com/de/fotos/vbxyFxlgpjM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>
+              Unsplash
+            </a>
+            <br />
+            Foto von{' '}
+            <a href='https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>
+              charlesdeluvio
+            </a>{' '}
+            auf{' '}
+            <a href='https://unsplash.com/de/fotos/Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>
+              Unsplash
+            </a>
             <br />
             <p>
               Die Informationen auf diesen Webseiten werden von Immajung (Dennis Piotrwoski, Karim Ould Mahieddine,
@@ -119,7 +136,6 @@ const Impressum: NextPage = () => {
               der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von
               Werbeinformationen, etwa durch Spam-Mails, vor.
             </p>
-
             <br />
             <br />
           </>
