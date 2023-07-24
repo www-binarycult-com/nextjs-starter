@@ -9,6 +9,7 @@ import Link from 'next/link';
 export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [accepted, setAccepted] = useState(false);
 
@@ -46,6 +47,19 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
             name='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className='mb-4'>
+          <label className='block text-gray-700 mb-2' htmlFor='email'>
+            Telefon:
+          </label>
+          <input
+            className='border rounded py-2 px-3 w-full'
+            type='tel'
+            id='phone'
+            name='phone'
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
         </div>
         <div className='mb-4'>

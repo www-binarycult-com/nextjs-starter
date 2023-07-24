@@ -7,7 +7,7 @@ const faqs = [
   {
     id: 1,
     header: 'Wie gewährleisten wir eine Website, die alle begeistert?',
-    text: 'Bei Immajung kreieren wir maßgeschneiderte Websites - keine vorgefertigten Bausteine, reine Kreativität. Sie profitieren von unserer Expertise aus über 500 Projekten und unseren innovativen Prozessen. Wir arbeiten eng mit Ihnen zusammen, um Ihre Erwartungen an Design und Funktion zu erfüllen und übernehmen den Großteil der Arbeit. Ihr Wunsch trifft auf unsere Kreativität - ein unschlagbares Team.',
+    text: 'Bei Immajung kreieren wir maßgeschneiderte Websites - keine vorgefertigten Bausteine, reine Kreativität. Sie profitieren von unserer Expertise aus zahlreichen Projekten und unseren innovativen Prozessen. Wir arbeiten eng mit Ihnen zusammen, um Ihre Erwartungen an Design und Funktion zu erfüllen und übernehmen den Großteil der Arbeit. Ihr Wunsch trifft auf unsere Kreativität - ein unschlagbares Team.',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const faqs = [
   {
     id: 4,
     header: 'Fallen zusätzliche Kosten an?',
-    text: 'Die Investition von 799€ netto umfasst die vollständige Erstellung Ihrer Website. Domain & Hosting sind für die ersten 12 Monate inklusive und nutzen unsere schnellen, CO2-neutralen Server in Deutschland. Danach bieten wir spezielle Konditionen für nur 19,99€ pro Monat, die Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal umfassen.',
+    text: 'Die Investition von 900€ netto umfasst die vollständige Erstellung Ihrer Website. Domain & Hosting sind für die ersten 12 Monate inklusive und nutzen unsere schnellen, CO2-neutralen Server in Deutschland. Danach bieten wir spezielle Konditionen für nur 19,99€ pro Monat, die Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal umfassen.',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const faqs = [
   {
     id: 7,
     header: 'Bieten wir weitere optionale Dienstleistungen?',
-    text: 'Nutzen Sie unseren erweiterten Service zu einem herausragenden Preis-Leistungs-Verhältnis. Zusätzliche Angebote umfassen Logoerstellung, Texterstellung, Online Marketing, SEO-Optimierung, Google My Business und Social Media Dienstleistungen.',
+    text: 'Nutzen Sie unseren erweiterten Service zu einem herausragenden Preis-Leistungs-Verhältnis. Zusätzliche Angebote umfassen Logoerstellung, Texterstellung, Online Marketing, SEO-Optimierung, Google My Business und Social Media Dienstleistungen. Sprechen Sie uns dafür einfach an.',
   },
 ];
 

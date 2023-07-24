@@ -7,7 +7,9 @@ export const Footer = () => {
     <footer className='bg-secondary border-t-2 border-solid border-black mt-16'>
       <div className='p-10 container m-auto flex gap-8 md:flex-row flex-col-reverse'>
         <div className='md:w-1/2 w-full'>
-          <h3 className='text-white text-2xl animate-pulse'>immajung</h3>
+          <Link href='/' className='text-white text-2xl animate-pulse'>
+            immajung
+          </Link>
           <p className='mt-1 text-tertiary text-xs font-medium tracking-wide'>
             Gemeinsam mit uns meistern Sie die Herausforderungen der Digitalisierung.
           </p>
@@ -17,7 +19,7 @@ export const Footer = () => {
           <nav className='text-sm font-semibold'>
             <ul className='flex items-center gap-4 flex-wrap'>
               <li className='mr-3'>
-                <Link href='/'>
+                <Link href='/#contact'>
                   <span className='hover-underline-animation text-white '>Kostenlose Erstberatung</span>
                 </Link>
               </li>
@@ -32,7 +34,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li className='mr-3'>
-                <Link href='/#contact-form'>
+                <Link href='/#contact'>
                   <span className='hover-underline-animation text-white '>Kontakt</span>
                 </Link>
               </li>

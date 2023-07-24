@@ -33,6 +33,9 @@ export const Navigation = () => {
             <li>
               <Link href='/impressum'>Impressum</Link>
             </li>
+            <li>
+              <Link href='/landingpage'>Unsere Angebote</Link>
+            </li>
           </ul>
         </div>
       </div>

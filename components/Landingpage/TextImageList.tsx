@@ -81,7 +81,7 @@ export const TextImageList = ({ heading, subheading = ' ', items, id, className 
             list={item.list}
             image={item.image}
             text={item.text}
-            key={key}
+            key={`TextImage-${key}`}
           />
           <Spacing type='content' />
         </>

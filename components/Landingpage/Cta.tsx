@@ -9,7 +9,7 @@ export const Cta = () => {
       <div className={container}>
         <h2 className='text-white text-center text-3xl'>Überzeugen Sie Ihre Kunden mit einer modernen Website</h2>
         <p className='text-center text-white'>
-          Sichern Sie sich jetzt für kurze Zeit 60% Rabatt. Die meisten Unternehmen haben heute bereits eine Website,
+          Sichern Sie sich jetzt für kurze Zeit 70% Rabatt. Die meisten Unternehmen haben heute bereits eine Website,
           doch diese überzeugt oft so gut wie keine Kunden. Wir erstellen Ihnen eine moderne Website, mit denen Sie sich
           von Ihren Mitbewerbern abheben.
         </p>

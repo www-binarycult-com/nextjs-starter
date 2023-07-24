@@ -12,7 +12,7 @@ const items: ItemTypes = [
   },
   {
     headline: 'Günstigster Preis',
-    text: 'Jetzt schnell sein und 60% Rabatt auf Ihre Website sichern. Keine versteckten Kosten. Domain & Hosting geschenkt.',
+    text: 'Jetzt schnell sein und 70% Rabatt auf Ihre Website sichern. Keine versteckten Kosten. Domain & Hosting geschenkt.',
     icon: '/landingpage/save-money.gif',
   },
   {
@@ -22,7 +22,7 @@ const items: ItemTypes = [
   },
   {
     headline: 'Geld zurück Garantie',
-    text: 'ie werden von unserem Design begeistert sein - garantiert! Wenn nicht, bekommen Sie Ihr Geld zurück.*',
+    text: 'Sie werden von unserem Design begeistert sein - garantiert! Wenn nicht, bekommen Sie Ihr Geld zurück.*',
     icon: '/landingpage/cashback.gif',
   },
 ];
