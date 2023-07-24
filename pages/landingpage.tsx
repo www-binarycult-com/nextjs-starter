@@ -39,9 +39,8 @@ const Landingpage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Landingpage</title>
-        <meta name='description' content='immajung - Landingpage' />
-        <link rel='icon' href='/favicon.ico' />
+        <title>Immajung | Deine Web Agentur</title>
+        <meta name='description' content='immajung - Sichern Sie sich Ihre neue Website mit unserem Top Sparangebot' />
       </Head>
       <main>
         <LandingpageHero />
