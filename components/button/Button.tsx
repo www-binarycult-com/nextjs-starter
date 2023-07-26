@@ -8,7 +8,7 @@ type ButtonProps = {
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({ children, className, size = 'cta', asButton = true, href, ...props }: ButtonProps) => {
-  const classes = classNames('ctaButton transparent', className);
+  const classes = classNames('ctaButton transparent rounded', className);
 
   if (!asButton) {
     return (
