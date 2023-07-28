@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Spacing } from '../Spacing';
 import { Headline } from '../Headline';
 import { SubHeadline } from '../SubHeadline';
-import { LinkCTA } from '../callToActions/LinkCTA';
 import { Button } from '../button/Button';
 import Link from 'next/link';
+import { Validate } from './utils/Validate';
 
 export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string }) => {
   const [name, setName] = useState('');
@@ -12,10 +12,57 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [accepted, setAccepted] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+  const [errorsMessage, setErrorsMessage] = useState("");
+
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const validateForm = Validate({ name, email, phone, message })
+
+    const errorMessageString = Object.values(validateForm).join("\n");
+    setErrorsMessage(errorMessageString);
+
+    const isValidForm = (errorsMessage: object) => {
+      console.log(errorsMessage)
+      return Object.values(errorsMessage).every(value => value === "");
+    };
+
+    if (isValidForm(validateForm)) {
+      const res = await fetch("api/sendgrid", {
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+          message: message,
+          accepted: accepted
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        return;
+      }
+
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+    } else {
+      setShowSuccessMessage(false);
+      setShowFailureMessage(true);
+    }
+  }
 
   return (
     <div className='p-10' id='contact'>
-      <form name='contact' method='POST' data-netlify='true'>
+      <form onSubmit={handleSubmit}>
         <input type='hidden' name='form-name' value='contact' />
         <input type='hidden' name='bot-field' />
         <div>
@@ -104,7 +151,14 @@ export const ContactForm = ({ classNameButton = '' }: { classNameButton?: string
           </Button>
         </div>
       </form>
-    </div>
+      {showSuccessMessage && <p>Ihre Nachricht wurde erfolgreich gesendet</p>}
+      {showFailureMessage && (
+        <>
+          <div className="text-red-500 text-xl text-xl">Entschuldigung, leider ist ein Fehler aufgetreten</div>
+          <div className="whitespace-pre-line text-red-500 text-xl text-xl">{errorsMessage}</div>
+        </>
+      )}
+    </div >
   );
 };
 
