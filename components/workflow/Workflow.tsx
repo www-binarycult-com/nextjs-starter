@@ -25,7 +25,7 @@ export const Workflow = ({ className }: ITextImageSection) => {
           contentStyle={{
             background: 'transparent',
             color: '#14213D',
-            borderRadius: '0',
+            borderRadius: '2px',
             boxShadow: 'none',
             padding: 0,
           }}
