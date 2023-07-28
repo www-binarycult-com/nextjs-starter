@@ -24,7 +24,9 @@ const Impressum: NextPage = () => {
               <br />
               Am Kalkbruche 1b 30455
               <br />
-              Hannover Germany e-mail: hello@immajung.com
+              Hannover Germany e-mail: hello@immajung.de
+              <br />
+              Telefon: 01767253740
             </p>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: ******
@@ -34,6 +36,11 @@ const Impressum: NextPage = () => {
               Landgericht: Hannover-Süd
               <br />
               <br />
+            </p>
+            <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+            <p>
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle teilzunehmen.
             </p>
             <Headline tag='h4'>RECHTLICHE HINWEISE</Headline>
             <br />

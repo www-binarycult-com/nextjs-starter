@@ -24,7 +24,7 @@ const DSGVO: NextPage = () => {
               <br />
               Am Kalkbruche 1b 30455
               <br />
-              Hannover Germany e-mail: hello@immajung.com
+              Hannover Germany e-mail: hello@immajung.de
             </p>
             <p>
               Für externe Links zu fremden Inhalten können wir trotz sorgfältiger inhaltlicher Kontrolle keine Haftung
@@ -133,7 +133,7 @@ const DSGVO: NextPage = () => {
             <br />
             <p>
               Sollten Sie Fragen zu unserer Datenschutzverordnung haben, wenden Sie sich bitte an unseren örtlichen
-              Datenschutzbeauftragten via hello@immajung.com
+              Datenschutzbeauftragten via hello@immajung.de
             </p>
           </>
         </TextImageSection>

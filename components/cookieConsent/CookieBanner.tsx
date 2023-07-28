@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { MouseEvent, useEffect, useState } from 'react';
 import { Button } from '../button/Button';
+import Link from 'next/link';
 
 const USER_CONSENT_COOKIE_KEY = 'cookie_consent_is_true';
 const USER_CONSENT_COOKIE_EXPIRE_DATE = new Date().getTime() + 365 * 24 * 60 * 60;
@@ -46,9 +47,9 @@ const CookieBanner = () => {
         <div className='flex items-center flex-grow text-gray-900'>
           <p className='text-sm font-medium text-white'>
             Diese Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern. <br />
-            <a className='text-sm underline hover:text-lightAccent' href='/dsgvo'>
+            <Link className='text-sm underline hover:text-lightAccent' href='/dsgvo'>
               Mehr auf unserer Datenschutzvereinbarung
-            </a>
+            </Link>
             .
           </p>
         </div>
