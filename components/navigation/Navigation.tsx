@@ -23,13 +23,11 @@ export const Navigation = () => {
               <Link href='/'>Home</Link>
             </li>
             <li>
-              <Link href='/#contact-form'>Kontankt</Link>
+              <Link href='/#contact-form'>Kontakt</Link>
             </li>
-
             <li>
               <Link href='/dsgvo'>Datenschutz</Link>
             </li>
-
             <li>
               <Link href='/impressum'>Impressum</Link>
             </li>
