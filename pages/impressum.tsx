@@ -29,9 +29,9 @@ const Impressum: NextPage = () => {
               Telefon: 01767253740
             </p>
             <p>
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: ******
+              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: 26/235/144504
               <br />
-              Steuer-ID: *******
+              Steuer-ID: 2326023514504
               <br />
               Landgericht: Hannover-Süd
               <br />
