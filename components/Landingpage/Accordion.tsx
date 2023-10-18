@@ -19,11 +19,11 @@ const faqs = [
     header: 'Können Sie Ihre aktuelle Domain behalten?',
     text: 'Selbstverständlich! Wir können Ihre bestehende Domain entweder umziehen oder eine Verbindung zu Ihrer neuen Website herstellen. Unser Rundum-Service ist darauf ausgelegt, Ihnen den Prozess so einfach wie möglich zu gestalten.',
   },
-  {
-    id: 4,
-    header: 'Fallen zusätzliche Kosten an?',
-    text: 'Die Investition von 900€ netto umfasst die vollständige Erstellung Ihrer Website. Domain & Hosting sind für die ersten 12 Monate inklusive und nutzen unsere schnellen, CO2-neutralen Server in Deutschland. Danach bieten wir spezielle Konditionen für nur 19,99€ pro Monat, die Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal umfassen.',
-  },
+  // {
+  //   id: 4,
+  //   header: 'Fallen zusätzliche Kosten an?',
+  //   text: 'Die Investition von 900€ netto umfasst die vollständige Erstellung Ihrer Website. Domain & Hosting sind für die ersten 12 Monate inklusive und nutzen unsere schnellen, CO2-neutralen Server in Deutschland. Danach bieten wir spezielle Konditionen für nur 19,99€ pro Monat, die Website-Nutzung, Domain, Hosting, technische Pflege & Wartung sowie Zugang zu Ihrem Kundenportal umfassen.',
+  // },
   {
     id: 5,
     header: 'Was beinhaltet unsere Geld-zurück-Garantie?',
